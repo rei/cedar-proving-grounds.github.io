@@ -14,7 +14,7 @@ before_install:
 install:
 - npm install
 before_script:
-- npm run dev
+- npm run build
 deploy:
   provider: pages
   skip-cleanup: true
@@ -22,4 +22,4 @@ deploy:
   keep-history: true
   local-dir: ''
   on:
-    branch: next
+    branch: master

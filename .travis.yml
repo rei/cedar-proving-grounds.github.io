@@ -1,0 +1,25 @@
+os:
+- linux
+language: node_js
+node_js:
+- '8'
+sudo: required
+dist: trusty
+before_install:
+- if [ "$TRAVIS_OS_NAME" == "linux" ]; then export CHROME_BIN=/usr/bin/google-chrome;
+    fi
+- if [ "$TRAVIS_OS_NAME" == "linux" ]; then export DISPLAY=:99.0; fi
+- if [ "$TRAVIS_OS_NAME" == "linux" ]; then sh -e /etc/init.d/xvfb start; fi
+- npm i -g npm
+install:
+- npm install
+before_script:
+- npm run dev
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: "$GH_TOKEN"
+  keep-history: true
+  local-dir: ''
+  on:
+    branch: next

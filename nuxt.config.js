@@ -59,9 +59,6 @@ module.exports = {
     }
   },
   router: {
-    extendRoutes(routes) {
-      // Update
-      routes.push({name: 'home', path: '/home', component: '~/pages/KitchenSink.vue'})
-    }
+    base: '/rei-cedar-proving-grounds/'
   }
 }

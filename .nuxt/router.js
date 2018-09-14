@@ -3,12 +3,12 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-const _305907d0 = () => import('..\\pages\\KitchenSink.vue' /* webpackChunkName: "pages_KitchenSink" */).then(m => m.default || m)
-const _4f3701e2 = () => import('..\\pages\\App.vue' /* webpackChunkName: "pages_App" */).then(m => m.default || m)
-const _952f9138 = () => import('..\\pages\\components\\Links.vue' /* webpackChunkName: "pages_components_Links" */).then(m => m.default || m)
-const _675f4bf3 = () => import('..\\pages\\components\\Accordion.vue' /* webpackChunkName: "pages_components_Accordion" */).then(m => m.default || m)
-const _40057368 = () => import('..\\pages\\components\\Breadcrumb.vue' /* webpackChunkName: "pages_components_Breadcrumb" */).then(m => m.default || m)
-const _c90dec1a = () => import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */).then(m => m.default || m)
+const _0a7f320d = () => import('..\\pages\\KitchenSink.vue' /* webpackChunkName: "pages_KitchenSink" */).then(m => m.default || m)
+const _267e7cd7 = () => import('..\\pages\\App.vue' /* webpackChunkName: "pages_App" */).then(m => m.default || m)
+const _540ee199 = () => import('..\\pages\\components\\Links.vue' /* webpackChunkName: "pages_components_Links" */).then(m => m.default || m)
+const _bce858b0 = () => import('..\\pages\\components\\Accordion.vue' /* webpackChunkName: "pages_components_Accordion" */).then(m => m.default || m)
+const _4b69e253 = () => import('..\\pages\\components\\Breadcrumb.vue' /* webpackChunkName: "pages_components_Breadcrumb" */).then(m => m.default || m)
+const _8264c8b0 = () => import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */).then(m => m.default || m)
 const _92645906 = () => import('~/pages/KitchenSink.vue' /* webpackChunkName: "" */).then(m => m.default || m)
 
 
@@ -71,32 +71,32 @@ export function createRouter () {
     routes: [
 		{
 			path: "/KitchenSink",
-			component: _305907d0,
+			component: _0a7f320d,
 			name: "KitchenSink"
 		},
 		{
 			path: "/App",
-			component: _4f3701e2,
+			component: _267e7cd7,
 			name: "App"
 		},
 		{
 			path: "/components/Links",
-			component: _952f9138,
+			component: _540ee199,
 			name: "components-Links"
 		},
 		{
 			path: "/components/Accordion",
-			component: _675f4bf3,
+			component: _bce858b0,
 			name: "components-Accordion"
 		},
 		{
 			path: "/components/Breadcrumb",
-			component: _40057368,
+			component: _4b69e253,
 			name: "components-Breadcrumb"
 		},
 		{
 			path: "/",
-			component: _c90dec1a,
+			component: _8264c8b0,
 			name: "index"
 		},
 		{

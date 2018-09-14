@@ -8,12 +8,12 @@
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
     "build": "nuxt build",
     "start": "cross-env NODE_ENV=production node server/index.js",
-    "generate": "nuxt generate"
-    "deploy": "push-dir --dir=docs --branch=gh-pages"
+    "generate": "nuxt generate",
+    "deploy": "push-dir --dir=docs --branch=gh-pages --cleanup"
   },
   "dependencies": {
-    "@rei/cdr-assets": "^0.3.0",
     "@rei/cdr-accordion": "^1.0.1",
+    "@rei/cdr-assets": "^0.3.0",
     "@rei/cdr-breadcrumb": "^1.0.0",
     "@rei/cdr-button": "^1.0.0",
     "@rei/cdr-cta": "^1.0.0",
@@ -21,7 +21,8 @@
     "@rei/cdr-link": "^1.0.0",
     "micro": "^9.0.0",
     "micro-route": "^2.4.0",
-    "nuxt": "^1.0.0"
+    "nuxt": "^1.0.0",
+    "push-dir": "^0.4.1"
   },
   "devDependencies": {
     "cross-env": "^5.0.1",

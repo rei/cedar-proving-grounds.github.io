@@ -9,7 +9,6 @@ const _540ee199 = () => import('..\\pages\\components\\Links.vue' /* webpackChun
 const _bce858b0 = () => import('..\\pages\\components\\Accordion.vue' /* webpackChunkName: "pages_components_Accordion" */).then(m => m.default || m)
 const _4b69e253 = () => import('..\\pages\\components\\Breadcrumb.vue' /* webpackChunkName: "pages_components_Breadcrumb" */).then(m => m.default || m)
 const _8264c8b0 = () => import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */).then(m => m.default || m)
-const _92645906 = () => import('~/pages/KitchenSink.vue' /* webpackChunkName: "" */).then(m => m.default || m)
 
 
 
@@ -64,7 +63,7 @@ const scrollBehavior = function (to, from, savedPosition) {
 export function createRouter () {
   return new Router({
     mode: 'history',
-    base: '/',
+    base: '/rei-cedar-proving-grounds/',
     linkActiveClass: 'nuxt-link-active',
     linkExactActiveClass: 'nuxt-link-exact-active',
     scrollBehavior,
@@ -98,11 +97,6 @@ export function createRouter () {
 			path: "/",
 			component: _8264c8b0,
 			name: "index"
-		},
-		{
-			path: "/home",
-			component: _92645906,
-			name: "home"
 		}
     ],
     

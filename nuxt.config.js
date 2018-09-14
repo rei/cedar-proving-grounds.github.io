@@ -10,7 +10,7 @@ module.exports = {
    ** Toggle for client side vs. server side rendering.
    */
   mode: 'universal',
-  // mode: 'spa',
+  //mode: 'spa',
   /*
   ** Headers of the page
   */
@@ -59,9 +59,6 @@ module.exports = {
     }
   },
   router: {
-    extendRoutes(routes) {
-      // Update
-      routes.push({name: 'home', path: '/home', component: '~/pages/KitchenSink.vue'})
-    }
+    base: '/rei-cedar-proving-grounds/'
   }
 }

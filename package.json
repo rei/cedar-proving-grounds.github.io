@@ -9,6 +9,7 @@
     "build": "nuxt build",
     "start": "cross-env NODE_ENV=production node server/index.js",
     "generate": "nuxt generate"
+    "deploy": "push-dir --dir=docs --branch=gh-pages"
   },
   "dependencies": {
     "@rei/cdr-assets": "^0.3.0",

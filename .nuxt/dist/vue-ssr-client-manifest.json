@@ -9,15 +9,16 @@
     "pages_index.43311bf961da7b5b1a55.js",
     "pages_KitchenSink.bc4f54af12f335e7df55.js",
     "vendor.590a41d3e85c3a0035e9.js",
-    "app.3ba420c40aa95743e06c.js",
-    "manifest.9f328d98851c29145f36.js",
+    "app.fb79396ad2b9ccc98180.js",
+    "manifest.b73ee813f3f6d7aa17cd.js",
     "LICENSES",
-    "index.spa.html"
+    "index.spa.html",
+    "index.ssr.html"
   ],
   "initial": [
-    "manifest.9f328d98851c29145f36.js",
+    "manifest.b73ee813f3f6d7aa17cd.js",
     "vendor.590a41d3e85c3a0035e9.js",
-    "app.3ba420c40aa95743e06c.js"
+    "app.fb79396ad2b9ccc98180.js"
   ],
   "async": [
     "layouts_default.1d8aa177b0b7e6a7f6bc.js",

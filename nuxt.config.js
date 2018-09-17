@@ -6,7 +6,6 @@ function resolve(dir) {
 }
 
 module.exports = {
-  buildDir: 'docs/',
   /*
    ** Toggle for client side vs. server side rendering.
    */
@@ -61,5 +60,8 @@ module.exports = {
   },
   router: {
     base: '/rei-cedar-proving-grounds/'
+  },
+  generate: {
+    dir: "docs"
   }
 }

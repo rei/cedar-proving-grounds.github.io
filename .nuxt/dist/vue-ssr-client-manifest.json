@@ -2,32 +2,31 @@
   "publicPath": "/rei-cedar-proving-grounds/_nuxt/",
   "all": [
     "layouts_default.1d8aa177b0b7e6a7f6bc.js",
-    "pages_index.eede1e85f2c6b6ad9de1.js",
-    "pages_KitchenSink.77113c3c7ca4fa1d0847.js",
-    "pages_components_Links.2e1338cfdedbf0fda372.js",
-    "pages_components_Breadcrumb.5de259628b3f306dd7c0.js",
-    "pages_components_Accordion.c392b0cfd1fe3e6280a2.js",
-    "pages_App.8874de99484366edc8ea.js",
+    "pages_index.06f540f148aa044eec95.js",
+    "pages_KitchenSink.cd023ffc962456ba9f49.js",
+    "pages_components_Links.3acede1647f5f4c7a668.js",
+    "pages_components_Breadcrumb.2648c036fc944a19b0a5.js",
+    "pages_components_Accordion.aa83e1a8e81b2a7f20a7.js",
+    "pages_App.60a15a3e2e6db665a335.js",
     "vendor.590a41d3e85c3a0035e9.js",
-    "app.5f0317cf76820f122b5a.js",
-    "manifest.2c96652c32e0b37c8df7.js",
+    "app.82e1a3fd935741952e9e.js",
+    "manifest.c71eaa3135206e364284.js",
     "LICENSES",
-    "index.spa.html",
-    "index.ssr.html"
+    "index.spa.html"
   ],
   "initial": [
-    "manifest.2c96652c32e0b37c8df7.js",
+    "manifest.c71eaa3135206e364284.js",
     "vendor.590a41d3e85c3a0035e9.js",
-    "app.5f0317cf76820f122b5a.js"
+    "app.82e1a3fd935741952e9e.js"
   ],
   "async": [
     "layouts_default.1d8aa177b0b7e6a7f6bc.js",
-    "pages_index.eede1e85f2c6b6ad9de1.js",
-    "pages_KitchenSink.77113c3c7ca4fa1d0847.js",
-    "pages_components_Links.2e1338cfdedbf0fda372.js",
-    "pages_components_Breadcrumb.5de259628b3f306dd7c0.js",
-    "pages_components_Accordion.c392b0cfd1fe3e6280a2.js",
-    "pages_App.8874de99484366edc8ea.js"
+    "pages_index.06f540f148aa044eec95.js",
+    "pages_KitchenSink.cd023ffc962456ba9f49.js",
+    "pages_components_Links.3acede1647f5f4c7a668.js",
+    "pages_components_Breadcrumb.2648c036fc944a19b0a5.js",
+    "pages_components_Accordion.aa83e1a8e81b2a7f20a7.js",
+    "pages_App.60a15a3e2e6db665a335.js"
   ],
   "modules": {
     "58271318": [
@@ -357,12 +356,6 @@
     "7a49649e": [
       1
     ],
-    "fac12a64": [
-      7
-    ],
-    "2ea586e5": [
-      7
-    ],
     "bc740520": [
       7
     ],
@@ -432,6 +425,9 @@
     "235702aa": [
       7
     ],
+    "fac12a64": [
+      7
+    ],
     "670cb7b6": [
       7
     ],
@@ -460,6 +456,9 @@
       7
     ],
     "c35d96da": [
+      7
+    ],
+    "2ea586e5": [
       7
     ],
     "a8823c12": [

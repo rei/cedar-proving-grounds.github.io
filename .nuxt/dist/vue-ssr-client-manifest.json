@@ -2,31 +2,31 @@
   "publicPath": "/rei-cedar-proving-grounds/_nuxt/",
   "all": [
     "layouts_default.1d8aa177b0b7e6a7f6bc.js",
-    "pages_index.06f540f148aa044eec95.js",
-    "pages_KitchenSink.cd023ffc962456ba9f49.js",
-    "pages_components_Links.3acede1647f5f4c7a668.js",
-    "pages_components_Breadcrumb.2648c036fc944a19b0a5.js",
-    "pages_components_Accordion.aa83e1a8e81b2a7f20a7.js",
-    "pages_App.60a15a3e2e6db665a335.js",
+    "pages_App.b9ab75fce4beec388941.js",
+    "pages_components_Links.429d2147e37686dda31e.js",
+    "pages_components_Breadcrumb.f259010e8723ab8dd20c.js",
+    "pages_components_Accordion.7f523559dfd8337e0eb3.js",
+    "pages_index.43311bf961da7b5b1a55.js",
+    "pages_KitchenSink.bc4f54af12f335e7df55.js",
     "vendor.590a41d3e85c3a0035e9.js",
-    "app.82e1a3fd935741952e9e.js",
-    "manifest.c71eaa3135206e364284.js",
+    "app.3ba420c40aa95743e06c.js",
+    "manifest.9f328d98851c29145f36.js",
     "LICENSES",
     "index.spa.html"
   ],
   "initial": [
-    "manifest.c71eaa3135206e364284.js",
+    "manifest.9f328d98851c29145f36.js",
     "vendor.590a41d3e85c3a0035e9.js",
-    "app.82e1a3fd935741952e9e.js"
+    "app.3ba420c40aa95743e06c.js"
   ],
   "async": [
     "layouts_default.1d8aa177b0b7e6a7f6bc.js",
-    "pages_index.06f540f148aa044eec95.js",
-    "pages_KitchenSink.cd023ffc962456ba9f49.js",
-    "pages_components_Links.3acede1647f5f4c7a668.js",
-    "pages_components_Breadcrumb.2648c036fc944a19b0a5.js",
-    "pages_components_Accordion.aa83e1a8e81b2a7f20a7.js",
-    "pages_App.60a15a3e2e6db665a335.js"
+    "pages_App.b9ab75fce4beec388941.js",
+    "pages_components_Links.429d2147e37686dda31e.js",
+    "pages_components_Breadcrumb.f259010e8723ab8dd20c.js",
+    "pages_components_Accordion.7f523559dfd8337e0eb3.js",
+    "pages_index.43311bf961da7b5b1a55.js",
+    "pages_KitchenSink.bc4f54af12f335e7df55.js"
   ],
   "modules": {
     "58271318": [
@@ -45,7 +45,7 @@
       7
     ],
     "00eef2de": [
-      1
+      5
     ],
     "e3f9d8b0": [
       7
@@ -57,7 +57,7 @@
       7
     ],
     "4d45ff1f": [
-      1
+      5
     ],
     "0359414c": [
       7
@@ -216,7 +216,7 @@
       8
     ],
     "b0515be4": [
-      6
+      1
     ],
     "687704d2": [
       7
@@ -353,7 +353,7 @@
     "fbbd241e": [
       7
     ],
-    "7a49649e": [
+    "517be59e": [
       1
     ],
     "bc740520": [
@@ -438,7 +438,7 @@
       8
     ],
     "0ca4f838": [
-      6
+      1
     ],
     "a092beaa": [
       8
@@ -447,18 +447,18 @@
       7
     ],
     "15b7e966": [
-      6
+      1
     ],
     "056150e0": [
+      7
+    ],
+    "2ea586e5": [
       7
     ],
     "3ca2ad2f": [
       7
     ],
     "c35d96da": [
-      7
-    ],
-    "2ea586e5": [
       7
     ],
     "a8823c12": [

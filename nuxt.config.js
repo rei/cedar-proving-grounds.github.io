@@ -1,14 +1,11 @@
 const path = require('path');
 const pkg = require('./package')
 
-function resolve(dir) {
-  return path.join(__dirname, '..', dir);
-}
-
 module.exports = {
   /*
    ** Toggle for client side vs. server side rendering.
    */
+   mode: 'spa',
   /*
   ** Headers of the page
   */
@@ -56,10 +53,10 @@ module.exports = {
 
     }
   },
-  router: {
-    base: '/rei-cedar-proving-grounds/'
-  },
   generate: {
     dir: "docs"
+  },
+  router: {
+    base: '/rei-cedar-proving-grounds/'
   }
 }

@@ -1,4 +1,5 @@
-<!--   <div>
+<template>
+  <div>
   	<p>Cedar Proving Grounds index.vue</p>
 
      <router-link
@@ -7,8 +8,8 @@
         :to="route.path">{{ route.name }} *
     </router-link>
 
-  	<router-view></router-view> -->
-    <!--<component v-for="section of data" :key="section.id" :is="section.name" />
+  	<router-view></router-view>
+    <component v-for="section of data" :key="section.id" :is="section.name" />
 
   </div>
 </template>
@@ -27,9 +28,9 @@ export default {
 
 </script>
 
- -->
+<!--
 <template>
-  <!-- <section class="container"> -->
+  <section class="container">
     <div>
       <logo/>
       <h1 class="title">
@@ -43,7 +44,7 @@ export default {
         <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
       </div>
     </div>
-  <!-- </section> -->
+  </section>
 </template>
 
 <script>
@@ -87,3 +88,4 @@ export default {
   padding-top: 15px;
 }
 </style>
+-->

@@ -40,7 +40,7 @@ const routes = [
     // { path: '/lists', name: 'Lists', component: Lists },
     // { path: '/media', name: 'Media', component: MediaObject },
     // { path: '/radios', name: 'Radio', component: Radio },
-    { path: '/quotes', name: 'Quote', component: Quotes },
+    { path: '/KitchenSink/components/quotes', name: 'Quote', component: Quotes },
     // { path: '/ratings', name: 'Rating', component: Rating },
     // { path: '/selects', name: 'Select', component: Select },
     // { path: '/captions', name: 'Caption', component: CaptionExample },

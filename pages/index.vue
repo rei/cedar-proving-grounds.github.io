@@ -28,8 +28,8 @@ export default {
 </script>
 
  -->
- <template>
-  <section class="container">
+<template>
+  <!-- <section class="container"> -->
     <div>
       <logo/>
       <h1 class="title">
@@ -43,7 +43,7 @@ export default {
         <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
       </div>
     </div>
-  </section>
+  <!-- </section> -->
 </template>
 
 <script>

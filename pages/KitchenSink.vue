@@ -17,7 +17,7 @@ import Breadcrumb from '~/pages/KitchenSink/components/Breadcrumb'
 // import Texts from '~/pages/KitchenSink/components/Text'
 // import Icons from 'componentsdir/icon/examples/Icons'
 import Images from '~/pages/KitchenSink/components/Images'
-import Quotes from '~/pages/KitchenSink/components/Quote'
+// import Quotes from '~/pages/KitchenSink/components/Quote'
 import Accordion from '~/pages/KitchenSink/components/Accordion'
 // import Forms from 'componentsdir/input/examples/Inputs'
 // import Lists from 'componentsdir/list/examples/Lists'
@@ -51,7 +51,7 @@ export default {
     // Cards,
     Images,
     // Searchbox,
-    Quotes,
+    // Quotes,
     // CaptionExample,
     // Activity,
     Tabs
@@ -76,7 +76,7 @@ export default {
         // Lists,
         // MediaObject,
         // Radios,
-        Quotes,
+        // Quotes,
         // Rating,
         // Selects,
         // CaptionExample,

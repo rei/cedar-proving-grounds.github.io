@@ -10,7 +10,7 @@
 
   	<!-- <router-view></router-view> -->
     <!-- <component v-for="section of data" :key="section.id" :is="section.name" /> -->
-
+    <nuxt />
   </div>
 </template>
 

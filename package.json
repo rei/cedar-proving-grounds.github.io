@@ -18,6 +18,7 @@
     "@rei/cdr-cta": "^1.0.0",
     "@rei/cdr-icon": "^0.2.1",
     "@rei/cdr-link": "^1.0.0",
+    "@rei/cdr-tabs": "1.0.0-alpha.56",
     "nuxt": "^1.0.0"
   },
   "devDependencies": {

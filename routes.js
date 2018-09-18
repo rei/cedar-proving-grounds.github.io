@@ -21,6 +21,7 @@ import CdrAccordion from '~/pages/KitchenSink/components/Accordion'
 // import CaptionExample from 'compositionsdir/caption/examples/Caption'
 // import Activity from 'compositionsdir/activityCard/examples/activity'
 // import Searchbox from 'compositionsdir/search/examples/searchbox'
+import Tabs from '~/pages/KitchenSink/components/Tabs'
 
 const routes = [
     { path: '/', name: 'Home', component: KitchenSink },
@@ -28,7 +29,7 @@ const routes = [
     { path: '/KitchenSink/components/buttons', name: 'Buttons', component: Button },
     // { path: '/cta', name: 'Cta', component: Cta },
     { path: '/KitchenSink/components/links', name: 'Links', component: Link },
-    { path: '/KitchenSink/components/breadcrumb', name: 'Breadcrumb', component: Breadcrumb },
+    { path: '/KitchenSink/components/breadcrumbs', name: 'Breadcrumb', component: Breadcrumb },
     // { path: '/cards', name: 'Card', component: Card },
     // { path: '/checkboxes', name: 'Checkboxes', component: Checkbox },
     // { path: '/grids', name: 'Grid', component: Grid },
@@ -45,7 +46,8 @@ const routes = [
     // { path: '/captions', name: 'Caption', component: CaptionExample },
     // { path: '/activity', name: 'ActivityCard', component: Activity },
     // { path: '/search', name: 'Searchbox', component: Searchbox },
-    { path: '/KitchenSink/components/accordion', name: 'Accordion', component: CdrAccordion },
+    { path: '/KitchenSink/components/accordions', name: 'Accordion', component: CdrAccordion },
+    { path: '/KitchenSink/components/tabs', name: 'Tabs', component: CdrTabs },
   ];
 
   export default routes;

@@ -28,6 +28,7 @@ import Accordion from '~/pages/KitchenSink/components/Accordion'
 // import CaptionExample from 'compositionsdir/caption/examples/Caption'
 // import Activity from 'compositionsdir/activityCard/examples/activity'
 // import Searchbox from 'compositionsdir/search/examples/searchbox'
+import Tabs from '~/pages/KitchenSink/components/Tabs'
 
 export default {
   name: 'KitchenSink',
@@ -53,6 +54,7 @@ export default {
     // Quotes,
     // CaptionExample,
     // Activity,
+    Tabs
   },
   data() {
     return {
@@ -78,6 +80,7 @@ export default {
         // Rating,
         // Selects,
         // CaptionExample,
+        Tabs
       ]
     }
   }

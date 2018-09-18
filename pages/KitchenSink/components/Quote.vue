@@ -1,9 +1,11 @@
 <template>
   <div>
     <h2>Quote version: {{ version }}</h2>
-    <blockquotes />
+    <div class="quotes-examples">
+      <blockquotes />
 
-    <pullquotes />
+      <pullquotes />
+    </div>
   </div>
 </template>
 
@@ -27,4 +29,7 @@ export default {
 </script>
 
 <style>
+  .quotes {
+    padding: 50px
+  }
 </style>

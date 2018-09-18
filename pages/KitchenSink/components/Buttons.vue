@@ -1,10 +1,6 @@
 <template>
   <div>
-    <nuxt-link
-        v-for="route in routes"
-        :key="route.name"
-        :to="route.path">{{ route.name }} *
-    </nuxt-link>
+    <nuxt />
 
     <h2>Buttons version: {{ version }}</h2>
     <default-buttons/>

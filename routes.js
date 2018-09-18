@@ -46,7 +46,7 @@ const routes = [
     // { path: '/captions', name: 'Caption', component: CaptionExample },
     // { path: '/activity', name: 'ActivityCard', component: Activity },
     // { path: '/search', name: 'Searchbox', component: Searchbox },
-    { path: '/KitchenSink/components/accordions', name: 'Accordion', component: CdrAccordion },
+    { path: '/KitchenSink/components/accordion', name: 'Accordion', component: CdrAccordion },
     { path: '/KitchenSink/components/tabs', name: 'Tabs', component: Tabs },
   ];
 

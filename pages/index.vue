@@ -16,9 +16,6 @@
 
 <script>
 import routes from '~/routes';
-for (var i = 0; i< routes.length; i++) {
-  console.log(routes[i].name);
-}
 export default {
 
   data() {

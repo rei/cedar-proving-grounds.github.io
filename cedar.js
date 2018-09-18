@@ -61,4 +61,4 @@ import '@rei/cdr-icon/dist/cdr-icon.css'
 // import '@rei/cdr-search/dist/cdr-search.css'
 
 export { CdrTabs, CdrTabPanel } from '@rei/cdr-tabs'
-import '@rei/cdr-tabs/dist/cdr-tabs'
+import '@rei/cdr-tabs/dist/cdr-tabs.css'

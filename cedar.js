@@ -52,6 +52,7 @@ import '@rei/cdr-img/dist/cdr-img.css'
 // import '@rei/cdr-select/dist/cdr-select.css'
 //
 export { CdrQuote } from '@rei/cdr-quote'
+import '@rei/cdr-quote/dist/cdr-quote.css'
 //
 // export { CdrCaption } from '@rei/cdr-caption'
 // export { CdrActivityCard } from '@rei/cdr-activity-card'

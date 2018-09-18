@@ -25,7 +25,7 @@ import '@rei/cdr-breadcrumb/dist/cdr-breadcrumb.css'
 export { CdrRow } from '@rei/cdr-row'
 export { CdrCol } from '@rei/cdr-col'
 //
-// export { CdrText } from '@rei/cdr-text'
+export { CdrText } from '@rei/cdr-text'
 //
 export { CdrIcon, IconCheckLg, IconCheckSm, IconClock } from '@rei/cdr-icon'
 import '@rei/cdr-icon/dist/cdr-icon.css'
@@ -51,7 +51,7 @@ import '@rei/cdr-img/dist/cdr-img.css'
 // export { CdrSelect } from '@rei/cdr-select'
 // import '@rei/cdr-select/dist/cdr-select.css'
 //
-// export { CdrQuote } from '@rei/cdr-quote'
+export { CdrQuote } from '@rei/cdr-quote'
 //
 // export { CdrCaption } from '@rei/cdr-caption'
 // export { CdrActivityCard } from '@rei/cdr-activity-card'

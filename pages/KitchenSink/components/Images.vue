@@ -40,6 +40,6 @@ import mods from './Images/Mods';
 
 export default {
   name: 'Images',
-  components: CdrImage,
+  components: CdrImg,
 };
 </script>

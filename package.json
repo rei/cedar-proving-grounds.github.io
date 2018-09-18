@@ -22,6 +22,8 @@
     "@rei/cdr-img": "^1.0.1",
     "@rei/cdr-row": "^0.1.0",
     "@rei/cdr-col": "^0.1.0",
+    "@rei/cdr-quote": "1.0.0-alpha.0",
+    "@rei/cdr-text": "^1.0.1",
     "nuxt": "^1.0.0"
   },
   "devDependencies": {

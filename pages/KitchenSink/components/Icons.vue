@@ -5,7 +5,7 @@
     <icon-account-profile />
 
     <h3>Default icon size</h3>
-    <cdr-icon use="#account-profile" alt="I'm a barbie girl"/>
+    <cdr-icon use="#account-profile" aria-label="I'm a barbie girl"/>
     <hr>
 
     <cdr-row  cols="3 6@md 10@lg">

@@ -8,15 +8,17 @@
         :to="route.path">{{ route.name }} *
     </router-link>
 
-  	<router-view></router-view>
+  	<!-- <router-view></router-view> -->
     <!-- <component v-for="section of data" :key="section.id" :is="section.name" /> -->
-    
+
   </div>
 </template>
 
 <script>
 import routes from '~/routes';
-
+for (var i = 0; i< routes.length; i++) {
+  console.log(routes[i].name);
+}
 export default {
 
   data() {

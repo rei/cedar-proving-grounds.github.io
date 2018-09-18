@@ -1,12 +1,12 @@
 <template>
   <div>
-    <component v-for="section of data" :key="section.id" :is="section.name" />
+    <!-- <component v-for="section of data" :key="section.id" :is="section.name" /> -->
     <nuxt-child />
   </div>
 </template>
 
 <script>
-// import Buttons from 'componentsdir/button/examples/Buttons'
+import Buttons from '~/pages/KitchenSink/components/Buttons'
 // import Cta from 'componentsdir/cta/examples/Cta'
 import Links from '~/pages/KitchenSink/components/Links'
 import Breadcrumb from '~/pages/KitchenSink/components/Breadcrumb'
@@ -35,7 +35,7 @@ export default {
     Links,
     Breadcrumb,
     Accordion,
-    // Buttons,
+    Buttons,
     // Cta,
     // Texts,
     // Icons,
@@ -60,7 +60,7 @@ export default {
         Links,
         Breadcrumb,
         Accordion,
-        // Buttons,
+        Buttons,
         // Cta,
         // Cards,
         // Activity,

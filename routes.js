@@ -1,4 +1,4 @@
-// import Button from 'componentsdir/button/examples/Buttons'
+import Button from '~/pages/KitchenSink/components/Buttons'
 // import Cta from 'componentsdir/cta/examples/Cta'
 // import Cdr1Page from 'componentsdir/cdr1css/cdr1css'
 import KitchenSink from '~/pages/KitchenSink'
@@ -25,7 +25,7 @@ import CdrAccordion from '~/pages/KitchenSink/components/Accordion'
 const routes = [
     { path: '/', name: 'Home', component: KitchenSink },
     // { path: '/cdr1css', name: 'Cdr1 Mixed In', component: Cdr1Page },
-    // { path: '/buttons', name: 'Buttons', component: Button },
+    { path: '/KitchenSink/components/buttons', name: 'Buttons', component: Button },
     // { path: '/cta', name: 'Cta', component: Cta },
     { path: '/KitchenSink/components/links', name: 'Links', component: Link },
     { path: '/KitchenSink/components/breadcrumb', name: 'Breadcrumb', component: Breadcrumb },

@@ -4,11 +4,11 @@ import '@rei/cdr-assets/dist/cdr-fonts.css';
 export { CdrAccordion, CdrAccordionItem } from '@rei/cdr-accordion'
 import '@rei/cdr-accordion/dist/cdr-accordion.css'
 
-// export { CdrButton } from '@rei/cdr-button'
+export { CdrButton } from '@rei/cdr-button'
 import '@rei/cdr-button/dist/cdr-button.css'
 //
-// export { CdrCta } from '@rei/cdr-cta'
-// import '@rei/cdr-cta/dist/cdr-cta.css'
+export { CdrCta } from '@rei/cdr-cta'
+import '@rei/cdr-cta/dist/cdr-cta.css'
 
 export { CdrLink } from '@rei/cdr-link'
 import '@rei/cdr-link/dist/cdr-link.css'
@@ -27,8 +27,8 @@ import '@rei/cdr-breadcrumb/dist/cdr-breadcrumb.css'
 //
 // export { CdrText } from '@rei/cdr-text'
 //
-// export { CdrIcon, IconCheckLg, IconCheckSm, IconClock } from '@rei/cdr-icon'
-// import '@rei/cdr-icon/dist/cdr-icon.css'
+export { CdrIcon, IconCheckLg, IconCheckSm, IconClock } from '@rei/cdr-icon'
+import '@rei/cdr-icon/dist/cdr-icon.css'
 //
 // export { CdrImg } from '@rei/cdr-img'
 // import '@rei/cdr-img/dist/cdr-img.css'

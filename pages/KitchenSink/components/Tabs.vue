@@ -1,5 +1,6 @@
 <template>
   <!-- eslint-disable max-len -->
+  <div id="tabcontainer">
   <div>
     <div class="tab-demo-section">
       <h2>Tabs</h2>
@@ -97,7 +98,28 @@
         </cdr-tab-panel>
       </cdr-tabs>
     </div>
+        <div class="tab-demo-section">
+      <h2>No Border Tabs</h2>
+      <cdr-tabs modifier="no-border">
+        <cdr-tab-panel name="one">
+          <h1>tab one content</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="two">
+          <h1>tab two content</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="three">
+          <h1>tab three content</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="four">
+          <h1>tab four content</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="five">
+          <h1>tab five content</h1>
+        </cdr-tab-panel>
+      </cdr-tabs>
+    </div>
   </div>
+</div>
 </template>
 
 <script>
@@ -110,6 +132,9 @@ export default {
 </script>
 
 <style>
+  .tabcontainer {
+    width: 500;
+  }
   .tab-demo-section {
     text-align: center;
     height: 150px;

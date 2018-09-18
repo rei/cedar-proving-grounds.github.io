@@ -1,6 +1,6 @@
 <template>
   <div>
-  	<p>Cedar Proving Grounds index.vue</p>
+  	<p>Cedar Proving Grounds</p>
 
      <router-link
         v-for="route in routes"

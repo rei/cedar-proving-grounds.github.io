@@ -14,8 +14,8 @@ import Breadcrumb from '~/pages/KitchenSink/components/Breadcrumb'
 // import Checkbox from 'componentsdir/checkbox/examples/checkboxes'
 // import Grid from 'componentsdir/grid/examples/Grid'
 // import Checkboxes from 'componentsdir/checkbox/examples/checkboxes'
-// import Texts from '~/pages/KitchenSink/components/Text'
-// import Icons from 'componentsdir/icon/examples/Icons'
+import Texts from '~/pages/KitchenSink/components/Text'
+import Icons from '~/pages/KitchenSink/components/Icons'
 import Images from '~/pages/KitchenSink/components/Images'
 import Quotes from '~/pages/KitchenSink/components/Quote'
 import Accordion from '~/pages/KitchenSink/components/Accordion'
@@ -39,7 +39,7 @@ export default {
     Buttons,
     // Cta,
     // Texts,
-    // Icons,
+    Icons,
     // Lists,
     // Selects,
     // MediaObject,
@@ -69,7 +69,7 @@ export default {
         // Checkboxes,
         // Grid,
         // Texts,
-        // Icons,
+        Icons,
         Images,
         // Searchbox,
         // Forms,

@@ -7,8 +7,8 @@ import Breadcrumb from '~/pages/KitchenSink/components/Breadcrumb'
 // import Card from 'componentsdir/card/examples/Cards'
 // import Checkbox from 'componentsdir/checkbox/examples/checkboxes'
 // import Grid from 'componentsdir/grid/examples/Grid'
-// import Texts from 'componentsdir/text/examples/Text'
-// import Icon from 'componentsdir/icon/examples/Icons'
+import Texts from '~/pages/KitchenSink/components/Text'
+import Icon from '~/pages/KitchenSink/components/Icons'
 // import Images from 'componentsdir/image/examples/Images'
 import CdrAccordion from '~/pages/KitchenSink/components/Accordion'
 // import Input from 'componentsdir/input/examples/Inputs'
@@ -33,8 +33,8 @@ const routes = [
     // { path: '/cards', name: 'Card', component: Card },
     // { path: '/checkboxes', name: 'Checkboxes', component: Checkbox },
     // { path: '/grids', name: 'Grid', component: Grid },
-    // { path: '/texts', name: 'Texts', component: Texts },
-    // { path: '/icons', name: 'Icons', component: Icon },
+    { path: '/text', name: 'Texts', component: Texts },
+    { path: '/icons', name: 'Icons', component: Icon },
     // { path: '/images', name: 'Image', component: Images },
     // { path: '/inputs', name: 'Input', component: Input },
     // { path: '/lists', name: 'Lists', component: Lists },
@@ -50,4 +50,4 @@ const routes = [
     { path: '/KitchenSink/components/tabs', name: 'Tabs', component: Tabs },
   ];
 
-  export default routes;
+export default routes;

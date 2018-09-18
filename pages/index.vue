@@ -2,15 +2,15 @@
   <div>
   	<p>Cedar Proving Grounds</p>
 
-     <router-link
+     <nuxt-link
         v-for="route in routes"
         :key="route.name"
         :to="route.path">{{ route.name }} *
-    </router-link>
+    </nuxt-link>
 
   	<!-- <router-view></router-view> -->
     <!-- <component v-for="section of data" :key="section.id" :is="section.name" /> -->
-    <nuxt />
+
   </div>
 </template>
 

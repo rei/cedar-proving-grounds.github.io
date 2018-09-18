@@ -52,7 +52,7 @@
 </template>
 
 <script>
-import { CdrText, CdrQuote } from '~/cedar';
+import { CdrText, CdrQuote} from '~/cedar';
 
 export default {
   name: 'BlockquoteDemo',

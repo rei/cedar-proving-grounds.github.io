@@ -1,6 +1,7 @@
 <template>
   <div>
     <component v-for="section of data" :key="section.id" :is="section.name" />
+    <nuxt-child />
   </div>
 </template>
 

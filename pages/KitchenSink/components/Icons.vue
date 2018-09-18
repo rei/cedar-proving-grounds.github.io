@@ -5,14 +5,10 @@
     <icon-account-profile />
 
     <h3>Default icon size</h3>
-    <cdr-icon use="#account-profile" alt="alternative text"/>
+    <cdr-icon use="#account-profile" alt="I'm a barbie girl"/>
     <hr>
 
-    <cdr-row
-      cols="3"
-      cols-md="6"
-      cols-lg="10"
-    >
+    <cdr-row  cols="3 6@md 10@lg">
       <cdr-col
         v-for="(val, key) in Icons"
         :key="key"
@@ -34,11 +30,7 @@
     <h3>Small icon size</h3>
     <hr>
 
-    <cdr-row
-      cols="3"
-      cols-md="6"
-      cols-lg="10"
-    >
+    <cdr-row  cols="3 6@md 10@lg">
       <cdr-col
         v-for="(val, key) in Icons"
         :key="key"
@@ -57,11 +49,7 @@
     <h3>Large icon size</h3>
     <hr>
 
-    <cdr-row
-      cols="3"
-      cols-md="6"
-      cols-lg="10"
-    >
+    <cdr-row  cols="3 6@md 10@lg">
       <cdr-col
         v-for="(val, key) in Icons"
         :key="key"

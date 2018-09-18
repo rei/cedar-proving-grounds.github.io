@@ -6,7 +6,17 @@
       <h2>Tabs</h2>
       <cdr-tabs height="100px">
         <cdr-tab-panel name="Tab1">
-          <h1>Tab One Content</h1>
+          <h1>          This is some text. It's not in a <strong>paragraph</strong> element because
+          that would include margin and add space to the container. Lorem ipsum dolor
+          sit amet, consectetur adipiscing elit. Sed dictum fermentum tortor posuere
+          fermentum. Sed interdum vel urna at tempor. Nullam vel sapien odio. Class
+          aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+          himenaeos. Fusce venenatis ex ut ultricies tincidunt. Suspendisse potenti.
+          Sed ut euismod mi, sit amet porta augue. Proin dictum laoreet blandit. Nulla
+          tempus tellus id ligula sodales ultrices. Proin lacus diam, ornare at libero
+          nec, eleifend vulputate mi. Praesent vestibulum accumsan erat id dapibus.
+          Suspendisse ut laoreet nunc, et tempor eros. Etiam vel commodo velit. Proin
+          egestas fringilla elit et lacinia. Praesent et vehicula massa. Fusce ac purus neque.</h1>
         </cdr-tab-panel>
         <cdr-tab-panel name="Tab2">
           <h1>
@@ -98,7 +108,7 @@
         </cdr-tab-panel>
       </cdr-tabs>
     </div>
-        <div class="tab-demo-section">
+    <div class="tab-demo-section">
       <h2>No Border Tabs</h2>
       <cdr-tabs modifier="no-border">
         <cdr-tab-panel name="one">

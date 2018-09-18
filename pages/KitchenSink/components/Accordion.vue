@@ -63,9 +63,9 @@
 </template>
 
 <script>
-import { CdrAccordion, CdrAccordionItem } from '../../cedar';
+import { CdrAccordion, CdrAccordionItem } from '~/cedar';
 
-const deps = require('../../package.json').dependencies;
+const deps = require('~/package.json').dependencies;
 
 export default {
   name: 'Accordion',

@@ -2,15 +2,15 @@
 // import Cta from 'componentsdir/cta/examples/Cta'
 // import Cdr1Page from 'componentsdir/cdr1css/cdr1css'
 import KitchenSink from '~/pages/KitchenSink'
-import Link from '~/pages/components/Links'
-import Breadcrumb from '~/pages/components/Breadcrumb'
+import Link from '~/pages/KitchenSink/components/Links'
+import Breadcrumb from '~/pages/KitchenSink/components/Breadcrumb'
 // import Card from 'componentsdir/card/examples/Cards'
 // import Checkbox from 'componentsdir/checkbox/examples/checkboxes'
 // import Grid from 'componentsdir/grid/examples/Grid'
 // import Texts from 'componentsdir/text/examples/Text'
 // import Icon from 'componentsdir/icon/examples/Icons'
 // import Images from 'componentsdir/image/examples/Images'
-import CdrAccordion from '~/pages/components/Accordion'
+import CdrAccordion from '~/pages/KitchenSink/components/Accordion'
 // import Input from 'componentsdir/input/examples/Inputs'
 // import Lists from 'componentsdir/list/examples/Lists'
 // import MediaObject from 'componentsdir/mediaObject/examples/mediaObject'
@@ -27,8 +27,8 @@ const routes = [
     // { path: '/cdr1css', name: 'Cdr1 Mixed In', component: Cdr1Page },
     // { path: '/buttons', name: 'Buttons', component: Button },
     // { path: '/cta', name: 'Cta', component: Cta },
-    { path: '/components/links', name: 'Links', component: Link },
-    { path: '/components/breadcrumb', name: 'Breadcrumb', component: Breadcrumb },
+    { path: '/KitchenSink/components/links', name: 'Links', component: Link },
+    { path: '/KitchenSink/components/breadcrumb', name: 'Breadcrumb', component: Breadcrumb },
     // { path: '/cards', name: 'Card', component: Card },
     // { path: '/checkboxes', name: 'Checkboxes', component: Checkbox },
     // { path: '/grids', name: 'Grid', component: Grid },
@@ -45,7 +45,7 @@ const routes = [
     // { path: '/captions', name: 'Caption', component: CaptionExample },
     // { path: '/activity', name: 'ActivityCard', component: Activity },
     // { path: '/search', name: 'Searchbox', component: Searchbox },
-    { path: '/components/accordion', name: 'Accordion', component: CdrAccordion },
+    { path: '/KitchenSink/components/accordion', name: 'Accordion', component: CdrAccordion },
   ];
 
   export default routes;

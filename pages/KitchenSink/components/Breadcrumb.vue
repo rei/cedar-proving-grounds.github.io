@@ -22,9 +22,9 @@
 
 <script>
 // import { CdrBreadcrumb } from 'cedar';
-import { CdrBreadcrumb } from '../../cedar'
+import { CdrBreadcrumb } from '~/cedar'
 
-const deps = require('../../package').dependencies;
+const deps = require('~/package').dependencies;
 
 export default {
   name: 'Breadcrumb',

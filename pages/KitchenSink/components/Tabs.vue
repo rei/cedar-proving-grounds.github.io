@@ -168,8 +168,8 @@ export default {
 
 <style>
   .tabcontainer {
-    width: 500;
-    padding-right: 30px;
+    padding-left:50px;
+    padding-right: 50px;
   }
   .tab-demo-section {
     text-align: center;

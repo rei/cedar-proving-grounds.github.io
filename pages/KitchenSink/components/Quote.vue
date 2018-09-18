@@ -1,9 +1,9 @@
 <template>
   <div>
     <h2>Quote version: {{ version }}</h2>
-    <blockquotes />
+<!--     <blockquotes />
 
-    <pullquotes />
+    <pullquotes /> -->
   </div>
 </template>
 

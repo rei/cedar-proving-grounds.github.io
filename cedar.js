@@ -22,8 +22,8 @@ import '@rei/cdr-breadcrumb/dist/cdr-breadcrumb.css'
 // export { CdrCheckbox } from '@rei/cdr-checkbox'
 // import '@rei/cdr-checkbox/dist/cdr-checkbox.css'
 //
-export { CdrRow } from '@rei/cdr-row'
-export { CdrCol } from '@rei/cdr-col'
+export { CdrRow, CdrCol } from '@rei/cdr-grid'
+import '@rei/cdr-grid/dist/cdr-grid.css'
 //
 export { CdrText } from '@rei/cdr-text'
 //

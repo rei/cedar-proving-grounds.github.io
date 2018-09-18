@@ -1,7 +1,15 @@
-# COMPONENTS
+# Cedar Proving Grounds
 
-**This directory is not required, you can delete it if you don't want to use it.**
+## Getting
 
-The components directory contains your Vue.js Components.
+```git clone https://github.com/rei/rei-cedar-proving-grounds.git```
 
-_Nuxt.js doesn't supercharge these components._
+## Building
+### Client-Side Rendering:
+
+1. in `nuxt.config.js`: change "mode" to `'spa'`
+2. in command prompt: `npm i && npm run dev` for local rendering, `npm i && npm run build` for deployment to github pages.
+
+### Server-Side Rendering
+1. in `nuxt.config.js`: change "mode" to `'universal'`
+2. in command prompt: `npm i && npm run dev` for local rendering, `npm i && npm run generate` for deployment to github pages.

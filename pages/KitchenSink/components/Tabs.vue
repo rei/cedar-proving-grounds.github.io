@@ -114,12 +114,37 @@
           <h1>tab four content</h1>
         </cdr-tab-panel>
         <cdr-tab-panel name="five">
-          <h1>tab five content</h1>
+          <h1>
+            This is some text. It's not in a <strong>paragraph</strong> element because
+          that would include margin and add space to the container. Lorem ipsum dolor
+          sit amet, consectetur adipiscing elit. Sed dictum fermentum tortor posuere
+          fermentum. Sed interdum vel urna at tempor. Nullam vel sapien odio. Class
+          aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+          himenaeos. Fusce venenatis ex ut ultricies tincidunt. Suspendisse potenti.
+          Sed ut euismod mi, sit amet porta augue. Proin dictum laoreet blandit. Nulla
+          tempus tellus id ligula sodales ultrices. Proin lacus diam, ornare at libero
+          nec, eleifend vulputate mi. Praesent vestibulum accumsan erat id dapibus.
+          Suspendisse ut laoreet nunc, et tempor eros. Etiam vel commodo velit. Proin
+          egestas fringilla elit et lacinia. Praesent et vehicula massa. Fusce ac purus neque.
+        </h1>
+        <p>
+                    This is some text. It's not in a <strong>paragraph</strong> element because
+          that would include margin and add space to the container. Lorem ipsum dolor
+          sit amet, consectetur adipiscing elit. Sed dictum fermentum tortor posuere
+          fermentum. Sed interdum vel urna at tempor. Nullam vel sapien odio. Class
+          aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+          himenaeos. Fusce venenatis ex ut ultricies tincidunt. Suspendisse potenti.
+          Sed ut euismod mi, sit amet porta augue. Proin dictum laoreet blandit. Nulla
+          tempus tellus id ligula sodales ultrices. Proin lacus diam, ornare at libero
+          nec, eleifend vulputate mi. Praesent vestibulum accumsan erat id dapibus.
+          Suspendisse ut laoreet nunc, et tempor eros. Etiam vel commodo velit. Proin
+          egestas fringilla elit et lacinia. Praesent et vehicula massa. Fusce ac purus neque.
+        </p>
         </cdr-tab-panel>
       </cdr-tabs>
     </div>
   </div>
-</div>
+</div >
 </template>
 
 <script>
@@ -134,6 +159,7 @@ export default {
 <style>
   .tabcontainer {
     width: 500;
+    padding-right: 30px;
   }
   .tab-demo-section {
     text-align: center;

@@ -5,8 +5,11 @@
     <icon-account-profile />
 
     <h3>Default icon size</h3>
-    <cdr-icon use="#account-profile" aria-label="I'm a barbie girl"/>
+    <h2>focusable attribute (true)</h2>
+    <cdr-icon use="#account-profile" aria-label="I'm a barbie girl" focusable='true'/>
+
     <hr>
+
 
     <cdr-row  cols="3 6@md 10@lg">
       <cdr-col

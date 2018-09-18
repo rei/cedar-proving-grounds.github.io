@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import Blockquotes from './Quotes/Blockquotes';
-import Pullquotes from './Quotes/Pullquotes';
+import Blockquotes from './Quote/Blockquotes';
+import Pullquotes from './Quote/Pullquotes';
 const deps = require('~/package').dependencies;
 
 export default {

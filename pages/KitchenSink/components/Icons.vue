@@ -5,7 +5,7 @@
     <icon-account-profile />
 
     <h3>Default icon size</h3>
-    <cdr-icon use="#account-profile" />
+    <cdr-icon use="#account-profile" alt="alternative text"/>
     <hr>
 
     <cdr-row

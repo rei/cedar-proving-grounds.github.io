@@ -22,16 +22,16 @@ import '@rei/cdr-breadcrumb/dist/cdr-breadcrumb.css'
 // export { CdrCheckbox } from '@rei/cdr-checkbox'
 // import '@rei/cdr-checkbox/dist/cdr-checkbox.css'
 //
-// export { CdrRow } from '@rei/cdr-row'
-// export { CdrCol } from '@rei/cdr-col'
+export { CdrRow } from '@rei/cdr-row'
+export { CdrCol } from '@rei/cdr-col'
 //
 // export { CdrText } from '@rei/cdr-text'
 //
 export { CdrIcon, IconCheckLg, IconCheckSm, IconClock } from '@rei/cdr-icon'
 import '@rei/cdr-icon/dist/cdr-icon.css'
 //
-// export { CdrImg } from '@rei/cdr-img'
-// import '@rei/cdr-img/dist/cdr-img.css'
+export { CdrImg } from '@rei/cdr-img'
+import '@rei/cdr-img/dist/cdr-img.css'
 //
 // export { CdrInput } from '@rei/cdr-input'
 // import '@rei/cdr-input/dist/cdr-input.css'

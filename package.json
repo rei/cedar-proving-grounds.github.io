@@ -19,6 +19,9 @@
     "@rei/cdr-icon": "^0.2.1",
     "@rei/cdr-link": "^1.0.0",
     "@rei/cdr-tabs": "1.0.0-alpha.56",
+    "@rei/cdr-img": "^1.0.1",
+    "@rei/cdr-row": "^0.1.0",
+    "@rei/cdr-col": "^0.1.0",
     "nuxt": "^1.0.0"
   },
   "devDependencies": {

@@ -8,9 +8,9 @@
 </template>
 
 <script>
-import defaultButtons from './demo/Default';
-import secondaryButtons from './demo/Secondary';
-import iconButtons from './demo/Icons';
+import defaultButtons from './Buttons/Default';
+import secondaryButtons from './Buttons/Secondary';
+import iconButtons from './Buttons/Icons';
 
 const deps = require('~/package').dependencies;
 

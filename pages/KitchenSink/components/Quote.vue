@@ -1,14 +1,13 @@
 <template>
   <div>
-    <h2>derp</h2>
-<!--     <h2>Quote version: {{ version }}</h2>
+    <h2>Quote version: {{ version }}</h2>
     <blockquotes />
 
-    <pullquotes /> -->
+    <pullquotes />
   </div>
 </template>
 
-<!-- <script>
+<script>
 import Blockquotes from './Quote/Blockquotes';
 import Pullquotes from './Quote/Pullquotes';
 const deps = require('~/package').dependencies;
@@ -28,4 +27,4 @@ export default {
 </script>
 
 <style>
-</style> -->
+</style>

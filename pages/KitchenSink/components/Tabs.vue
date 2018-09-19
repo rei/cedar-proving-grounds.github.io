@@ -183,7 +183,6 @@ export default {
   }
   .tab-demo-section {
     text-align: center;
-    height: 150px;
     padding-top: 25px;
   }
 

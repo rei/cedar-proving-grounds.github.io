@@ -44,9 +44,7 @@
 </template>
 
 <script> 
-import { CdrCta } from '@rei/cdr-cta';
-import '@rei/cdr-cta/dist/cdr-cta.css';
-import { CdrIconSprite } from '@rei/cdr-icon';
+import { CdrCta } from '~/cedar';
 
 const deps = require('~/package').dependencies;
 

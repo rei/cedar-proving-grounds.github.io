@@ -73,7 +73,6 @@
 
 <script>
 import { CdrCol, CdrRow } from '~/cedar';
-
 import * as Icons from '@rei/cdr-icon';
 const deps = require('~/package').dependencies;
 

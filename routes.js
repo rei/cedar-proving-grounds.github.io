@@ -1,7 +1,7 @@
 ////import Button from '~/pages/KitchenSink/components/Buttons'
 import Cta from '~/pages/KitchenSink/components/Cta'
 // import Cdr1Page from 'componentsdir/cdr1css/cdr1css'
-////import KitchenSink from '~/pages/KitchenSink'
+import KitchenSink from '~/pages/KitchenSink'
 ////import Link from '~/pages/KitchenSink/components/Links'
 ////import Breadcrumb from '~/pages/KitchenSink/components/Breadcrumb'
 // import Card from 'componentsdir/card/examples/Cards'

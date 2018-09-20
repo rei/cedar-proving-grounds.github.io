@@ -22,8 +22,8 @@
         href="https://rei.com"
         cta-style="sale"
         data-backstop="cdr-cta--sale"
-      >Sale</cdr-cta
-      >
+      >Sale
+      </cdr-cta>
     </div>
     <div class="button-example">
       <cdr-cta
@@ -31,8 +31,8 @@
         href="https://rei.com"
         :full-width="true"
         data-backstop="cdr-cta--full-width"
-      >Full width</cdr-cta
-      >
+      >Full width
+      </cdr-cta>
     </div>
     <div
       class="button-example"
@@ -50,10 +50,18 @@
 
 <script>
 import { CdrCta } from '~/cedar';
+import "@rei/cdr-link/dist/cdr-link.css";
+
+const deps = require('~/package').dependencies;
 
 export default {
   name: 'Cta',
   components: CdrCta,
+    data() {
+    return {
+      version: deps["@rei/cdr-cta"],
+    };
+  },
 };
 </script>
 

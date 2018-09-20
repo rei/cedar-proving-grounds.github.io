@@ -1,27 +1,24 @@
 <template>
   <div>
+    <cdr-icon-sprite /> 
     <h2>CTA</h2>
     <div class="button-example">
       <cdr-cta
-        data-backstop="cdr-cta--dark">
         Dark
       </cdr-cta>
       <cdr-cta
         href="https://rei.com"
         cta-style="brand"
-        data-backstop="cdr-cta--brand"
       >Brand</cdr-cta
       >
       <cdr-cta
         href="https://rei.com"
         cta-style="light"
-        data-backstop="cdr-cta--light"
       >Light</cdr-cta
       >
       <cdr-cta
         href="https://rei.com"
         cta-style="sale"
-        data-backstop="cdr-cta--sale"
       >Sale
       </cdr-cta>
     </div>
@@ -30,7 +27,6 @@
         cta-style="dark"
         href="https://rei.com"
         :full-width="true"
-        data-backstop="cdr-cta--full-width"
       >Full width
       </cdr-cta>
     </div>
@@ -38,7 +34,6 @@
       class="button-example"
       style="max-width: 300px">
       <cdr-cta
-        data-backstop="cdr-cta--elevated"
         href="https://rei.com"
         cta-style="light"
         modifier="elevated">
@@ -48,9 +43,10 @@
   </div>
 </template>
 
-<script>
-import { CdrCta } from '~/cedar';
-import "@rei/cdr-link/dist/cdr-link.css";
+<script> 
+import { CdrCta } from '@rei/cdr-cta';
+import '@rei/cdr-cta/dist/cdr-cta.css';
+import { CdrIconSprite } from '@rei/cdr-icon';
 
 const deps = require('~/package').dependencies;
 

@@ -5,7 +5,7 @@
      <nuxt-link
         v-for="route in routes"
         :key="route.name"
-        :to="{{ route.name }} * "
+        :to="route.path">{{ route.name }}  *
     </nuxt-link>
 
   	<!-- <router-view></router-view> -->

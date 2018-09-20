@@ -7,7 +7,7 @@
 
 <script>
 import Buttons from '~/pages/KitchenSink/components/Buttons'
-// import Cta from 'componentsdir/cta/examples/Cta'
+import Cta from '~/pages/KitchenSink/components/Cta'
 import Links from '~/pages/KitchenSink/components/Links'
 import Breadcrumb from '~/pages/KitchenSink/components/Breadcrumb'
 // import Cards from 'componentsdir/card/examples/Cards'
@@ -37,7 +37,7 @@ export default {
     Breadcrumb,
     Accordion,
     Buttons,
-    // Cta,
+    Cta,
     // Texts,
     Icons,
     // Lists,
@@ -63,7 +63,7 @@ export default {
         Breadcrumb,
         Accordion,
         Buttons,
-        // Cta,
+        Cta,
         // Cards,
         // Activity,
         // Checkboxes,

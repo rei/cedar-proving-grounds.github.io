@@ -1,53 +1,53 @@
-import Button from '~/pages/KitchenSink/components/Buttons'
+////import Button from '~/pages/KitchenSink/components/Buttons'
 import Cta from '~/pages/KitchenSink/components/Cta'
 // import Cdr1Page from 'componentsdir/cdr1css/cdr1css'
-import KitchenSink from '~/pages/KitchenSink'
-import Link from '~/pages/KitchenSink/components/Links'
-import Breadcrumb from '~/pages/KitchenSink/components/Breadcrumb'
+////import KitchenSink from '~/pages/KitchenSink'
+////import Link from '~/pages/KitchenSink/components/Links'
+////import Breadcrumb from '~/pages/KitchenSink/components/Breadcrumb'
 // import Card from 'componentsdir/card/examples/Cards'
 // import Checkbox from 'componentsdir/checkbox/examples/checkboxes'
 // import Grid from 'componentsdir/grid/examples/Grid'
-import Texts from '~/pages/KitchenSink/components/Text'
-import Icon from '~/pages/KitchenSink/components/Icons'
+////import Texts from '~/pages/KitchenSink/components/Text'
+////import Icon from '~/pages/KitchenSink/components/Icons'
 // import Images from 'componentsdir/image/examples/Images'
-import CdrAccordion from '~/pages/KitchenSink/components/Accordion'
+////import CdrAccordion from '~/pages/KitchenSink/components/Accordion'
 // import Input from 'componentsdir/input/examples/Inputs'
 // import Lists from 'componentsdir/list/examples/Lists'
 // import MediaObject from 'componentsdir/mediaObject/examples/mediaObject'
 // import Radio from 'componentsdir/radio/examples/Radios'
-import Quotes from '~/pages/KitchenSink/components/Quote'
+////import Quotes from '~/pages/KitchenSink/components/Quote'
 // import Rating from 'componentsdir/rating/examples/Ratings'
 // import Select from 'componentsdir/select/examples/Selects'
-import CaptionExample from '~/pages/KitchenSink/components/Caption'
+////import CaptionExample from '~/pages/KitchenSink/components/Caption'
 // import Activity from 'compositionsdir/activityCard/examples/activity'
 // import Searchbox from 'compositionsdir/search/examples/searchbox'
-import Tabs from '~/pages/KitchenSink/components/Tabs'
+//// import Tabs from '~/pages/KitchenSink/components/Tabs'
 
 const routes = [
     { path: '/', name: 'Home', component: KitchenSink },
     // { path: '/cdr1css', name: 'Cdr1 Mixed In', component: Cdr1Page },
-    { path: '/KitchenSink/components/buttons', name: 'Buttons', component: Button },
+////    { path: '/KitchenSink/components/buttons', name: 'Buttons', component: Button },
     { path: '/KitchenSink/components/cta', name: 'Cta', component: Cta },
-    { path: '/KitchenSink/components/links', name: 'Links', component: Link },
-    { path: '/KitchenSink/components/breadcrumb', name: 'Breadcrumb', component: Breadcrumb },
+////    { path: '/KitchenSink/components/links', name: 'Links', component: Link },
+////    { path: '/KitchenSink/components/breadcrumb', name: 'Breadcrumb', component: Breadcrumb },
     // { path: '/cards', name: 'Card', component: Card },
     // { path: '/checkboxes', name: 'Checkboxes', component: Checkbox },
     // { path: '/grids', name: 'Grid', component: Grid },
-    { path: '/KitchenSink/components/text', name: 'Text', component: Texts },
-    { path: '/KitchenSink/components/icons', name: 'Icons', component: Icon },
+////    { path: '/KitchenSink/components/text', name: 'Text', component: Texts },
+////    { path: '/KitchenSink/components/icons', name: 'Icons', component: Icon },
     // { path: '/images', name: 'Image', component: Images },
     // { path: '/inputs', name: 'Input', component: Input },
     // { path: '/lists', name: 'Lists', component: Lists },
     // { path: '/media', name: 'Media', component: MediaObject },
     // { path: '/radios', name: 'Radio', component: Radio },
-    { path: '/KitchenSink/components/quote', name: 'Quote', component: Quotes },
+////    { path: '/KitchenSink/components/quote', name: 'Quote', component: Quotes },
     // { path: '/ratings', name: 'Rating', component: Rating },
     // { path: '/selects', name: 'Select', component: Select },
-    { path: '/KitchenSink/components/captions', name: 'Caption', component: CaptionExample },
+////    { path: '/KitchenSink/components/captions', name: 'Caption', component: CaptionExample },
     // { path: '/activity', name: 'ActivityCard', component: Activity },
     // { path: '/search', name: 'Searchbox', component: Searchbox },
-    { path: '/KitchenSink/components/accordion', name: 'Accordion', component: CdrAccordion },
-    { path: '/KitchenSink/components/tabs', name: 'Tabs', component: Tabs },
+////    { path: '/KitchenSink/components/accordion', name: 'Accordion', component: CdrAccordion },
+////    { path: '/KitchenSink/components/tabs', name: 'Tabs', component: Tabs },
   ];
 
 export default routes;

@@ -87,7 +87,6 @@
 
 <script>
 import { CdrLink } from '~/cedar'
-import * as Icons from '~/cedar';
 const deps = require('~/package').dependencies;
 
 export default {

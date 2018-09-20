@@ -21,7 +21,6 @@
 </template>
 
 <script>
-// import { CdrBreadcrumb } from 'cedar';
 import { CdrBreadcrumb } from '~/cedar'
 
 const deps = require('~/package').dependencies;

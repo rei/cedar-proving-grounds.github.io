@@ -18,7 +18,7 @@ import CdrAccordion from '~/pages/KitchenSink/components/Accordion'
 import Quotes from '~/pages/KitchenSink/components/Quote'
 // import Rating from 'componentsdir/rating/examples/Ratings'
 // import Select from 'componentsdir/select/examples/Selects'
-// import CaptionExample from 'compositionsdir/caption/examples/Caption'
+import CaptionExample from '~/pages/KitchenSink/components/Caption'
 // import Activity from 'compositionsdir/activityCard/examples/activity'
 // import Searchbox from 'compositionsdir/search/examples/searchbox'
 import Tabs from '~/pages/KitchenSink/components/Tabs'
@@ -43,7 +43,7 @@ const routes = [
     { path: '/KitchenSink/components/quote', name: 'Quote', component: Quotes },
     // { path: '/ratings', name: 'Rating', component: Rating },
     // { path: '/selects', name: 'Select', component: Select },
-    // { path: '/captions', name: 'Caption', component: CaptionExample },
+    { path: '/KitchenSink/components/captions', name: 'Caption', component: CaptionExample },
     // { path: '/activity', name: 'ActivityCard', component: Activity },
     // { path: '/search', name: 'Searchbox', component: Searchbox },
     { path: '/KitchenSink/components/accordion', name: 'Accordion', component: CdrAccordion },

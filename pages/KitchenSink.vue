@@ -25,7 +25,7 @@ import Accordion from '~/pages/KitchenSink/components/Accordion'
 // import Rating from 'componentsdir/rating/examples/Ratings';
 // import Radios from 'componentsdir/radio/examples/Radios'
 // import Selects from 'componentsdir/select/examples/Selects'
-// import CaptionExample from 'compositionsdir/caption/examples/Caption'
+import CaptionExample from '~/pages/KitchenSink/components/Caption'
 // import Activity from 'compositionsdir/activityCard/examples/activity'
 // import Searchbox from 'compositionsdir/search/examples/searchbox'
 import Tabs from '~/pages/KitchenSink/components/Tabs'
@@ -52,7 +52,7 @@ export default {
     Images,
     // Searchbox,
     Quotes,
-    // CaptionExample,
+    CaptionExample,
     // Activity,
     Tabs
   },
@@ -79,7 +79,7 @@ export default {
         Quotes,
         // Rating,
         // Selects,
-        // CaptionExample,
+        CaptionExample,
         Tabs
       ]
     }

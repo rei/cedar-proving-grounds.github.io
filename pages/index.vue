@@ -8,7 +8,7 @@
         :to="route.path">{{ route.name }}  *
     </nuxt-link> -->
 
-    <nuxt-link to="/KitchenSink/components/cta">CTA</nuxt-link>
+    <nuxt-link to="/demo/cta">CTA</nuxt-link>
 
   	<!-- <router-view></router-view> -->
     <!-- <component v-for="section of data" :key="section.id" :is="section.name" /> -->

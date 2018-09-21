@@ -7,12 +7,12 @@
 </template>
 
 <script>
-import { CdrCard } from '~/cedar';
+// import { CdrCard } from '~/cedar';
 
 
 export default {
   name: 'SimpleCard',
-  components: CdrCard,
+  // components: CdrCard,
 };
 </script>
 

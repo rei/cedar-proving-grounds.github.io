@@ -2,11 +2,13 @@
   <div>
   	<p>Cedar Proving Grounds</p>
 
-     <nuxt-link
+     <!-- <nuxt-link
         v-for="route in routes"
         :key="route.name"
         :to="route.path">{{ route.name }}  *
-    </nuxt-link>
+    </nuxt-link> -->
+
+    <nuxt-link to="/KitchenSink/components/cta">CTA</nuxt-link>
 
   	<!-- <router-view></router-view> -->
     <!-- <component v-for="section of data" :key="section.id" :is="section.name" /> -->
@@ -15,13 +17,13 @@
 </template>
 
 <script>
-import routes from '~/routes';
+// import routes from '~/routes';
 
 export default {
 
   data() {
     return {
-      routes
+      // routes
     };
   },
 };

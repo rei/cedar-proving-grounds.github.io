@@ -1,9 +1,8 @@
 <template>
   <div>
-    <cdr-icon-sprite /> 
     <h2>CTA version: {{ version }}</h2>
     <div class="button-example">
-      <cdr-cta
+      <cdr-cta>
         Dark
       </cdr-cta>
       <cdr-cta
@@ -50,8 +49,10 @@ const deps = require('~/package').dependencies;
 
 export default {
   name: 'Cta',
-  components: CdrCta,
-    data() {
+  components: {
+    CdrCta
+  },
+  data() {
     return {
       version: deps["@rei/cdr-cta"],
     };

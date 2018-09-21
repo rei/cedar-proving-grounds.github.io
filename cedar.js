@@ -16,8 +16,8 @@ import '@rei/cdr-link/dist/cdr-link.css'
 export { CdrBreadcrumb } from '@rei/cdr-breadcrumb'
 import '@rei/cdr-breadcrumb/dist/cdr-breadcrumb.css'
 
-export { CdrCard } from '@rei/cdr-card'
-import '@rei/cdr-card/dist/cdr-card.css'
+// export { CdrCard } from '@rei/cdr-card'
+// import '@rei/cdr-card/dist/cdr-card.css'
 
 export { CdrCheckbox } from '@rei/cdr-checkbox'
 import '@rei/cdr-checkbox/dist/cdr-checkbox.css'

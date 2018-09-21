@@ -3,6 +3,4 @@ npm i
 npm run build
 git add . 
 git commit -m build
-git push origin master <<< EOF
-zfolwick
-aquarius01
+git push origin master

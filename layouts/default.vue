@@ -1,10 +1,10 @@
-<!-- <template>
+<template>
   <div>
     <nuxt/>
   </div>
 </template>
 
-<style>
+<!--<style>
 html
 {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -51,4 +51,4 @@ html
   background-color: #35495e;
 }
 </style>
- -->
+-->

@@ -128,6 +128,7 @@
 
 <script>
 import { CdrCheckbox } from '~/cedar';
+const deps = require('~/package').dependencies;
 
 export default {
   name: 'Checkboxes',

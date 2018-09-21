@@ -8,7 +8,7 @@ import Breadcrumb from '~/pages/KitchenSink/components/Breadcrumb'
 // import Checkbox from 'componentsdir/checkbox/examples/checkboxes'
 // import Grid from 'componentsdir/grid/examples/Grid'
 import Texts from '~/pages/KitchenSink/components/Text'
-import Icon from '~/pages/KitchenSink/components/Icons'
+import Icons from '~/pages/KitchenSink/components/Icons'
 // import Images from 'componentsdir/image/examples/Images'
 import CdrAccordion from '~/pages/KitchenSink/components/Accordion'
 // import Input from 'componentsdir/input/examples/Inputs'
@@ -34,7 +34,7 @@ const routes = [
     // { path: '/checkboxes', name: 'Checkboxes', component: Checkbox },
     // { path: '/grids', name: 'Grid', component: Grid },
     { path: '/KitchenSink/components/text', name: 'Text', component: Texts },
-    { path: '/KitchenSink/components/icons', name: 'Icons', component: Icon },
+    { path: '/KitchenSink/components/icons', name: 'Icons', component: Icons },
     // { path: '/images', name: 'Image', component: Images },
     // { path: '/inputs', name: 'Input', component: Input },
     // { path: '/lists', name: 'Lists', component: Lists },

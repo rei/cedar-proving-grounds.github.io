@@ -43,7 +43,7 @@ const routes = [
     { path: '/KitchenSink/components/quote', name: 'Quote', component: Quotes },
     // { path: '/ratings', name: 'Rating', component: Rating },
     // { path: '/selects', name: 'Select', component: Select },
-    { path: '/KitchenSink/components/captions', name: 'Caption', component: CaptionExample },
+    { path: '/KitchenSink/components/caption', name: 'Caption', component: CaptionExample },
     // { path: '/activity', name: 'ActivityCard', component: Activity },
     // { path: '/search', name: 'Searchbox', component: Searchbox },
     { path: '/KitchenSink/components/accordion', name: 'Accordion', component: CdrAccordion },

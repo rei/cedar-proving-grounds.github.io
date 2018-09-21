@@ -169,10 +169,16 @@
 
 <script>
 import { CdrTabs, CdrTabPanel, CdrImage } from '~/cedar';
+const deps = require('~/package').dependencies;
 
 export default {
   name: 'Tabs',
   components: { CdrTabs, CdrTabPanel },
+    data() {
+  return {
+    version: deps["@rei/cdr-tabs"],
+    };
+  },
 };
 </script>
 

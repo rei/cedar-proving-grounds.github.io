@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div>
     <nuxt/>
   </div>
@@ -51,3 +51,4 @@ html
   background-color: #35495e;
 }
 </style>
+ -->

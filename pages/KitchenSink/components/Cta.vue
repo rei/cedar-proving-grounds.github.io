@@ -1,7 +1,7 @@
 <template>
   <div>
     <cdr-icon-sprite /> 
-    <h2>CTA</h2>
+    <h2>CTA version: {{ version }}</h2>
     <div class="button-example">
       <cdr-cta
         Dark

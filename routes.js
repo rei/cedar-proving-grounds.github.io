@@ -1,11 +1,12 @@
+const p = '~/pages/KitchenSink/components/';
 import Button from '~/pages/KitchenSink/components/Buttons'
 import Cta from '~/pages/KitchenSink/components/Cta'
 // import Cdr1Page from 'componentsdir/cdr1css/cdr1css'
 import KitchenSink from '~/pages/KitchenSink'
 import Link from '~/pages/KitchenSink/components/Links'
 import Breadcrumb from '~/pages/KitchenSink/components/Breadcrumb'
-import Card from 'componentsdir/card/examples/Cards'
-// import Checkbox from 'componentsdir/checkbox/examples/checkboxes'
+import Card from '~/pages/KitchenSink/components/Cards'
+import Checkbox from '~/pages/KitchenSink/components/Checkboxes'
 // import Grid from 'componentsdir/grid/examples/Grid'
 import Texts from '~/pages/KitchenSink/components/Text'
 import Icons from '~/pages/KitchenSink/components/Icons'
@@ -30,8 +31,8 @@ const routes = [
     { path: '/KitchenSink/components/cta', name: 'Cta', component: Cta },
     { path: '/KitchenSink/components/links', name: 'Links', component: Link },
     { path: '/KitchenSink/components/breadcrumb', name: 'Breadcrumb', component: Breadcrumb },
-    // { path: '/cards', name: 'Card', component: Card },
-    // { path: '/checkboxes', name: 'Checkboxes', component: Checkbox },
+    { path: '/KitchenSink/components/cards', name: 'Card', component: Card },
+    { path: '~/pages/KitchenSink/components/checkboxes', name: 'Checkboxes', component: Checkbox },
     // { path: '/grids', name: 'Grid', component: Grid },
     { path: '/KitchenSink/components/text', name: 'Text', component: Texts },
     { path: '/KitchenSink/components/icons', name: 'Icons', component: Icons },

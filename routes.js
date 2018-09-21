@@ -32,7 +32,7 @@ const routes = [
     { path: '/KitchenSink/components/links', name: 'Links', component: Link },
     { path: '/KitchenSink/components/breadcrumb', name: 'Breadcrumb', component: Breadcrumb },
     { path: '/KitchenSink/components/cards', name: 'Card', component: Card },
-    { path: '~/pages/KitchenSink/components/checkboxes', name: 'Checkboxes', component: Checkbox },
+    { path: '/KitchenSink/components/checkboxes', name: 'Checkboxes', component: Checkbox },
     // { path: '/grids', name: 'Grid', component: Grid },
     { path: '/KitchenSink/components/text', name: 'Text', component: Texts },
     { path: '/KitchenSink/components/icons', name: 'Icons', component: Icons },

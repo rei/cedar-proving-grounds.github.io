@@ -127,7 +127,7 @@
 </template>
 
 <script>
-import { CdrCeckbox } from '~/cedar';
+import { CdrCheckbox } from '~/cedar';
 
 export default {
   name: 'Checkboxes',

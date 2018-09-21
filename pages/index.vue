@@ -9,7 +9,8 @@
     </nuxt-link> -->
 
     <nuxt-link 
-      v-for="route in routes"
+      v-for="(route, index) in routes"
+      :key="index"
       :to="route.path">{{ route.name }}  *  
     </nuxt-link>
 

@@ -19,10 +19,10 @@
     "@rei/cdr-checkbox": "1.0.0",
     "@rei/cdr-cta": "1.0.3-alpha.2",
     "@rei/cdr-icon": "1.0.0",
+    "@rei/cdr-grid": "1.0.0",
     "@rei/cdr-link": "1.0.0",
     "@rei/cdr-tabs": "1.0.0-alpha.60",
     "@rei/cdr-img": "^1.0.1",
-    "@rei/cdr-grid": "^1.0.0",
     "@rei/cdr-quote": "1.0.0-alpha.0",
     "@rei/cdr-text": "1.0.0",
     "nuxt": "^1.0.0"

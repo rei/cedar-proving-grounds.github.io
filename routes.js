@@ -7,7 +7,7 @@ import Link from '~/pages/KitchenSink/components/Links'
 import Breadcrumb from '~/pages/KitchenSink/components/Breadcrumb'
 import Card from '~/pages/KitchenSink/components/Cards'
 import Checkbox from '~/pages/KitchenSink/components/Checkboxes'
-// import Grid from 'componentsdir/grid/examples/Grid'
+import Grid from '~/pages/KitchenSink/components/Grid'
 import Texts from '~/pages/KitchenSink/components/Text'
 import Icons from '~/pages/KitchenSink/components/Icons'
 // import Images from 'componentsdir/image/examples/Images'
@@ -33,7 +33,7 @@ const routes = [
     { path: '/KitchenSink/components/breadcrumb', name: 'Breadcrumb', component: Breadcrumb },
     { path: '/KitchenSink/components/cards', name: 'Card', component: Card },
     { path: '/KitchenSink/components/checkboxes', name: 'Checkboxes', component: Checkbox },
-    // { path: '/grids', name: 'Grid', component: Grid },
+    { path: '/KitchenSink/components/grids', name: 'Grid', component: Grid },
     { path: '/KitchenSink/components/text', name: 'Text', component: Texts },
     { path: '/KitchenSink/components/icons', name: 'Icons', component: Icons },
     // { path: '/images', name: 'Image', component: Images },

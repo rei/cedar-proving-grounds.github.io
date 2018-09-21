@@ -12,7 +12,7 @@ import Links from '~/pages/KitchenSink/components/Links'
 import Breadcrumb from '~/pages/KitchenSink/components/Breadcrumb'
 import Cards from '~/pages/KitchenSink/components/Cards'
 import Checkboxes from '~/pages/KitchenSink/components/Checkboxes'
-// import Grid from 'componentsdir/grid/examples/Grid'
+import Grid from '~/pages/KitchenSink/components/Grid'
 // import Checkboxes from 'componentsdir/checkbox/examples/checkboxes'
 import Texts from '~/pages/KitchenSink/components/Text'
 import Icons from '~/pages/KitchenSink/components/Icons'
@@ -46,7 +46,7 @@ export default {
     // Forms,
     // Radios,
     // Rating,
-    // Grid,
+    Grid,
     Checkboxes,
     Cards,
     Images,
@@ -67,7 +67,7 @@ export default {
         Cards,
         // Activity,
         Checkboxes,
-        // Grid,
+        Grid,
         // Texts,
         Icons,
         Images,

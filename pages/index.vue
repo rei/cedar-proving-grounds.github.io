@@ -2,13 +2,11 @@
   <div>
   	<p>Cedar Proving Grounds</p>
 
-     <!-- <nuxt-link
+     <nuxt-link
         v-for="route in routes"
-        :key="route.name"
-        :to="route.path">{{ route.name }}  *
-    </nuxt-link> -->
-
-    <nuxt-link to="/demo/cta">CTA</nuxt-link>
+        :key="route"
+        :to="`/component/${route}/`">{{ route }}  *
+    </nuxt-link>
 
   	<!-- <router-view></router-view> -->
     <!-- <component v-for="section of data" :key="section.id" :is="section.name" /> -->
@@ -17,15 +15,30 @@
 </template>
 
 <script>
-// import routes from '~/routes';
+import _ from 'lodash';
+const deps = require('~/package').dependencies;
 
 export default {
 
   data() {
     return {
-      // routes
+      deps
     };
   },
+  computed: {
+    routes() {
+      const ignorePackages = ['@rei/cdr-assets']
+      const reiDeps = _.pickBy(this.deps, (v, k) => {
+        return (_.startsWith(k, '@rei') && ignorePackages.indexOf(k) === -1);
+      });
+      const depArr = _.keys(reiDeps);
+      const routeArr = depArr.map((dep) => {
+        const rep = dep.replace('@rei/cdr-', '');
+        return rep;
+      });
+      return routeArr;
+    },
+  }
 };
 
 </script>

@@ -1,8 +1,26 @@
 <template>
   <div>
+    <!-- make sprite available on every page -->
+    <cdr-icon-sprite />
+
     <nuxt/>
   </div>
 </template>
+
+<script>
+import { CdrIconSprite } from '@rei/cdr-icon';
+
+export default {
+  components: {
+    CdrIconSprite,
+  },
+};
+</script>
+
+<style lang="scss">
+  @import "@rei/cdr-icon/dist/cdr-icon.css";
+</style>
+
 
 <!--<style>
 html

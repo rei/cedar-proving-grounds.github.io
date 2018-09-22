@@ -26,7 +26,7 @@ import Button from '~/pages/KitchenSink/components/Buttons'
 import Cta from '~/pages/KitchenSink/components/Cta'
 // import Cdr1Page from 'componentsdir/cdr1css/cdr1css'
 import KitchenSink from '~/pages/KitchenSink'
-import Link from '~/pages/KitchenSink/components/Links'
+import Links from '~/pages/KitchenSink/components/Links'
 import Breadcrumb from '~/pages/KitchenSink/components/Breadcrumb'
 import Card from '~/pages/KitchenSink/components/Cards'
 import Checkbox from '~/pages/KitchenSink/components/Checkboxes'
@@ -52,7 +52,7 @@ const routes = [
     // { path: '/cdr1css', name: 'Cdr1 Mixed In', component: Cdr1Page },
     { path: '/KitchenSink/components/buttons', name: 'Buttons', component: Button },
     { path: '/KitchenSink/components/cta', name: 'Cta', component: Cta },
-    { path: '/KitchenSink/components/links', name: 'Links', component: Link },
+    { path: '/KitchenSink/components/links', name: 'Links', component: Links },
     { path: '/KitchenSink/components/breadcrumb', name: 'Breadcrumb', component: Breadcrumb },
     { path: '/KitchenSink/components/cards', name: 'Card', component: Card },
     { path: '/KitchenSink/components/checkboxes', name: 'Checkboxes', component: Checkbox },

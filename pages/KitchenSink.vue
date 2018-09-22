@@ -8,7 +8,7 @@
 <script>
 import Buttons from '~/pages/KitchenSink/components/Buttons'
 import Cta from '~/pages/KitchenSink/components/Cta'
-import Links from '~/pages/KitchenSink/components/Links'
+import Links from '~/pages/KitchenSink/components/Link'
 import Breadcrumb from '~/pages/KitchenSink/components/Breadcrumb'
 import Cards from '~/pages/KitchenSink/components/Cards'
 import Checkboxes from '~/pages/KitchenSink/components/Checkboxes'

@@ -5,7 +5,7 @@
      <nuxt-link
         v-for="route in routes"
         :key="route"
-        :to="`/component/${route}/`">{{ route }}  *
+        :to="`/KitchenSink/component/${route}/`">{{ route }}  *
     </nuxt-link>
 
   	<!-- <router-view></router-view> -->

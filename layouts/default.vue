@@ -2,7 +2,6 @@
   <div>
     <!-- make sprite available on every page -->
     <cdr-icon-sprite />
-
     <nuxt/>
   </div>
 </template>

@@ -5,10 +5,10 @@
   "author": "Zach Folwick <zfolwic@rei.com>",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "dev": "cross-env NODE_ENV=dev nuxt",
+    "build": "cross-env NODE_ENV=production nuxt build",
+    "start": "cross-env NODE_ENV=production nuxt start",
+    "generate": "cross-env NODE_ENV=production nuxt generate"
   },
   "dependencies": {
     "@rei/cdr-accordion": "^1.0.1",

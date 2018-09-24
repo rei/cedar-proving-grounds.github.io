@@ -32,6 +32,8 @@ module.exports = {
   ** Global CSS
   */
   css: [
+    '@rei/cdr-assets/dist/cdr-core.css',
+    '@rei/cdr-assets/dist/cdr-fonts.css',
   ],
 
   /*

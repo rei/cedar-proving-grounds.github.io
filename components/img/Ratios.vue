@@ -105,7 +105,8 @@
 </template>
 
 <script>
-import { CdrCol, CdrRow, CdrImg } from '@rei/cdr-img';
+import { CdrImg } from '@rei/cdr-img';
+import { CdrCol, CdrRow } from '@rei/cdr-grid';
 
 export default {
   name: 'Ratio',

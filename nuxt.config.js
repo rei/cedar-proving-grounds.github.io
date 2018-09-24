@@ -1,6 +1,8 @@
 const path = require('path');
 const pkg = require('./package')
 
+const routerBase = process.env.NODE_ENV === 'production' ? '/rei-cedar-proving-grounds/' : '';
+
 module.exports = {
   /*
    ** Toggle for client side vs. server side rendering.
@@ -58,6 +60,6 @@ module.exports = {
     dir: "docs"
   },
   router: {
-    base: '/rei-cedar-proving-grounds/'
+    base: routerBase
   }
 }

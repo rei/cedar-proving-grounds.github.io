@@ -102,6 +102,9 @@ import {CdrRow, CdrCol} from '~/cedar';
 
 export default {
   name: 'ComplexGrid',
-  components: CdrRow, CdrCol,
+  components: {
+    CdrRow,
+    CdrCol,
+  },
 };
 </script>

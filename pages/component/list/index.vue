@@ -14,10 +14,10 @@
 </template>
 
 <script>
-import { CdrText } from '~/cedar';
-import unorderedList from './Unordered';
-import orderedList from './Ordered';
-import bareList from './Bare';
+import { CdrText } from '@rei/cdr-text';
+import unorderedList from '~/components/list/Unordered';
+import orderedList from '~/components/list/Ordered';
+import bareList from '~/components/list/Bare';
 
 
 export default {

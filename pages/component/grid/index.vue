@@ -1799,8 +1799,8 @@
 </template>
 
 <script>
-import { CdrRow, CdrCol } from '~/cedar';
-import complex from './Complex';
+import { CdrRow, CdrCol } from '@rei/cdr-grid';
+import complex from '~/components/grid/Complex';
 const deps = require('~/package').dependencies;
 
 export default {

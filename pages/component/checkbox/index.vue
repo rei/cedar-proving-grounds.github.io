@@ -127,7 +127,7 @@
 </template>
 
 <script>
-import { CdrCheckbox } from '~/cedar';
+import { CdrCheckbox } from '@rei/cdr-checkbox';
 const deps = require('~/package').dependencies;
 
 export default {
@@ -160,7 +160,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
   .wrap {
     width: 180px;
   }

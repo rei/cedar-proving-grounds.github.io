@@ -63,7 +63,7 @@
 </template>
 
 <script>
-import { CdrAccordion, CdrAccordionItem } from '~/cedar';
+import { CdrAccordion, CdrAccordionItem } from '@rei/cdr-accordion';
 
 const deps = require('~/package.json').dependencies;
 

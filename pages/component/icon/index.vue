@@ -72,7 +72,7 @@
 </template>
 
 <script>
-import { CdrCol, CdrRow } from '~/cedar';
+import { CdrCol, CdrRow } from '@rei/cdr-grid';
 import * as Icons from '@rei/cdr-icon';
 const deps = require('~/package').dependencies;
 
@@ -97,7 +97,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .icon-examples {
   .cdr-icon {
     &:hover {

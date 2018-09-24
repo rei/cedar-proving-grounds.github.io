@@ -33,10 +33,10 @@
 </template>
 
 <script>
-import { CdrImg } from '~/cedar';
-import ratios from './Ratios';
-import cropping from './Cropping';
-import mods from './Mods';
+import { CdrImg } from '@rei/cdr-img';
+import ratios from '~/components/img/Ratios';
+import cropping from '~/components/img/Cropping';
+import mods from '~/components/img/Mods';
 
 export default {
   name: 'Images',

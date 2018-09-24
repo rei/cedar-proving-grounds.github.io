@@ -21,10 +21,10 @@
 </template>
 
 <script>
-import figurePlacement from './figurePlacement';
-import mediaObjectFlux from './mediaObjectFlux';
-import mediaOverlay from './mediaOverlay';
-import mediaShapeAlign from './mediaShapeAlign';
+import figurePlacement from '~/components/media-object/figurePlacement';
+import mediaObjectFlux from '~/components/media-object/mediaObjectFlux';
+import mediaOverlay from '~/components/media-object/mediaOverlay';
+import mediaShapeAlign from '~/components/media-object/mediaShapeAlign';
 
 
 export default {

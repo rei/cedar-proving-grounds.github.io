@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import headings from './Headings';
-import paragraphs from './Paragraphs';
+import headings from '~/components/text/Headings';
+import paragraphs from '~/components/text/Paragraphs';
 const deps = require('~/package').dependencies;
 
 export default {

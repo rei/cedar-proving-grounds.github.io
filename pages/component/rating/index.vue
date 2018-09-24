@@ -68,7 +68,7 @@
 </template>
 
 <script>
-import { CdrRating } from '~/cedar';
+import { CdrRating } from '@rei/cdr-rating';
 
 export default {
   name: 'Rating',

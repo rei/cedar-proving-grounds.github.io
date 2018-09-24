@@ -172,7 +172,8 @@
 </template>
 
 <script>
-import { CdrTabs, CdrTabPanel, CdrImg } from '~/cedar';
+import { CdrTabs, CdrTabPanel } from '@rei/cdr-tabs';
+import { CdrImg } from '@rei/cdr-img';
 const deps = require('~/package').dependencies;
 
 export default {

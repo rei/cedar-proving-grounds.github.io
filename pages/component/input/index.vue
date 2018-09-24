@@ -128,7 +128,7 @@
 </template>
 
 <script>
-import { CdrInput } from '~/cedar';
+import { CdrInput } from '@rei/cdr-input';
 
 export default {
   name: 'Forms',

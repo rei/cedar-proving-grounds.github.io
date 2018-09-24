@@ -124,7 +124,7 @@
 </template>
 
 <script>
-import { CdrRadio } from '~/cedar';
+import { CdrRadio } from '@rei/cdr-radio';
 
 export default {
   name: 'Radios',
@@ -143,7 +143,7 @@ export default {
 };
 </script>
 
-<style lang="css">
+<style lang="scss">
   .wrap {
     width: 180px;
   }

@@ -93,7 +93,7 @@
 </template>
 
 <script>
-import { CdrSelect } from '~/cedar';
+import { CdrSelect } from '@rei/cdr-select';
 
 export default {
   name: 'Selects',

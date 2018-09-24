@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import { CdrCaption } from '~/cedar';
+import { CdrCaption } from '@rei/cdr-caption';
 
 export default {
   name: 'CaptionExample',

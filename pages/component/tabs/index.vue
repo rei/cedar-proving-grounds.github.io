@@ -52,9 +52,9 @@
         <cdr-tab-panel name="one with image">
           <h1>tab one content</h1>
           <cdr-img
-        alt="ratio standard"
-        src="http://placehold.it/200x200"
-      />
+            alt="ratio standard"
+            src="http://placehold.it/1200x1200"
+          />
         </cdr-tab-panel>
         <cdr-tab-panel name="two">
           <h1>tab two content</h1>
@@ -172,12 +172,16 @@
 </template>
 
 <script>
-import { CdrTabs, CdrTabPanel, CdrImage } from '~/cedar';
+import { CdrTabs, CdrTabPanel, CdrImg } from '~/cedar';
 const deps = require('~/package').dependencies;
 
 export default {
   name: 'Tabs',
-  components: { CdrTabs, CdrTabPanel },
+  components: {
+    CdrTabs, 
+    CdrTabPanel, 
+    CdrImg 
+  },
     data() {
   return {
     version: deps["@rei/cdr-tabs"],

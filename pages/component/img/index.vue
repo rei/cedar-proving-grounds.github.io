@@ -40,6 +40,11 @@ import mods from './Mods';
 
 export default {
   name: 'Images',
-  components: CdrImg,
+  components: {
+    CdrImg,
+    ratios,
+    cropping,
+    mods,
+  },
 };
 </script>

@@ -17,7 +17,7 @@
     "@rei/cdr-button": "^1.0.1",
     "@rei/cdr-caption": "^1.0.0",
     "@rei/cdr-checkbox": "^1.0.0",
-    "@rei/cdr-cta": "^1.0.2",
+    "@rei/cdr-cta": "1.0.3-alpha.2",
     "@rei/cdr-grid": "^1.0.0",
     "@rei/cdr-icon": "^1.0.0",
     "@rei/cdr-img": "^1.0.1",

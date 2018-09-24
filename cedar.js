@@ -1,6 +1,3 @@
-import '@rei/cdr-assets/dist/cdr-core.css';
-import '@rei/cdr-assets/dist/cdr-fonts.css';
-
 export { CdrAccordion, CdrAccordionItem } from '@rei/cdr-accordion'
 import '@rei/cdr-accordion/dist/cdr-accordion.css'
 

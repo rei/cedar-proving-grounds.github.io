@@ -7,8 +7,8 @@ module.exports = {
   /*
    ** Toggle for client side vs. server side rendering.
    */
-   mode: 'spa',
-   // mode: 'universal',
+   // mode: 'spa',
+   mode: 'universal',
   /*
   ** Headers of the page
   */

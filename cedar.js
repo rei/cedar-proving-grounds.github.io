@@ -38,19 +38,19 @@ import '@rei/cdr-list/dist/cdr-list.css'
 
 export { CdrMediaObject } from '@rei/cdr-media-object'
 import '@rei/cdr-media-object/dist/cdr-media-object.css'
-//
-// export { CdrRadio } from '@rei/cdr-radio'
-// import '@rei/cdr-radio/dist/cdr-radio.css'
-//
-// export { CdrRating } from '@rei/cdr-rating'
-// import '@rei/cdr-rating/dist/cdr-rating.css'
-//
-// export { CdrSelect } from '@rei/cdr-select'
-// import '@rei/cdr-select/dist/cdr-select.css'
-//
+
+export { CdrRadio } from '@rei/cdr-radio'
+import '@rei/cdr-radio/dist/cdr-radio.css'
+
+export { CdrRating } from '@rei/cdr-rating'
+import '@rei/cdr-rating/dist/cdr-rating.css'
+
+export { CdrSelect } from '@rei/cdr-select'
+import '@rei/cdr-select/dist/cdr-select.css'
+
 export { CdrQuote } from '@rei/cdr-quote'
 import '@rei/cdr-quote/dist/cdr-quote.css'
-//
+
 export { CdrCaption } from '@rei/cdr-caption'
 import "@rei/cdr-caption/dist/cdr-caption.css";
 // export { CdrActivityCard } from '@rei/cdr-activity-card'

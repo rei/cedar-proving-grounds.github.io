@@ -67,7 +67,7 @@ module.exports = {
   */
   modules: [
   ],
-  buildDir: "docs",
+  // buildDir: "docs",
   /*
   ** Build configuration
   */

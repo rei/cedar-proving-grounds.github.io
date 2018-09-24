@@ -7,9 +7,7 @@
 ## Building
 ### Client-Side Rendering:
 
-1. in `nuxt.config.js`: change "mode" to `'spa'`
-2. in command prompt: `npm i && npm run dev` for local rendering, `npm i && npm run build` for deployment to github pages.
+1. in command prompt: `npm i && npm run dev -s` for local rendering, `npm i && npm run build -s` for deployment to github pages.
 
 ### Server-Side Rendering
-1. in `nuxt.config.js`: change "mode" to `'universal'`
-2. in command prompt: `npm i && npm run dev` for local rendering, `npm i && npm run generate` for deployment to github pages.
+1. in command prompt: `npm i && npm run dev -u` for local rendering, `npm i && npm run generate -u` for deployment to github pages.

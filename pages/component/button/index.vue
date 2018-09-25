@@ -1,7 +1,5 @@
 <template>
   <div>
-    <nuxt />
-
     <h2>Buttons version: {{ version }}</h2>
     <default-buttons/>
     <secondary-buttons/>

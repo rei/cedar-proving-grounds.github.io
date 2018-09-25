@@ -1,6 +1,6 @@
 <template>
-  <div>
-
+  <div class="cedar-home-page-layout">
+  <!-- Cedar Home Page for crazy experimenting-->
 
   </div>
 </template>

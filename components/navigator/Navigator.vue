@@ -1,5 +1,7 @@
 <template>
   <div>
+    <nuxt-link to="/#/">home * </nuxt-link>
+
      <nuxt-link
         v-for="route in routes"
         :key="route"

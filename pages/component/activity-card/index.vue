@@ -3,7 +3,7 @@
     <h2>Activity Card</h2>
     <div class="activity-card">
         <cdr-activity-card
-          media=dogData
+          :media='dogData'
           label="rest api call"
           title-url="http://rei.com"
           title="Snow Lake Trail"
@@ -35,7 +35,8 @@ import {CdrActivityCard} from '@rei/cdr-activity-card';
 export default {
   name: 'Activity',
   components: { CdrActivityCard },
-    async asyncData({ app }) {
+
+  async asyncData({ app }) {
     const {
       data: { 
       message: dogData 

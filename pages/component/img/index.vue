@@ -42,7 +42,8 @@ export default {
     cropping,
     mods,
   },
-    async asyncData({ app }) {
+  
+  async asyncData({ app }) {
     const {
       data: { 
       message: dogData 

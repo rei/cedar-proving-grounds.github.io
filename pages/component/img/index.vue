@@ -1,20 +1,16 @@
 <template>
   <div>
     <h2>Images</h2>
-    <div data-backstop="image-aspect-ratio">
+    
+      <h3>Images from Rest service</h3>
+      <cdr-img
+        :src=dogData
+        />
       <h3>Aspect Ratios (with landscape images)</h3>
       <ratios/>
-    </div>
-
-    <div data-backstop="image-cropping">
       <cropping/>
-    </div>
-
-    <div data-backstop="image-mods">
       <mods/>
-    </div>
 
-    <div data-backstop="image-standard">
       <h3>Standard image</h3>
       <cdr-img
         alt="ratio standard"
@@ -28,7 +24,7 @@
         alt="standard portrait"
         src="http://placehold.it/150x350"
       />
-    </div>
+
   </div>
 </template>
 
@@ -45,6 +41,14 @@ export default {
     ratios,
     cropping,
     mods,
+  },
+    async asyncData({ app }) {
+    const {
+      data: { 
+      message: dogData 
+      } 
+    } = await app.$axios.get('https://dog.ceo/api/breeds/image/random')
+    return { dogData }
   },
 };
 </script>

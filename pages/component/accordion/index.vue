@@ -21,7 +21,8 @@
           nec, eleifend vulputate mi. Praesent vestibulum accumsan erat id dapibus.
           Suspendisse ut laoreet nunc, et tempor eros. Etiam vel commodo velit. Proin
           egestas fringilla elit et lacinia. Praesent et vehicula massa. Fusce ac purus neque.
-          <img :src="dogData">{{dog}}</img>
+          <img :src="dogData">
+          </img>
         </cdr-accordion-item>
         <cdr-accordion-item
           id="default-long-label"

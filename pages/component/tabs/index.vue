@@ -1,7 +1,7 @@
 <template>
   <!-- eslint-disable max-len -->
   <div id="tabcontainer">
-  <div>
+  <div class="basic-tab-examples">
     <div class="tab-demo-section">
       <h2>Tabs</h2>
       <cdr-tabs height="100px">
@@ -193,7 +193,7 @@ export default {
 
 <style>
   .tabcontainer {
-    padding: 2rem;
+    padding: 5rem;
   }
   .tab-demo-section {
     text-align: center;

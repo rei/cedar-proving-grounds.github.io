@@ -21,6 +21,7 @@
           nec, eleifend vulputate mi. Praesent vestibulum accumsan erat id dapibus.
           Suspendisse ut laoreet nunc, et tempor eros. Etiam vel commodo velit. Proin
           egestas fringilla elit et lacinia. Praesent et vehicula massa. Fusce ac purus neque.
+          <img :src="dogData">{{dog}}</img>
         </cdr-accordion-item>
         <cdr-accordion-item
           id="default-long-label"
@@ -70,6 +71,15 @@ const deps = require('~/package.json').dependencies;
 export default {
   name: 'Accordion',
   components: { CdrAccordion, CdrAccordionItem },
+
+  async asyncData({ app }) {
+    const {
+      data: { 
+      message: dogData 
+      } 
+    } = await app.$axios.get('https://dog.ceo/api/breeds/image/random')
+    return { dogData }
+  },
   data() {
     return {
       version: deps["@rei/cdr-accordion"],

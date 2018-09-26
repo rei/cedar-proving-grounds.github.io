@@ -20,7 +20,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/cedar-logo.png' },
+      { rel: 'icon', type: 'image/x-icon', href: '/trees-left.svg' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto+Condensed:400|Roboto:400' }
     ]
   },
@@ -66,7 +66,15 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+        '@nuxtjs/axios',
+        '@nuxtjs/proxy'
   ],
+  proxy: [
+    ['/api/dog', { target: 'https://dog.ceo/', pathRewrite: { '^/api/dog': '/api/breeds/image/random' } }]
+  ],
+  axios: {
+    proxy: true
+  },
   // buildDir: "docs",
   /*
   ** Build configuration

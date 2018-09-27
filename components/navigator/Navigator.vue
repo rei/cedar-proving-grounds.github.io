@@ -7,8 +7,13 @@
         :key="route"
         :to="`/component/${route}/`">{{ route }}  *
     </nuxt-link>
+
+    <nuxt-link to="/testcomponents/">test only components</nuxt-link>
   </div>
 </template>
+
+
+
 
 <script>
 import _ from 'lodash';

@@ -29,21 +29,6 @@
             :id="message.id"
           />
         </cdr-tab-panel>
-        <cdr-tab-panel name="4">
-          <h1>
-            Four Content
-          </h1>
-        </cdr-tab-panel>
-        <cdr-tab-panel name="Five">
-          <h1>
-            Tab Five Content
-          </h1>
-        </cdr-tab-panel>
-        <cdr-tab-panel name="Six">
-          <h1>
-            Tab Six Content
-          </h1>
-        </cdr-tab-panel>
       </cdr-tabs>
     </div>
   </div>

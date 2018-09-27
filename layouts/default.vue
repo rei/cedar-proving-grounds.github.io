@@ -1,10 +1,14 @@
 <template>
-  <div>
+  <div class="page"  :style="bgc">
      <p>Cedar Proving Grounds</p>
     <!-- make sprite available on every page -->
     <cdr-icon-sprite />
     <!-- add navigation pane to every page -->
     <navigator />
+    <section>
+            <input type="radio" key="a" v-model="bgc.backgroundColor" :value='light'>light ({{light}})</input>
+            <input type="radio" key="b" v-model="bgc.backgroundColor" :value='dark'>dark ({{dark}})</input>
+        </section>
     <br />
     <br />
     <nuxt/>
@@ -14,16 +18,32 @@
 <script>
 import { CdrIconSprite } from '@rei/cdr-icon';
 import Navigator from '~/components/navigator/Navigator';
+import BackgroundToggle from '~/components/background-toggle';
 
 export default {
   name: 'Home',
   components: {
     CdrIconSprite,
     Navigator,
+    BackgroundToggle,
   },
+  data() {
+        return {
+            description: 'Type any colour name, rgb, hex or hsl in the input below and see what happens!',
+            bgc: {
+                backgroundColor: ''
+            },
+            light:'#FFFFFF',
+            dark:'#1A1A1A'
+        }
+    },
 };
 </script>
 
 <style lang="scss">
   @import "@rei/cdr-icon/dist/cdr-icon.css";
+.page {
+    background-color: #FFFFFF;
+}
+
 </style>

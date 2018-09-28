@@ -18,14 +18,12 @@
 <script>
 import { CdrIconSprite } from '@rei/cdr-icon';
 import Navigator from '~/components/navigator/Navigator';
-import BackgroundToggle from '~/components/background-toggle';
 
 export default {
   name: 'Home',
   components: {
     CdrIconSprite,
     Navigator,
-    BackgroundToggle,
   },
   data() {
         return {
@@ -34,7 +32,7 @@ export default {
                 backgroundColor: ''
             },
             light:'#FFFFFF',
-            dark:'#1A1A1A'
+            dark:'#292929'
         }
     },
 };

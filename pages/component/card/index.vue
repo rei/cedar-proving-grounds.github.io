@@ -16,9 +16,9 @@ export default {
   components: {
     simpleCard,
   },
-    data() {
-  return {
-    version: deps["@rei/cdr-card"],
+  data() {
+    return {
+      version: deps["@rei/cdr-card"],
     };
   },
 };

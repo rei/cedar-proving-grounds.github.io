@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2>Media Object</h2>
+    <h2>Media Object version: {{ version }}</h2>
     <div data-backstop="figure-placement">
       <h3>Media Object Figure Placement</h3>
       <figurePlacement/>
@@ -25,6 +25,7 @@ import figurePlacement from '~/components/media-object/figurePlacement';
 import mediaObjectFlux from '~/components/media-object/mediaObjectFlux';
 import mediaOverlay from '~/components/media-object/mediaOverlay';
 import mediaShapeAlign from '~/components/media-object/mediaShapeAlign';
+const deps = require('~/package').dependencies;
 
 
 export default {
@@ -34,6 +35,7 @@ export default {
     mediaObjectFlux,
     mediaOverlay,
     mediaShapeAlign,
+    version: deps["@rei/cdr-media-object"],
   },
 };
 </script>

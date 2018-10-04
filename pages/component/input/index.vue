@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Text Inputs</h2>
+    <h2>Text Inputs version: {{ version }}</h2>
 
     <cdr-input
       v-model="nothing"
@@ -182,6 +182,7 @@
 
 <script>
 import { CdrInput } from '@rei/cdr-input';
+const deps = require('~/package').dependencies;
 
 export default {
   name: 'Forms',
@@ -199,6 +200,7 @@ export default {
       error: 1,
       multi: '',
       multi2: '',
+      version: deps["@rei/cdr-input"],
     };
   },
   methods: {

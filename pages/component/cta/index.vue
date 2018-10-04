@@ -44,7 +44,6 @@
 
 <script> 
 import { CdrCta } from '@rei/cdr-cta';
-
 const deps = require('~/package').dependencies;
 
 export default {

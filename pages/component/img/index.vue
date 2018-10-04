@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Images</h2>
+    <h2>Images {{ version }}</h2>
     
       <h3>Images from Rest service</h3>
       <cdr-img
@@ -33,6 +33,7 @@ import { CdrImg } from '@rei/cdr-img';
 import ratios from '~/components/img/Ratios';
 import cropping from '~/components/img/Cropping';
 import mods from '~/components/img/Mods';
+const deps = require('~/package').dependencies;
 
 export default {
   name: 'Images',
@@ -50,6 +51,12 @@ export default {
       } 
     } = await app.$axios.get('https://dog.ceo/api/breeds/image/random')
     return { dogData }
+  },
+
+  data() {
+  return {
+    version: deps["@rei/cdr-img"],
+    };
   },
 };
 </script>

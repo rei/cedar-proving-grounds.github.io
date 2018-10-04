@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Selects</h2>
+    <h2>Selects version: {{ version }}</h2>
 
     <cdr-select
       label="Disabled select"
@@ -107,6 +107,7 @@ export default {
       multiple: ['1', '2'],
       multiple2: [],
       multiple2Data: ['a', 'b', 'c', 'd'],
+      version: deps["@rei/cdr-select"],
     };
   },
 };

@@ -183,7 +183,7 @@ export default {
     CdrTabPanel, 
     CdrImg 
   },
-    data() {
+  data() {
   return {
     version: deps["@rei/cdr-tabs"],
     };

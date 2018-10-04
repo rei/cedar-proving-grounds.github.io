@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Activity Card</h2>
+    <h2>Activity Card version: {{ version }}</h2>
     <div class="activity-card">
         <cdr-activity-card
           :media='dogData'
@@ -31,6 +31,7 @@
 
 <script>
 import {CdrActivityCard} from '@rei/cdr-activity-card';
+const deps = require('~/package').dependencies;
 
 export default {
   name: 'Activity',
@@ -43,6 +44,11 @@ export default {
       } 
     } = await app.$axios.get('https://dog.ceo/api/breeds/image/random')
     return { dogData }
+  },
+  data() {
+  return {
+    version: deps["@rei/cdr-activity-card"],
+    };
   },
 };
 </script>

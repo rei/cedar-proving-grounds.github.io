@@ -4,7 +4,7 @@
     <cdr-text
       tag="h2"
       modifier="heading-large">
-      List
+      List version: {{ version }}
     </cdr-text>
 
     <unordered-list class="cdr-stack--xl"/>

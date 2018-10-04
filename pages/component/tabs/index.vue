@@ -3,7 +3,7 @@
   <div id="tabcontainer">
   <div class="basic-tab-examples">
     <div class="tab-demo-section">
-      <h2>Tabs</h2>
+      <h2>Tabs version: {{ version }}</h2>
       <cdr-tabs height="100px">
         <cdr-tab-panel name="Tab1">
           <h1>          This is some text. It's not in a <strong>paragraph</strong> element because

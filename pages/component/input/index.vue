@@ -3,6 +3,60 @@
     <h2>Text Inputs</h2>
 
     <cdr-input
+      v-model="nothing"
+      label="Max length is 5 characters"
+      maxlength="5"
+    />
+    <!-- empty thing -->
+    <cdr-input />
+
+    <cdr-input
+      v-model="nothing"
+      placeholder="no label used"
+    />
+
+    <cdr-input
+      v-model="nothing"
+      placeholder="no label used"
+    />
+
+    <cdr-input
+      v-model="nothing"
+      placeholder="a shorter box"
+      style="width: 300px"
+    />
+
+    <cdr-input
+      v-model="nothing"
+      placeholder="high contrast version"
+      style="background-color: #292929"
+    />
+
+    <cdr-input
+      v-model="nothing"
+      placeholder="high contrast with short length"
+      style="background-color: #292929; width: 300px"
+    />
+
+    <cdr-input
+      v-model="nothing"
+      placeholder="high contrast with short length"
+      style="shortText"
+    />
+
+    <cdr-input
+      v-model="debounce"
+      label="Validation with debounce"
+      id="testing"
+      placeholder="Enter hi"
+      feedback
+      name="yoyo"
+      :rules="[validateFn]"
+      debounce
+      data-backstop="text-input"
+    />
+
+    <cdr-input
       v-model="debounce"
       label="Validation with debounce"
       id="testing"
@@ -85,7 +139,6 @@
       label="Multiline"
       multi-line
       rows="5"
-      data-backstop="form-textarea"
     />
 
     <cdr-input
@@ -168,3 +221,10 @@ export default {
   },
 };
 </script>
+
+<style>
+.shortText {
+  background-color: #292929; 
+  width: 300px;
+}
+</style>

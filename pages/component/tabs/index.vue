@@ -1,6 +1,6 @@
 <template>
   <!-- eslint-disable max-len -->
-  <div id="tabcontainer">
+  <div id="tabcontainer" style="padding:100px">
   <div class="basic-tab-examples">
     <div class="tab-demo-section">
       <h2>Tabs version: {{ version }}</h2>
@@ -193,7 +193,9 @@ export default {
 
 <style>
   .tabcontainer {
-    padding: 5rem;
+    padding: 50px;
+    margin-left: 50px;
+    padding-left: 100px;
   }
   .tab-demo-section {
     text-align: center;

@@ -66,8 +66,8 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-        '@nuxtjs/axios',
-        '@nuxtjs/proxy'
+    '@nuxtjs/axios',
+    '@nuxtjs/proxy'
   ],
   proxy: [
     ['/api/dog', { target: 'https://dog.ceo/', pathRewrite: { '^/api/dog': '/api/breeds/image/random' } }]
@@ -80,11 +80,22 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    babel: {
+      presets: [
+        ["env", {
+          // "modules": false,
+          "targets": {
+            "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
+          }
+        }],
+        "stage-2"
+      ],
+      plugins: ["transform-vue-jsx", "transform-runtime"]
+    },
     /*
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-
     }
   },
   generate: {

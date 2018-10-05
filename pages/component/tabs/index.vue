@@ -1,6 +1,6 @@
 <template>
   <!-- eslint-disable max-len -->
-  <div id="tabcontainer" style="padding:100px">
+  <div id="tabcontainer" style="padding:50px">
   <div class="basic-tab-examples">
     <div class="tab-demo-section">
       <h2>Tabs version: {{ version }}</h2>
@@ -166,6 +166,129 @@
         </p>
         </cdr-tab-panel>
       </cdr-tabs>
+      <h2>tab panel overflow side-scrolling scenario</h2>
+      <cdr-tabs>
+        <cdr-tab-panel name="Stop. ">
+          <h1>tab one content</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="Who">
+          <h1>tab two content</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="would">
+          <h1>tab three content</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="cross">
+          <h1>tab four content</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="the">
+          <h1>tab five content</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="Bridge">
+          <h1>tab six content</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="of">
+          <h1>tab seven content</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="Death">
+          <h1>auuuuuuuugh.</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="must">
+          <h1>auuuuuuuugh.</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="answer">
+          <h1>auuuuuuuugh.</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="me">
+          <h1>auuuuuuuugh.</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="these">
+          <h1>auuuuuuuugh.</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="questions">
+          <h1>auuuuuuuugh.</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="three,">
+          <h1>auuuuuuuugh.</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="ere">
+          <h1>auuuuuuuugh.</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="the">
+          <h1>auuuuuuuugh.</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="other">
+          <h1>auuuuuuuugh.</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="side">
+          <h1>auuuuuuuugh.</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="he">
+          <h1>auuuuuuuugh.</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="see.">
+          <h1>auuuuuuuugh.</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="Ask">
+          <h1>auuuuuuuugh.</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="me ">
+          <h1>auuuuuuuugh.</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="the">
+          <h1>auuuuuuuugh.</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="questions,">
+          <h1>auuuuuuuugh.</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="bridgekeeper.">
+          <h1>auuuuuuuugh.</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="I">
+          <h1>auuuuuuuugh.</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="am">
+          <h1>auuuuuuuugh.</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="not">
+          <h1>auuuuuuuugh.</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="afraid.">
+          <h1>auuuuuuuugh.</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="What...">
+          <h1>auuuuuuuugh.</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="is">
+          <h1>auuuuuuuugh.</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="your">
+          <h1>auuuuuuuugh.</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="name?">
+          <h1>auuuuuuuugh.</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="My">
+          <h1>auuuuuuuugh.</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="name">
+          <h1>auuuuuuuugh.</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="is">
+          <h1>auuuuuuuugh.</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="Sir">
+          <h1>auuuuuuuugh.</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="Camelot.">
+          <h1>auuuuuuuugh.</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="Camelot.">
+          <h1>auuuuuuuugh.</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="Camelot.">
+          <h1>auuuuuuuugh.</h1>
+        </cdr-tab-panel>
+      </cdr-tabs>
     </div>
   </div>
 </div >
@@ -194,8 +317,6 @@ export default {
 <style>
   .tabcontainer {
     padding: 50px;
-    margin-left: 50px;
-    padding-left: 100px;
   }
   .tab-demo-section {
     text-align: center;

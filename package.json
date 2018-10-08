@@ -34,6 +34,7 @@
     "@rei/cdr-radio": "1.0.0",
     "@rei/cdr-rating": "0.1.1",
     "@rei/cdr-select": "0.1.1",
+    "@rei/cdr-table": "0.1.0-alpha.0",
     "@rei/cdr-tabs": "1.0.0-alpha.62",
     "@rei/cdr-text": "^1.0.1",
     "lodash": "^4.17.11",

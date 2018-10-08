@@ -111,11 +111,11 @@
 </template>
 
 <script>
-import Components from 'componentsdir/_index';
+import {CdrTable} from '@rei/cdr-table';
 
 export default {
-  name: 'Table',
-  components: Components,
+  name: 'ManualTable',
+  components: {CdrTable},
   data() {
     const headers = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
     const records = [];

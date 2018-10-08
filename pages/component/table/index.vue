@@ -1,4 +1,4 @@
-<!-- <template>
+<template>
   <div>
     <h2>Tables version {{ version }}</h2>
     <auto-table />
@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import AutoTable from './demo/Auto';
-import ManualTable from './demo/Manual';
+import AutoTable from '~/components/table/Auto';
+import ManualTable from '~/components/table/Manual';
 const deps = require('~/package').dependencies;
 
 export default {
@@ -24,4 +24,3 @@ export default {
   },
 };
 </script>
- -->

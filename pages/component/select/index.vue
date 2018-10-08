@@ -94,6 +94,7 @@
 
 <script>
 import { CdrSelect } from '@rei/cdr-select';
+const deps = require('~/package').dependencies;
 
 export default {
   name: 'Selects',

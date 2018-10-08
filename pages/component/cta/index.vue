@@ -21,14 +21,34 @@
       >Sale
       </cdr-cta>
     </div>
-    <div class="button-example">
+    <h2>full-width = true</h2>
+    <div class="button-example"
+      style="max-width: 300px">
       <cdr-cta
-        cta-style="dark"
         href="https://rei.com"
         :full-width="true"
-      >Full width
+      >REI
       </cdr-cta>
     </div>
+    <h2>full-width = false</h2>
+    <div class="button-example"
+      style="max-width: 300px">
+      <cdr-cta
+        href="https://rei.com"
+        :full-width="false"
+      >REI
+      </cdr-cta>
+    </div>
+    <h2>full-width = false with lots of text</h2>
+    <div class="button-example"
+      style="max-width: 300px">
+      <cdr-cta
+        href="https://rei.com"
+        :full-width="false"
+      >This button has long text. It wraps!
+      </cdr-cta>
+    </div>
+    <h2>full-width = false with lots of text</h2>
     <div
       class="button-example"
       style="max-width: 300px">

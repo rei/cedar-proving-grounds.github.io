@@ -42,7 +42,7 @@
 import { CdrTable } from '@rei/cdr-table';
 
 export default {
-  name: 'Table',
+  name: 'Auto',
   components: { CdrTable },
   data() {
     return {

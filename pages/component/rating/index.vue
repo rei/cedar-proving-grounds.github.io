@@ -14,6 +14,8 @@
       modifier="large"
       compact
     />
+    <br />
+    <h2>Linked review</h2>
     <cdr-rating
       rating="3.66"
       count="1000"
@@ -30,6 +32,8 @@
       />
     </div>
 
+    <br />
+    <h2>default sized tests</h2>
     <!-- Default Size -->
     <cdr-rating
       rating="1.2"

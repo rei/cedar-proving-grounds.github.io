@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h1>Versioned Buttons</h1>
+    <h1>Versioned Links</h1>
     <div
-      v-for="(v,k) in VersionedButtons"
+      v-for="(v,k) in VersionedLinks"
       :key="k"
     >
       <component :is="v">test</component>
@@ -12,21 +12,21 @@
 </template>
 
 <script>
-import VersionedButtons from '~/cedar-packages/cdr-button/';
+import VersionedLinks from '~/cedar-packages/cdr-link/';
 
 export default {
-  name: 'ButtonVersions',
+  name: 'LinkVersions',
   components: {
-    ...VersionedButtons,
+    ...VersionedLinks,
   },
   data() {
     return {
-      VersionedButtons,
+      VersionedLinks,
     }
   }
 }
 </script>
 
 <style lang="scss">
-@import "~/cedar-packages/cdr-button/index.scss";
+@import "~/cedar-packages/cdr-link/index.scss";
 </style>

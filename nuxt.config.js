@@ -55,6 +55,7 @@ module.exports = {
     '@rei/cdr-rating/dist/cdr-rating.css',
     '@rei/cdr-select/dist/cdr-select.css',
     '@rei/cdr-tabs/dist/cdr-tabs.css',
+    '@rei/cdr-data-table/dist/cdr-data-table.css',
   ],
 
   /*

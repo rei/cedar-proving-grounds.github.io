@@ -1,14 +1,14 @@
 <template>
   <div>
-    <h2>Tables version {{ version }}</h2>
+    <h2>DataTables version {{ version }}</h2>
     <auto-table />
     <manual-table />
   </div>
 </template>
 
 <script>
-import AutoTable from '~/components/table/Auto';
-import ManualTable from '~/components/table/Manual';
+import AutoTable from '~/components/data-table/Auto';
+import ManualTable from '~/components/data-table/Manual';
 const deps = require('~/package').dependencies;
 
 export default {
@@ -19,7 +19,7 @@ export default {
   },
   data() {
   return {
-    version: deps["@rei/cdr-table"],
+    version: deps["@rei/cdr-data-table"],
     };
   },
 };

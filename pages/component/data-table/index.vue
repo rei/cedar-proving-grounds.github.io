@@ -1,8 +1,10 @@
 <template>
   <div>
     <h2>DataTables version {{ version }}</h2>
-    <auto-table />
-    <manual-table />
+    <div class="table-container">
+      <auto-table />
+      <manual-table />
+    </div>
   </div>
 </template>
 

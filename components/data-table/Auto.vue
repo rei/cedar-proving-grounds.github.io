@@ -1,5 +1,6 @@
 <template>
-  <div class="table-examples-wrapper">
+  <div class="table-examples-wrapperxxx">
+
     <cdr-data-table
       :col-headers="tableData.colHeaders"
       :row-headers="tableData.rowHeaders"
@@ -40,11 +41,11 @@ export default {
 </script>
 
 <style>
-.table-examples-wrapper {
+.table-examples-wrapperxxx {
   padding: 10px;
 }
 
-.table-examples-wrapper > div {
+.table-examples-wrapperxxx > div {
   margin-bottom: 40px;
 }
 

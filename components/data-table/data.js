@@ -13,6 +13,7 @@ for (let i = 0; i < 2; i += 1) {
 }
 
 const tableData = {
+  dataCaption:'caption from a data table',
   colHeaders: ['XS', 'S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
   rowHeaders: ['Chest', 'Sleeve Length', 'Waist', 'Hip', 'Inseam'],
   rowData: [

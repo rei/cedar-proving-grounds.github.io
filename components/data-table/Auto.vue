@@ -5,6 +5,7 @@
       :col-headers="tableData.colHeaders"
       :row-headers="tableData.rowHeaders"
       :row-data="tableData.rowData"
+      :caption="tableData.dataCaption"
       :key-order="['xs', 's', 'm', 'l', 'xl', 'xxl', 'xxxl']"
       id="auto-table-col-lock-scroll"
     />

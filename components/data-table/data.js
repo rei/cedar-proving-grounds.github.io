@@ -74,10 +74,10 @@ const tableData = {
         title: 'Book A',
         year: 1823,
         author: 'Mikey',
-        rowheader: 'row 1',
+        rowheader: 'It is I, Arthur, son of Uther Pendragon, from the castle of Camelot. King of the Britons, defeater of the Saxons, Sovereign of all England!',
       },
       {
-        title: 'Book C',
+        title: 'Mountaineers Books Dirty Gourmet: Food For Your Outdoor Adventures',
         year: 1532,
         author: 'Joey',
         rowheader: 'row 2',
@@ -85,7 +85,7 @@ const tableData = {
       {
         title: 'Book E',
         year: 1253,
-        author: 'Scotty',
+        author: 'Scotty Fleschenberger',
         rowheader: 'row 3',
       },
     ],

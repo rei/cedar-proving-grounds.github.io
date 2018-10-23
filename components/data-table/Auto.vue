@@ -25,6 +25,28 @@
       :key-order="['xs', 's', 'm', 'l', 'xl', 'xxl', 'xxxl']"
       id="auto-table-no-col-no-row-headers"
     />
+
+    <cdr-data-table
+      caption="“Is it a boy or a girl?” \n
+      “I think it’s a bit early to start imposing roles on it, don’t you?”"
+      :col-headers="false"
+      :row-headers="false"
+      :row-data="tableData.rowData"
+      :key-order="['xs', 's', 'm', 'l', 'xl', 'xxl', 'xxxl']"
+      id="auto-table-no-col-no-row-headersx"
+    />
+
+    <div id="scrollable-table" style="max-width: 500px">
+      <cdr-data-table
+
+        caption="Data Table that should be scrollable"
+        :col-headers="false"
+        :row-headers="false"
+        :row-data="tableData.rowData"
+        :key-order="['xs', 's', 'm', 'l', 'xl', 'xxl', 'xxxl']"
+        id="auto-table-no-col-no-row-headersx"
+      />
+    </div>
   </div>
 </template>
 

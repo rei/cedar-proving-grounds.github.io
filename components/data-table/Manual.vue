@@ -81,7 +81,7 @@
 
     <cdr-data-table
       modifier="compact borderless"
-      caption="Full Manual - Compact & Borderless"
+      caption="Full Manual - Compact & Borderless with a cell with large data"
       summary="Summary"
       id="full-manual"
     >
@@ -99,12 +99,12 @@
           <td>Polyester microfleece/nylon</td>
         </tr>
         <tr>
-          <th>Hood</th>
+          <th>“We are three wise men.” </th>
           <td>No</td>
         </tr>
         <tr>
           <th>Black Length</th>
-          <td>Hip-length</td>
+          <td>“Well, what are you doing creeping around a cow shed at two o’clock in the morning? That doesn’t sound very wise to me.”</td>
         </tr>
         <tr>
           <th>Weight</th>

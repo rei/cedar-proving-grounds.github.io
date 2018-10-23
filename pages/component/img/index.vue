@@ -25,6 +25,17 @@
         src="http://placehold.it/150x350"
       />
 
+      <h3>Image without an alt tag</h3>
+      <cdr-img
+        src="http://placehold.it/150x350"
+      />
+
+      <h3>Image without alt tag, but with title should not be supported behavior</h3>
+      <cdr-img
+        src="http://placehold.it/150x350"
+        title="this should not be supported behavior"
+      />
+
   </div>
 </template>
 

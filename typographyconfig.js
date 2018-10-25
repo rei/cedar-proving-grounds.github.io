@@ -29,6 +29,11 @@ const defaultWeightsValues = {
 const defaultLongValues = {
   styles: defaultStyles,
   heading: `Inspiring`,
+  headingStyles: {
+    'font-size': '28px',
+    'font-weight': 'bold',
+    'margin-bottom': '1rem',
+  },
   p1: `We believe it's in the outdoors that we find our best selves. Our digital products are tethered to that belief &mdash; a place our users come to dream, be curious, scheme, and plan.`,
   p2: `We are a destination for discovery. To remind people to think "what if?", encouraging exploration and rewarding curiosity. Storytelling is at the very center of everything we create: helping people find what they are looking for, and surprising and delighting them when they discover new, interesting things`,
 };

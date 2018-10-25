@@ -33,7 +33,7 @@
     </nav>
 
     <section class="type-section">
-      <h1>Recreational Equipment, Inc.</h1>
+      <h1 class="example-heading">Recreational Equipment, Inc.</h1>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti rerum incidunt saepe cupiditate id? Commodi molestias laudantium similique possimus libero atque ipsa quo natus, at, iste eveniet asperiores blanditiis deleniti.</p>
     </section>
     <section class="type-section">
@@ -68,7 +68,7 @@
           :key="`${c.value}-${guid()}`"
         >
           <div>
-            <h3>{{ c.heading }}</h3>
+            <h3 :style="c.headingStyles">{{ c.heading }}</h3>
             <p :style="c.styles" v-html="c.p1"/>
             <p :style="c.styles" v-html="c.p2"/>
           </div>
@@ -170,6 +170,11 @@ export default {
   border-bottom: 1px solid black;
   padding: $space-1-x 0;
   display: flex;
+}
+
+.example-heading {
+  font-size: 96px;
+  margin-bottom: 2rem;
 }
 
 .type-section {

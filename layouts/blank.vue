@@ -1,5 +1,5 @@
 <template>
-  <div class="cdr-container">
+  <div>
     <nuxt/>
   </div>
 </template>

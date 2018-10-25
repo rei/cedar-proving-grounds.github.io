@@ -1,13 +1,35 @@
 <template>
-  <div :style="{fontFamily: currentFontData.family }">
+  <div 
+    :style="{fontFamily: currentFontData.family }"
+    :class="{
+      'theme--light': bgTheme === 'light',
+      'theme--dark': bgTheme === 'dark',
+      'cdr-container': true,
+      'type-test-wrapper': true,
+    }"
+  >
     <nav class="type-header">
-      <cdr-radio
-        v-for="(v,k) in fontsData"
-        :key="v.name"
-        name="family"
-        v-model="currentFont"
-        :value="k"
-      >{{ v.name }}</cdr-radio>
+      <div>
+        <cdr-radio
+          v-for="(v,k) in fontsData"
+          :key="v.name"
+          name="family"
+          v-model="currentFont"
+          :value="k"
+        >{{ v.name }}</cdr-radio>
+      </div>
+      <div>
+        <cdr-radio
+          name="theme"
+          v-model="bgTheme"
+          value="light"
+        >Light</cdr-radio>
+        <cdr-radio
+          name="theme"
+          v-model="bgTheme"
+          value="dark"
+        >Dark</cdr-radio>
+      </div>
     </nav>
 
     <section class="type-section">
@@ -102,6 +124,7 @@ export default {
     return {
       fontsData,
       currentFont: Object.keys(fontsData)[0],
+      bgTheme: 'light',
     };
   },
   computed: {
@@ -137,8 +160,16 @@ export default {
 <style lang="scss">
 @import '@rei/cdr-tokens/dist/cdr-tokens.scss';
 
+.type-test-wrapper {
+  * {
+    color: inherit;
+  }
+}
+
 .type-header {
   border-bottom: 1px solid black;
+  padding: $space-1-x 0;
+  display: flex;
 }
 
 .type-section {
@@ -150,6 +181,8 @@ export default {
 }
 
 .section-title {
+  @include redwood-display-50();
+
   color: gray;
   margin-bottom: $space-2-x;
 }
@@ -164,6 +197,22 @@ export default {
   text-align: center;
   padding: $inset-1-x;
   box-shadow: $prominence-raised;
+}
+
+.theme {
+  &--light {
+    background-color: $background-color-lightest;
+    color: $text-color-primary-on-light;
+  }
+
+  &--dark {
+    background-color: $background-color-dark;
+    color: $text-color-primary-on-dark;
+
+    .example-card {
+      box-shadow: 2px 2px 2px 0 $background-color-darker;
+    }
+  }
 }
 
 </style>

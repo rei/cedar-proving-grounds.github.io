@@ -16,13 +16,13 @@ const defaultStyles = {
 
 // Characters
 const defaultCharacterValues = {
-  styles: defaultStyles,
+  styles: overrideDefault(defaultStyles, { 'font-size': '32px' }),
   value: `AEHORabcdefghilnorst235,-.`,
 };
 
 // Font weights
 const defaultWeightsValues = {
-  styles: defaultStyles,
+  styles: overrideDefault(defaultStyles, { 'font-size': '64px' }),
   value: `Aa`,
 };
 
@@ -35,7 +35,7 @@ const defaultLongValues = {
 
 // Ambiguous
 const defaultAmbigousValues = {
-  styles: defaultStyles,
+  styles: overrideDefault(defaultStyles, { 'font-size': '64px' }),
   value: [`8B`, `Il1`, `ao`, `O0`, `69`],
 };
 

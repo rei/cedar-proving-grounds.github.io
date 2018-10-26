@@ -9,27 +9,36 @@
     }"
   >
     <nav class="type-header">
-      <div>
-        <cdr-radio
-          v-for="(v,k) in fontsData"
-          :key="v.name"
-          name="family"
-          v-model="currentFont"
-          :value="k"
-        >{{ v.name }}</cdr-radio>
-      </div>
-      <div>
-        <cdr-radio
-          name="theme"
-          v-model="bgTheme"
-          value="light"
-        >Light</cdr-radio>
-        <cdr-radio
-          name="theme"
-          v-model="bgTheme"
-          value="dark"
-        >Dark</cdr-radio>
-      </div>
+      <form class="type-header__section">
+        <fieldset>
+          <legend>Typeface:</legend>
+          <cdr-radio
+            v-for="(v,k) in fontsData"
+            :key="v.name"
+            name="family"
+            v-model="currentFont"
+            :value="k"
+            class="type-header__radio"
+          >{{ v.name }}</cdr-radio>
+        </fieldset>
+      </form>
+      <form class="type-header__section">
+        <fieldset>
+          <legend>Theme:</legend>
+          <cdr-radio
+            name="theme"
+            v-model="bgTheme"
+            value="light"
+            class="type-header__radio"
+          >Light</cdr-radio>
+          <cdr-radio
+            name="theme"
+            v-model="bgTheme"
+            value="dark"
+            class="type-header__radio"
+          >Dark</cdr-radio>
+        </fieldset>
+      </form>
     </nav>
 
     <section class="type-section">
@@ -47,7 +56,7 @@
     </section>
     <section class="type-section">
       <h2 class="section-title">Font Weights</h2>
-      <cdr-row cols="5">
+      <cdr-row cols="2 3@sm 5@md">
         <cdr-col
           v-for="c in currentFontData.weights"
           :key="`${c.value}-${guid()}`"
@@ -62,7 +71,7 @@
     </section>
     <section class="type-section">
       <h2 class="section-title">Paragraph book vs light</h2>
-      <cdr-row cols="2">
+      <cdr-row cols="1 2@sm">
         <cdr-col
           v-for="c in currentFontData.long"
           :key="`${c.value}-${guid()}`"
@@ -77,7 +86,7 @@
     </section>
     <section class="type-section">
       <h2 class="section-title">Character Ambiguity</h2>
-      <cdr-row cols="5">
+      <cdr-row cols="2 3@sm 5@md">
         <template v-for="c in currentFontData.ambiguous">
           <cdr-col
             v-for="v in c.value"
@@ -161,6 +170,8 @@ export default {
 @import '@rei/cdr-tokens/dist/cdr-tokens.scss';
 
 .type-test-wrapper {
+  word-wrap: break-word;
+
   * {
     color: inherit;
   }
@@ -170,6 +181,18 @@ export default {
   border-bottom: 1px solid black;
   padding: $space-1-x 0;
   display: flex;
+
+  &__section {
+    & + & {
+      margin-left: $space-2-x;
+    }
+  }
+
+  &__radio {
+    & + & {
+      margin-top: $space-1-x;
+    }
+  }
 }
 
 .example-heading {

@@ -1,118 +1,123 @@
 <template>
-  <div 
-    :style="{fontFamily: currentFontData.family }"
-    :class="{
-      'theme--light': bgTheme === 'light',
-      'theme--dark': bgTheme === 'dark',
-      'cdr-container': true,
-      'type-test-wrapper': true,
-    }"
-  >
+  <div>
     <nav class="type-header">
-      <form class="type-header__section">
-        <fieldset>
-          <legend>Typeface:</legend>
-          <cdr-radio
-            v-for="(v,k) in fontsData"
-            :key="v.name"
-            name="family"
-            v-model="currentFont"
-            :value="k"
-            class="type-header__radio"
-          >{{ v.name }}</cdr-radio>
-        </fieldset>
-      </form>
-      <form class="type-header__section">
-        <fieldset>
-          <legend>Theme:</legend>
-          <cdr-radio
-            name="theme"
-            v-model="bgTheme"
-            value="light"
-            class="type-header__radio"
-          >Light</cdr-radio>
-          <cdr-radio
-            name="theme"
-            v-model="bgTheme"
-            value="dark"
-            class="type-header__radio"
-          >Dark</cdr-radio>
-        </fieldset>
-      </form>
+      <div class="cdr-container type-header__container">
+        <form class="type-header__section">
+          <fieldset>
+            <legend>Typeface:</legend>
+            <cdr-radio
+              v-for="(v,k) in fontsData"
+              :key="v.name"
+              name="family"
+              v-model="currentFont"
+              :value="k"
+              class="type-header__radio"
+            >{{ v.name }}</cdr-radio>
+          </fieldset>
+        </form>
+        <form class="type-header__section">
+          <fieldset>
+            <legend>Theme:</legend>
+            <cdr-radio
+              name="theme"
+              v-model="bgTheme"
+              value="light"
+              class="type-header__radio"
+            >Light</cdr-radio>
+            <cdr-radio
+              name="theme"
+              v-model="bgTheme"
+              value="dark"
+              class="type-header__radio"
+            >Dark</cdr-radio>
+          </fieldset>
+        </form>
+      </div>
     </nav>
 
-    <section class="type-section">
-      <h1 class="example-heading">Recreational Equipment, Inc.</h1>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti rerum incidunt saepe cupiditate id? Commodi molestias laudantium similique possimus libero atque ipsa quo natus, at, iste eveniet asperiores blanditiis deleniti.</p>
-    </section>
-    <section class="type-section">
-      <h2 class="section-title">Characters</h2>
-      <p
-        v-for="c in currentFontData.characters"
-        :key="`${c.value}-${guid()}`"
-        :style="c.styles"
-        v-html="c.value"
-      />
-    </section>
-    <section class="type-section">
-      <h2 class="section-title">Font Weights</h2>
-      <cdr-row cols="2 3@sm 5@md">
-        <cdr-col
-          v-for="c in currentFontData.weights"
-          :key="`${c.value}-${guid()}`"
-        >
+    <div
+      :style="{fontFamily: currentFontData.family }"
+      :class="{
+        'theme--light': bgTheme === 'light',
+        'theme--dark': bgTheme === 'dark',
+        'type-test-wrapper': true,
+      }"
+    >
+      <div class="cdr-container">
+        <section class="type-section">
+          <h1 class="example-heading">Recreational Equipment, Inc.</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti rerum incidunt saepe cupiditate id? Commodi molestias laudantium similique possimus libero atque ipsa quo natus, at, iste eveniet asperiores blanditiis deleniti.</p>
+        </section>
+        <section class="type-section">
+          <h2 class="section-title">Characters</h2>
           <p
-            class="example-card"
+            v-for="c in currentFontData.characters"
+            :key="`${c.value}-${guid()}`"
             :style="c.styles"
             v-html="c.value"
           />
-        </cdr-col>
-      </cdr-row>
-    </section>
-    <section class="type-section">
-      <h2 class="section-title">Paragraph book vs light</h2>
-      <cdr-row cols="1 2@sm">
-        <cdr-col
-          v-for="c in currentFontData.long"
-          :key="`${c.value}-${guid()}`"
-        >
-          <div>
-            <h3 :style="c.headingStyles">{{ c.heading }}</h3>
-            <p :style="c.styles" v-html="c.p1"/>
-            <p :style="c.styles" v-html="c.p2"/>
-          </div>
-        </cdr-col>
-      </cdr-row>
-    </section>
-    <section class="type-section">
-      <h2 class="section-title">Character Ambiguity</h2>
-      <cdr-row cols="2 3@sm 5@md">
-        <template v-for="c in currentFontData.ambiguous">
-          <cdr-col
-            v-for="v in c.value"
-            :key="`${v}-${guid()}`"
+        </section>
+        <section class="type-section">
+          <h2 class="section-title">Font Weights</h2>
+          <cdr-row cols="2 3@sm 5@md">
+            <cdr-col
+              v-for="c in currentFontData.weights"
+              :key="`${c.value}-${guid()}`"
+            >
+              <p
+                class="example-card"
+                :style="c.styles"
+                v-html="c.value"
+              />
+            </cdr-col>
+          </cdr-row>
+        </section>
+        <section class="type-section">
+          <h2 class="section-title">Paragraph book vs light</h2>
+          <cdr-row cols="1 2@sm">
+            <cdr-col
+              v-for="c in currentFontData.long"
+              :key="`${c.value}-${guid()}`"
+            >
+              <div>
+                <h3 :style="c.headingStyles">{{ c.heading }}</h3>
+                <p :style="c.styles" v-html="c.p1"/>
+                <p :style="c.styles" v-html="c.p2"/>
+              </div>
+            </cdr-col>
+          </cdr-row>
+        </section>
+        <section class="type-section">
+          <h2 class="section-title">Character Ambiguity</h2>
+          <cdr-row cols="2 3@sm 5@md">
+            <template v-for="c in currentFontData.ambiguous">
+              <cdr-col
+                v-for="v in c.value"
+                :key="`${v}-${guid()}`"
+              >
+                <p
+                  :style="c.styles"
+                  class="example-card"
+                  v-html="v"
+                />
+              </cdr-col>
+            </template>
+          </cdr-row>
+        </section>
+        <section class="type-section">
+          <h2 class="section-title">Typographic Scale</h2>
+          <div
+            v-for="c in currentFontData.scale"
+            :key="`${c.value}-${guid()}`"
           >
             <p
               :style="c.styles"
-              class="example-card"
-              v-html="v"
+              v-html="c.value"
             />
-          </cdr-col>
-        </template>
-      </cdr-row>
-    </section>
-    <section class="type-section">
-      <h2 class="section-title">Typographic Scale</h2>
-      <div
-        v-for="c in currentFontData.scale"
-        :key="`${c.value}-${guid()}`"
-      >
-        <p
-          :style="c.styles"
-          v-html="c.value"
-        />
+          </div>
+        </section>
       </div>
-    </section>
+    </div>
   </div>
 </template>
 
@@ -178,9 +183,14 @@ export default {
 }
 
 .type-header {
-  border-bottom: 1px solid black;
-  padding: $space-1-x 0;
-  display: flex;
+  padding-top: $space-1-x;
+  padding-bottom: $space-1-x;
+  box-shadow: $prominence-raised;
+  margin-bottom: 3px;
+
+  &__container {
+    display: flex;
+  }
 
   &__section {
     & + & {

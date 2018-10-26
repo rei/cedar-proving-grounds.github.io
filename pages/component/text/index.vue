@@ -1,6 +1,10 @@
 <template>
   <div>
-    <h2>Text  version: {{ version }}</h2>
+    <cdr-text
+      tag="h2"
+      modifier="heading-medium">
+      Text  version: {{ version }}
+    </cdr-text>
     <headings />
     <paragraphs />
   </div>

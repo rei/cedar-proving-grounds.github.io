@@ -56,7 +56,7 @@ const defaultScaleValues = {
 
 // Default
 const defaultConfig = {
-  name: 'default',
+  name: 'Default',
   family: 'inherit',
   characters: [
     defaultCharacterValues,

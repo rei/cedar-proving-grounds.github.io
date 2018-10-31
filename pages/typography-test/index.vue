@@ -1,10 +1,10 @@
 <template>
   <div>
-    <nav class="type-header">
+    <nav :class="['type-header', {'type-header--dark': bgTheme === 'dark'}]">
       <div class="cdr-container type-header__container">
-        <form class="type-header__section">
-          <fieldset>
-            <legend>Typeface:</legend>
+        <img class="type-header__logo" src="~/static/rei-logo.svg" alt="REI logo">
+        <div class="type-header__container2">
+          <form class="type-header__section">
             <cdr-radio
               v-for="(v,k) in fontsData"
               :key="v.name"
@@ -12,12 +12,12 @@
               v-model="currentFont"
               :value="k"
               class="type-header__radio"
+              modifier="hide-figure"
+              input-class="font-radio"
+              content-class="font-radio__content"
             >{{ v.name }}</cdr-radio>
-          </fieldset>
-        </form>
-        <form class="type-header__section">
-          <fieldset>
-            <legend>Theme:</legend>
+          </form>
+          <form class="type-header__section">
             <cdr-radio
               name="theme"
               v-model="bgTheme"
@@ -30,8 +30,8 @@
               value="dark"
               class="type-header__radio"
             >Dark</cdr-radio>
-          </fieldset>
-        </form>
+          </form>
+        </div>
       </div>
     </nav>
 
@@ -185,24 +185,45 @@ export default {
 .type-header {
   padding-top: $space-1-x;
   padding-bottom: $space-1-x;
-  box-shadow: $prominence-raised;
-  margin-bottom: 3px;
+  box-shadow: $prominence-elevated;
+  position: relative;
+
+  &--dark {
+    box-shadow: 4px 4px 4px 0 $background-color-darker;
+  }
+
+  &__logo {
+    margin-right: $space-4-x;
+  }
 
   &__container {
     display: flex;
+    align-items: center;
+  }
+
+  &__container2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
   }
 
   &__section {
+    display: flex;
+
     & + & {
-      margin-left: $space-2-x;
+      margin-left: $space-4-x;
     }
   }
 
   &__radio {
     & + & {
-      margin-top: $space-1-x;
+      margin-left: $space-1-x;
     }
   }
+}
+
+.font-radio:checked ~ .font-radio__content {
+  border-bottom: 2px solid black;
 }
 
 .example-heading {

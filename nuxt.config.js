@@ -23,7 +23,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/trees-left.svg' },
+      { rel: 'icon', type: 'image/x-icon', href: 'docs/trees-left.svg' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto+Condensed:400|Roboto:400' }
     ]
   },

@@ -5,7 +5,7 @@
   "author": "Zach Folwick <zfolwic@rei.com>",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_ENV=dev nuxt",
+    "dev": "cross-env NODE_ENV=dev nuxt --hostname 0.0.0.0",
     "dev-ssr": "cross-env NODE_ENV=dev nuxt generate && nuxt start",
     "build": "cross-env NODE_ENV=production nuxt build",
     "start": "nuxt start",

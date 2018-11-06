@@ -45,8 +45,12 @@
     >
       <div class="cdr-container">
         <section class="type-section">
-          <h1 class="example-heading">Recreational Equipment, Inc.</h1>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti rerum incidunt saepe cupiditate id? Commodi molestias laudantium similique possimus libero atque ipsa quo natus, at, iste eveniet asperiores blanditiis deleniti.</p>
+          <h1
+            class="example-heading" 
+            :style="currentFontData.headingParagraph.headingStyles">Recreational Equipment, Inc.</h1>
+          <p
+            class="example-paragraph"
+            :style="currentFontData.headingParagraph.paragraphStyles">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti rerum incidunt saepe cupiditate id? Commodi molestias laudantium similique possimus libero atque ipsa quo natus, at, iste eveniet asperiores blanditiis deleniti.</p>
         </section>
         <section class="type-section">
           <h2 class="section-title">Characters</h2>
@@ -54,6 +58,7 @@
             v-for="c in currentFontData.characters"
             :key="`${c.value}-${guid()}`"
             :style="c.styles"
+            class="characters-example"
             v-html="c.value"
           />
         </section>
@@ -106,15 +111,13 @@
         </section>
         <section class="type-section">
           <h2 class="section-title">Typographic Scale</h2>
-          <div
+          <p
             v-for="c in currentFontData.scale"
             :key="`${c.value}-${guid()}`"
-          >
-            <p
-              :style="c.styles"
-              v-html="c.value"
-            />
-          </div>
+            :style="c.styles"
+            class="scale-example"
+            v-html="c.value"
+          />
         </section>
       </div>
     </div>
@@ -179,6 +182,7 @@ export default {
 
   * {
     color: inherit;
+    font-family: inherit;
   }
 }
 
@@ -193,6 +197,7 @@ export default {
   }
 
   &__logo {
+    width: 75px;
     margin-right: $space-4-x;
   }
 
@@ -227,8 +232,24 @@ export default {
 }
 
 .example-heading {
-  font-size: 96px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  max-width: 882px;
+}
+
+.example-paragraph {
+  max-width: 634px;
+}
+
+.characters-example {
+  & + & {
+    margin-top: 2rem;
+  }
+}
+
+.scale-example {
+  & + & {
+    margin-top: 32px;
+  }
 }
 
 .type-section {
@@ -240,7 +261,7 @@ export default {
 }
 
 .section-title {
-  @include redwood-display-50();
+  @include redwood-display-30();
 
   color: gray;
   margin-bottom: $space-2-x;

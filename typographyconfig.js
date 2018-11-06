@@ -14,9 +14,26 @@ const defaultStyles = {
   'font-style': `normal`,
 };
 
+// Heading-Paragraph
+const defaultHeadingParagraph = {
+  headingStyles: overrideDefault(defaultStyles, {
+    'font-size': '96px',
+    'line-height': '104px',
+    'font-weight': 'bold',
+  }),
+  paragraphStyles: overrideDefault(defaultStyles, {
+    'font-size': '20px',
+    'line-height': '32px',
+  }),
+};
+
 // Characters
 const defaultCharacterValues = {
-  styles: overrideDefault(defaultStyles, { 'font-size': '32px' }),
+  styles: overrideDefault(defaultStyles, { 
+    'font-size': '40px',
+    'line-height': '48px',
+    'letter-spacing': '5px',
+  }),
   value: `AEHORabcdefghilnorst235,-.`,
 };
 
@@ -27,15 +44,20 @@ const defaultWeightsValues = {
 };
 
 const defaultLongValues = {
-  styles: defaultStyles,
+  styles: overrideDefault(defaultStyles, {
+    'font-size': '20px',
+    'line-height': '32px',
+  }),
   heading: `Inspiring`,
   headingStyles: {
     'font-size': '28px',
+    'line-height': '36px',
     'font-weight': 'bold',
-    'margin-bottom': '1rem',
+    'margin-top': '2rem',
+    'margin-bottom': '2rem',
   },
   p1: `We believe it's in the outdoors that we find our best selves. Our digital products are tethered to that belief &mdash; a place our users come to dream, be curious, scheme, and plan.`,
-  p2: `We are a destination for discovery. To remind people to think "what if?", encouraging exploration and rewarding curiosity. Storytelling is at the very center of everything we create: helping people find what they are looking for, and surprising and delighting them when they discover new, interesting things`,
+  p2: `We are a destination for discovery. To remind people to think "what if?", encouraging exploration and rewarding curiosity. Storytelling is at the very center of everything we create: helping people find what they are looking for, and surprising and delightering them when they discover new, interesting things`,
 };
 
 // Ambiguous
@@ -56,30 +78,75 @@ const defaultScaleValues = {
 
 // Default
 const defaultConfig = {
-  name: 'Default',
-  family: 'inherit',
+  name: 'Sentinel',
+  family: 'Sentinel',
+  headingParagraph: defaultHeadingParagraph,
   characters: [
     defaultCharacterValues,
     overrideDefault(defaultCharacterValues, { styles: { 'font-weight': 'bold'} }),
   ],
   weights: [
+    overrideDefault(defaultWeightsValues, { styles: { 'font-weight': 'lighter'} }),
     defaultWeightsValues,
     overrideDefault(defaultWeightsValues, { styles: { 'font-weight': 'bold'} }),
+    overrideDefault(defaultWeightsValues, { styles: { 'font-weight': 'bolder'} }),
   ],
   long: [
     defaultLongValues,
-    overrideDefault(defaultLongValues, { styles: { 'font-weight': 'light'} }),
+    overrideDefault(defaultLongValues, { styles: { 'font-weight': 'lighter'} }),
   ],
   ambiguous: [
     defaultAmbigousValues,
   ],
   scale: [
-    overrideDefault(defaultScaleValues, { styles: { 'font-size': `80px` } }),
-    overrideDefault(defaultScaleValues, { styles: { 'font-size': `60px` } }),
-    overrideDefault(defaultScaleValues, { styles: { 'font-size': `40px` } }),
-    overrideDefault(defaultScaleValues, { styles: { 'font-size': `20px` } }),
+    overrideDefault(defaultScaleValues, { styles: { 
+      'font-size': `96px`,
+      'line-height': '104px',
+    } }),
+    overrideDefault(defaultScaleValues, { styles: { 
+      'font-size': `76px`,
+      'line-height': '84px',
+    } }),
+    overrideDefault(defaultScaleValues, { styles: { 
+      'font-size': `56px`,
+      'line-height': '60px',
+    } }),
+    overrideDefault(defaultScaleValues, { styles: { 
+      'font-size': `40px`,
+      'line-height': '48px',
+    } }),
+    overrideDefault(defaultScaleValues, { styles: { 
+      'font-size': `32px`,
+      'line-height': '40px',
+    } }),
+    overrideDefault(defaultScaleValues, { styles: { 
+      'font-size': `28px`,
+      'line-height': '36px',
+    } }),
+    overrideDefault(defaultScaleValues, { styles: { 
+      'font-size': `24px`,
+      'line-height': '32px',
+    } }),
+    overrideDefault(defaultScaleValues, { styles: { 
+      'font-size': `20px`,
+      'line-height': '28px',
+    } }),
+    overrideDefault(defaultScaleValues, { styles: { 
+      'font-size': `18px`,
+      'line-height': '24px',
+    } }),
+    overrideDefault(defaultScaleValues, { styles: { 
+      'font-size': `16px`,
+      'line-height': '24px',
+    } }),
+    overrideDefault(defaultScaleValues, { styles: { 
+      'font-size': `14px`,
+      'line-height': '20px',
+    } }),
   ],
 };
+
+console.log(defaultConfig.long);
 
 // Mali
 const maliConfig = overrideDefault(defaultConfig, {

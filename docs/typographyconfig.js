@@ -146,8 +146,6 @@ const defaultConfig = {
   ],
 };
 
-console.log(defaultConfig.long);
-
 // Mali
 const maliConfig = overrideDefault(defaultConfig, {
   name: 'Mali',

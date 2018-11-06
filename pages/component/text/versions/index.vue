@@ -28,5 +28,4 @@ export default {
 </script>
 
 <style lang="scss">
-@import "~/cedar-packages/cdr-text/index.scss";
 </style>

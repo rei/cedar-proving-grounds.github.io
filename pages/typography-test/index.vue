@@ -127,7 +127,7 @@
 <script>
 import { CdrRadio } from '@rei/cdr-radio';
 import { CdrRow, CdrCol } from '@rei/cdr-grid';
-import fontsData from '~/typographyconfig';
+import fontsData from '~/static/typographyconfig';
 
 export default {
   name: 'TypographyTest',

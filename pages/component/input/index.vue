@@ -139,6 +139,7 @@ export default {
   data() {
     return {
       requiredValidated: '',
+      requiredWithIcons: '',
       required: '',
       nothing: '',
       pattern: '',
@@ -148,6 +149,7 @@ export default {
       error: 1,
       multi: '',
       multi2: '',
+      multiRowModel: '',
       version: deps["@rei/cdr-input"],
     };
   },

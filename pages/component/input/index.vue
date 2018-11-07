@@ -109,10 +109,10 @@
         </a>
       </template>
       <template slot="pre-icon">
-        <icon-twitter inherit-color/>
+        <icon-twitter inherit-color=true />
       </template>
       <template slot="post-icon">
-        <icon-check-lg inherit-color/>
+        <icon-check-lg inherit-color=true />
       </template>
       <template slot="helper-text">
         This is helper text.

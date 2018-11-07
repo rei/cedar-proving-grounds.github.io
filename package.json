@@ -5,11 +5,11 @@
   "author": "Zach Folwick <zfolwic@rei.com>",
   "private": true,
   "scripts": {
-    "dev": "npm run multi-version cross-env NODE_ENV=dev nuxt --hostname 0.0.0.0",
-    "dev-ssr": "npm run multi-version cross-env NODE_ENV=dev nuxt generate && nuxt start",
-    "build": "npm run multi-version cross-env NODE_ENV=production nuxt build",
+    "dev": "npm run multi-version && cross-env NODE_ENV=dev nuxt --hostname 0.0.0.0",
+    "dev-ssr": "npm run multi-version && cross-env NODE_ENV=dev nuxt generate && nuxt start",
+    "build": "npm run multi-version && cross-env NODE_ENV=production nuxt build",
     "start": "nuxt start",
-    "generate": "npm run multi-version cross-env NODE_ENV=production nuxt generate",
+    "generate": "npm run multi-version && cross-env NODE_ENV=production nuxt generate",
     "multi-version": "node ./multi-version"
   },
   "dependencies": {

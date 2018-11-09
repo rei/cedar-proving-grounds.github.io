@@ -104,12 +104,12 @@
       required
       type="email">
       <template slot="info">
-        <a href="#/inputs">
+        <a href="/inputs">
           Info Link/Icon
         </a>
       </template>
       <template slot="pre-icon">
-        <icon-twitter inherit-color=true />
+        <icon-twitter inherit-color />
       </template>
       <template slot="post-icon">
         <icon-check-lg inherit-color=true />

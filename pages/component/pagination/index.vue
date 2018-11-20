@@ -2,47 +2,53 @@
   <div>
     <h1>Pagination</h1>
 
-    <h2>Example with fetched data</h2>
+      <div class="pagination-demo">
+        <h2>Example with fetched data</h2>
+        <cdr-row>
+          <cdr-col
+            v-for="d in apiData.data"
+            :key="d.id"
+          >
+            <div>
+              <p>{{d.id}}</p>
+              <p>{{d.first_name}} {{d.last_name}}</p>
+            </div>
+          </cdr-col>
+        </cdr-row>
+      </div>
 
-    <cdr-row>
-      <cdr-col
-        v-for="d in apiData.data"
-        :key="d.id"
-      >
-        <div>
-          <p>{{d.id}}</p>
-          <p>{{d.first_name}} {{d.last_name}}</p>
-        </div>
-      </cdr-col>
-    </cdr-row>
+      <div class="pagination-demo">
+        <cdr-pagination
+          :pages="pageData"
+          :total-pages="apiData.total_pages"
+          v-model="currPage"
+          @change="navigate"
+          @select-change="selected"
+        />
+      </div>
 
-    <cdr-pagination
-      :pages="pageData"
-      :total-pages="apiData.total_pages"
-      v-model="currPage"
-      @change="navigate"
-      @select-change="selected"
-    />
+      <div class="pagination-demo">
+        <h2>Example with more pages (faked data)</h2>
+        <cdr-pagination 
+         :pages="makePages(20, 'faked-page')"
+         :total-pages="20"
+         v-model="fakedPage"
+         @change="faked"
+         @select-change="selected"
+       />
+      </div>
 
-    <h2>Example with more pages (faked data)</h2>
+      <div class="pagination-demo">
+        <h2>Example with only prev/next (faked data)</h2>
+        <cdr-pagination
+          :pages="makePages(ex2Pages, 'other-page', fakedPage2 - 2)"
+          :total-pages="10"
+          v-model="fakedPage2"
+          @change="faked"
+          @select-change="selected"
+        />
+      </div>
 
-    <cdr-pagination 
-      :pages="makePages(20, 'faked-page')"
-      :total-pages="20"
-      v-model="fakedPage"
-      @change="faked"
-      @select-change="selected"
-    />
-
-    <h2>Example with only prev/next (faked data)</h2>
-
-    <cdr-pagination
-      :pages="makePages(ex2Pages, 'other-page', fakedPage2 - 2)"
-      :total-pages="10"
-      v-model="fakedPage2"
-      @change="faked"
-      @select-change="selected"
-    />
   </div>
 </template>
 

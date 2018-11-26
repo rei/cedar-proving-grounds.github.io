@@ -49,6 +49,38 @@
         />
       </div>
 
+      <div class="pagination-demo">
+        <h2>Example with only one page</h2>
+        <cdr-pagination
+          :pages="makePages(1)"
+          :total-pages="1"
+          v-model="fakedPage3"
+          @change="faked"
+          @select-change="selected"
+        />
+      </div>
+
+      <div class="pagination-demo">
+        <h2>Example with only two pages</h2>
+        <cdr-pagination
+          :pages="makePages(2)"
+          :total-pages="2"
+          v-model="fakedPage4"
+          @change="faked"
+          @select-change="selected"
+        />
+      </div>
+
+      <div class="pagination-demo">
+        <h2>Example with many pages</h2>
+        <cdr-pagination
+          :pages="makePages(1000, 'other-page')"
+          :total-pages="1000"
+          v-model="fakedPage5"
+          @change="faked"
+          @select-change="selected"
+        />
+      </div>
   </div>
 </template>
 
@@ -72,6 +104,9 @@ export default {
       currPage: 1,
       fakedPage: 1,
       fakedPage2: 5,
+      fakedPage3: 1,
+      fakedPage4: 2,
+      fakedPage5: 1,
     };
   },
   computed: {

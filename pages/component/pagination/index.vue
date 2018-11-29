@@ -72,7 +72,7 @@
       </div>
 
 
-      <div class="pagination-demo" style="background-color: grey">
+      <div class="pagination-demo" style="background-color: beige">
         <div style="width:200px; background-color: white">
           <h2>Example with many pages in too small of div</h2>
           <cdr-pagination

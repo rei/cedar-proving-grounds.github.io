@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Pagination</h1>
+    <h1>Pagination version: {{version}}</h1>
 
       <div class="pagination-demo">
         <h2>Example with fetched data</h2>
@@ -90,6 +90,8 @@
 <script>
 import { CdrPagination } from '@rei/cdr-pagination';
 import { CdrRow, CdrCol } from '@rei/cdr-grid';
+const deps = require('~/package').dependencies;
+
 
 export default {
   name: 'pagination-example',
@@ -98,6 +100,7 @@ export default {
     CdrRow,
     CdrCol,
   },
+  version: deps["@rei/cdr-icon"],
   async asyncData({ app }) {
     const apiData = await app.$axios.$get('https://reqres.in/api/users');
     return { apiData };

@@ -10,7 +10,6 @@
         :key="index"
         :size="button.size"
         :full-width="button.fullWidth"
-        :responsive-size="button.responsiveSize"
         :type="button.type"
         :disabled="button.disabled"
         :data-backstop="button.backstop"
@@ -20,8 +19,20 @@
       <h2>Responsive</h2>
       <cdr-button
         :full-width="true"
-        :responsive-size="['large@sm']"
+        size="large@sm"
       >Responsive with default</cdr-button>
+    </div>
+    <div class="button-example">
+    <cdr-button
+        :full-width="true"
+        size="large@xs"
+      >Medium Responsive with default</cdr-button>
+    </div>
+        <div class="button-example">
+    <cdr-button
+        :full-width="true"
+        size="small@md"
+      >xtra-small Responsive with default</cdr-button>
     </div>
     <div class="button-example">
       <h2>Primary Anchor</h2>

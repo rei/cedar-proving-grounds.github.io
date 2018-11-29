@@ -20,7 +20,6 @@
       >
       <cdr-button
         size="small"
-        data-backstop="cdr-button--small icon"
       ><icon-check-lg
         modifier="sm"
         class="cdr-button__icon"
@@ -38,7 +37,6 @@
       <cdr-button
         size="large"
         modifier="secondary"
-        data-backstop="cdr-button--large secondary icon"
       ><cdr-icon
         class="cdr-button__icon"
         use="#download"
@@ -65,8 +63,7 @@
     </div>
     <div class="button-example">
       <cdr-button
-        size="small"
-        :responsive-size="['large@xs', 'medium@sm', 'small@lg']"
+        size="small large@xs medium@sm small@lg"
       ><icon-clock
         class="cdr-button__icon"
       />Responsive</cdr-button

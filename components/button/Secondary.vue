@@ -10,11 +10,9 @@
         :key="index"
         :size="button.size"
         :full-width="button.fullWidth"
-        :responsive-size="button.responsiveSize"
         :modifier="button.modifier"
         :type="button.type"
         :disabled="button.disabled"
-        :data-backstop="button.backstop"
       >{{ button.label }}</cdr-button>
     </div>
     <div class="button-example">

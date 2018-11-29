@@ -42,7 +42,7 @@
         <div class="cdr-text-center">
           <svg
             :is="key"
-            modifier="sm"
+            size="small"
           />
           <p>{{ key }}</p>
         </div>
@@ -61,13 +61,29 @@
         <div class="cdr-text-center">
           <svg
             :is="key"
-            modifier="lg"
+            size="large"
           />
           <p>{{ key }}</p>
         </div>
       </cdr-col>
     </cdr-row>
 
+    <h3>Responsive icon scenario</h3>
+        <cdr-row  cols="3 6@md 10@lg">
+      <cdr-col
+        v-for="(val, key) in Icons"
+        :key="key"
+        v-if="key !== 'CdrIcon' && key !== 'CdrIconSprite'"
+      >
+        <div class="cdr-text-center">
+          <svg
+            :is="key"
+            size="large@xs medium@xs small@lg"
+          />
+          <p>{{ key }}</p>
+        </div>
+      </cdr-col>
+    </cdr-row>
   </div>
 </template>
 

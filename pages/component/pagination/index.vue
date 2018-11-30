@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Pagination version: {{version}}</h1>
+    <h1>Pagination version: {{ version }}</h1>
 
       <div class="pagination-demo">
         <h2>Example with fetched data</h2>
@@ -100,7 +100,6 @@ export default {
     CdrRow,
     CdrCol,
   },
-  version: deps["@rei/cdr-icon"],
   async asyncData({ app }) {
     const apiData = await app.$axios.$get('https://reqres.in/api/users');
     return { apiData };
@@ -113,6 +112,7 @@ export default {
       fakedPage3: 1,
       fakedPage4: 2,
       fakedPage5: 1,
+      version: deps["@rei/cdr-pagination"],
     };
   },
   computed: {

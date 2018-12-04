@@ -12,7 +12,7 @@
         :full-width="button.fullWidth"
         :type="button.type"
         :disabled="button.disabled"
-        :data-backstop="button.backstop"
+        :on-click="log"
       >{{ button.label }}</cdr-button>
     </div>
     <div class="button-example">
@@ -64,21 +64,18 @@ export default {
               disabled: false,
               size: 'large',
               fullWidth: false,
-              backstop: 'cdr-button--large',
             },
             {
               label: 'Medium',
               disabled: false,
               size: 'medium',
               fullWidth: false,
-              backstop: 'cdr-button--medium',
             },
             {
               label: 'Small',
               disabled: false,
               size: 'small',
               fullWidth: false,
-              backstop: 'cdr-button--small',
             },
           ],
         },
@@ -90,21 +87,18 @@ export default {
               disabled: true,
               size: 'large',
               fullWidth: false,
-              backstop: 'cdr-button--large disabled',
             },
             {
               label: 'Medium',
               disabled: true,
               size: 'medium',
               fullWidth: false,
-              backstop: 'cdr-button--medium disabled',
             },
             {
               label: 'Small',
               disabled: true,
               size: 'small',
               fullWidth: false,
-              backstop: 'cdr-button--small disabled',
             },
           ],
         },
@@ -116,21 +110,18 @@ export default {
               disabled: false,
               size: 'small',
               fullWidth: true,
-              backstop: 'cdr-button--mall full-width',
             },
             {
               label: 'Medium + full width',
               disabled: false,
               size: 'medium',
               fullWidth: true,
-              backstop: 'cdr-button--medium full-width',
             },
             {
               label: 'Large + full width',
               disabled: false,
               size: 'large',
               fullWidth: true,
-              backstop: 'cdr-button--large full-width',
             },
           ],
         },
@@ -139,7 +130,7 @@ export default {
   },
   methods: {
     log() {
-      console.log('clicked'); // eslint-disable-line
+      console.warn('clicked'); // eslint-disable-line
     },
   },
 };

@@ -1,19 +1,19 @@
 <template>
   <section>
     <h2>Media Object version: {{ version }}</h2>
-    <div data-backstop="figure-placement">
+    <div class="media-object-demo">
       <h3>Media Object Figure Placement</h3>
       <figurePlacement/>
     </div>
-    <div data-backstop="media-object-flux">
+    <div class="media-object-demo">
       <h3>Media Object Flux</h3>
       <mediaObjectFlux/>
     </div>
-    <div data-backstop="media-shape-align">
+    <div class="media-object-demo">
       <h3>Media Figure shapes and body alignment</h3>
       <mediaShapeAlign/>
     </div>
-    <div data-backstop="media-object-overlay">
+    <div class="media-object-demo">
       <h3>Media Object Overlay</h3>
       <mediaOverlay/>
     </div>

@@ -78,7 +78,7 @@ export default {
       data: { 
       message: dogData 
       } 
-    } = await app.$axios.get('https://dog.ceo/api/breeds/image/random')
+    } = await app.$axios.get('https://placehold.it/350x150')
     return { dogData }
   },
   data() {

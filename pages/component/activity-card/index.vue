@@ -32,7 +32,8 @@
 <script>
 import {CdrActivityCard} from '@rei/cdr-activity-card';
 const deps = require('~/package').dependencies;
-
+const url = 'https://images.dog.ceo/breeds/entlebucher/n02108000_2457.jpg';
+// const url = 'https://images.dog.ceo/breeds/entlebucher/n02108000_2457.jpg';
 export default {
   name: 'Activity',
   components: { CdrActivityCard },
@@ -42,7 +43,15 @@ export default {
       data: { 
       message: dogData 
       } 
-    } = await app.$axios.get('https://placehold.it/350x150')
+    } = await app.$axios/*.get('https://dog.ceo/api/breeds/image/random')*/
+    .get(url, {
+      mode: 'cors',
+      crossdomain: true,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+      }
+    })
+
     return { dogData }
   },
   data() {

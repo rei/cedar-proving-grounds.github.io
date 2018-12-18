@@ -3,7 +3,7 @@
     <cdr-text
       tag="h2"
       modifier="heading-small">
-      Searchbox
+      Searchbox: {{ version }}
     </cdr-text>
 
     <cdr-search
@@ -35,6 +35,7 @@
 <script>
 import {CdrText} from '@rei/cdr-text';
 import {CdrSearch} from '@rei/cdr-search';
+const deps = require('~/package').dependencies;
 
 export default {
   name: 'Searchbox',
@@ -43,6 +44,7 @@ export default {
     return {
       search1: '',
       search2: 'bare',
+      version: deps["@rei/cdr-search"],
     };
   },
   methods: {

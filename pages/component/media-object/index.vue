@@ -35,7 +35,11 @@ export default {
     mediaObjectFlux,
     mediaOverlay,
     mediaShapeAlign,
-    version: deps["@rei/cdr-media-object"],
   },
+  data() {
+    return {
+      version: deps["@rei/cdr-media-object"],
+   };
+  }
 };
 </script>

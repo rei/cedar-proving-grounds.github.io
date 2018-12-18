@@ -32,7 +32,8 @@
 <script>
 import {CdrActivityCard} from '@rei/cdr-activity-card';
 const deps = require('~/package').dependencies;
-
+const url = 'https://images.dog.ceo/breeds/entlebucher/n02108000_2457.jpg';
+// const url = 'https://images.dog.ceo/breeds/entlebucher/n02108000_2457.jpg';
 export default {
   name: 'Activity',
   components: { CdrActivityCard },

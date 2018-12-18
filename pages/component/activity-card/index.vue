@@ -3,7 +3,7 @@
     <h2>Activity Card version: {{ version }}</h2>
     <div class="activity-card">
         <cdr-activity-card
-          :media='dogData'
+          :media="dogImg"
           label="rest api call"
           title-url="http://rei.com"
           title="Snow Lake Trail"
@@ -38,12 +38,9 @@ export default {
   components: { CdrActivityCard },
 
   async asyncData({ app }) {
-    const {
-      data: { 
-      message: dogData 
-      } 
-    } = await app.$axios.get('https://placehold.it/350x150')
-    return { dogData }
+    const { data } = await app.$axios.get('https://dog.ceo/api/breed/entlebucher/images');
+    const dogImg = data.message[0];
+    return { dogImg };
   },
   data() {
   return {

@@ -7,23 +7,27 @@
     </cdr-text>
 
     <cdr-search
+      class="cdr-search-demo"
       v-model="search1"
       :click="search"/>
     <cdr-text>Searching: {{ search1 }}</cdr-text>
 
     <cdr-search
+      class="cdr-search-demo"
       v-model="search1"
       :click="search"
       large/>
     <cdr-text>Searching: {{ search1 }}</cdr-text>
 
     <cdr-search
+      class="cdr-search-demo"
       v-model="search2"
       :click="search"
       bare/>
     <cdr-text>Searching: {{ search2 }}</cdr-text>
 
     <cdr-search
+      class="cdr-search-demo"
       v-model="search2"
       :click="search"
       bare

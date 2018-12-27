@@ -17,7 +17,7 @@
     <div class="anchor-example">
       <cdr-link
         modifier="standalone"
-        data-backstop="cdr-link--standalone"/>
+      />
     </div>
 
     <h3>Links, with icon</h3>
@@ -79,8 +79,7 @@
     <h3>Link using a &lt;button&gt; element</h3>
     <div class="anchor-example">
       <cdr-link
-        tag="button"
-        data-backstop="cdr-link--button">I'm a button!</cdr-link>
+        tag="button">I'm a button!</cdr-link>
     </div>
   </div>
 </template>

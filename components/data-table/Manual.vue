@@ -4,7 +4,7 @@
     <cdr-data-table
       :col-headers="true"
       :row-headers="true"
-      caption="Table with data fed in"
+      caption="Table with data fed in using slots"
       id="manual-3-col"
     >
       <template slot="thead">

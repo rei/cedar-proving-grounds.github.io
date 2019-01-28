@@ -1,6 +1,7 @@
 <template>
   <div>
     <h2>DataTables version {{ version }}</h2>
+    <nuxt-link to="/testcomponents/data-table/starwars">Star Wars Dataset</nuxt-link>
     <div class="table-container">
       <auto-table />
       <manual-table />

@@ -66,24 +66,28 @@ const tableData = {
   books: {
     headers: [
       'Title',
+      'You must cut down the mightiest tree in the forest... WITH... A HERRING!',
       'Year',
       'Author',
     ],
     records: [
       {
         title: 'Book A',
+        "You must cut down the mightiest tree in the forest... WITH... A HERRING!": 'fake data',
         year: 1823,
         author: 'Mikey',
         rowheader: 'It is I, Arthur, son of Uther Pendragon, from the castle of Camelot. King of the Britons, defeater of the Saxons, Sovereign of all England!',
       },
       {
         title: 'Mountaineers Books Dirty Gourmet: Food For Your Outdoor Adventures',
+        "You must cut down the mightiest tree in the forest... WITH... A HERRING!": 'fake data',
         year: 1532,
         author: 'Joey',
         rowheader: 'row 2',
       },
       {
         title: 'Book E',
+        "You must cut down the mightiest tree in the forest... WITH... A HERRING!": 'fake data',
         year: 1253,
         author: 'Scotty Fleschenberger',
         rowheader: 'row 3',

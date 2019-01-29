@@ -1,71 +1,59 @@
 <template>
-  <div>
+  <div class="page"  :style="bgc">
+     <p>Cedar Proving Grounds</p>
     <!-- make sprite available on every page -->
     <cdr-icon-sprite />
+    <!-- add navigation pane to every page -->
+    <navigator />
+    <section>
+            <input 
+              type="radio" 
+              key="a" 
+              aria-label="light background"
+              v-model="bgc.backgroundColor"
+              :value='light'>light ({{light}})
+            </input>
+            <input
+              type="radio"
+              key="b"
+              aria-label="light background"
+              v-model="bgc.backgroundColor"
+              :value='dark'>dark ({{dark}})
+            </input>
+        </section>
+    <br />
+    <br />
     <nuxt/>
   </div>
 </template>
 
 <script>
 import { CdrIconSprite } from '@rei/cdr-icon';
+import Navigator from '~/components/navigator/Navigator';
 
 export default {
+  name: 'Home',
   components: {
     CdrIconSprite,
+    Navigator,
   },
+  data() {
+        return {
+            description: 'Type any colour name, rgb, hex or hsl in the input below and see what happens!',
+            bgc: {
+                backgroundColor: ''
+            },
+            light:'#FFFFFF',
+            dark:'#292929'
+        }
+    },
 };
 </script>
 
 <style lang="scss">
   @import "@rei/cdr-icon/dist/cdr-icon.css";
-</style>
+.page {
+    background-color: #FFFFFF;
+}
 
-
-<!--<style>
-html
-{
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-*, *:before, *:after
-{
-  box-sizing: border-box;
-  margin: 0;
-}
-.button--green
-{
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-.button--green:hover
-{
-  color: #fff;
-  background-color: #3b8070;
-}
-.button--grey
-{
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-.button--grey:hover
-{
-  color: #fff;
-  background-color: #35495e;
-}
 </style>
--->

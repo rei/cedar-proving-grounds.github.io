@@ -1,7 +1,7 @@
 <template>
   <!-- eslint-disable max-len -->
   <div>
-    <h2>Caption</h2>
+    <h2>Caption version: {{ version }}</h2>
 
     <h3>Default</h3>
     <cdr-caption
@@ -32,12 +32,18 @@
 </template>
 
 <script>
-import { CdrCaption } from '~/cedar';
+import { CdrCaption } from '@rei/cdr-caption';
+const deps = require('~/package').dependencies;
 
 export default {
   name: 'CaptionExample',
   components: {
     CdrCaption,
+  },
+  data() {
+  return {
+    version: deps["@rei/cdr-caption"],
+    };
   },
 };
 </script>

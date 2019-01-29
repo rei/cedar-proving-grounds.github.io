@@ -2,7 +2,7 @@
   <!-- eslint-disable max-len -->
   <div>
     <div class="row-demo-wrapper">
-      <h2>The Grid</h2>
+      <h2>The Grid version: {{ version }}</h2>
 
       <div data-backstop="row-basic">
         <h3>cdr-row usage</h3>
@@ -1799,8 +1799,8 @@
 </template>
 
 <script>
-import { CdrRow, CdrCol } from '~/cedar';
-import complex from './Complex';
+import { CdrRow, CdrCol } from '@rei/cdr-grid';
+import complex from '~/components/grid/Complex';
 const deps = require('~/package').dependencies;
 
 export default {

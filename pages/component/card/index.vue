@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import simpleCard from './simpleCard';
+import simpleCard from '~/components/card/simpleCard';
 const deps = require('~/package').dependencies;
 
 export default {
@@ -16,9 +16,9 @@ export default {
   components: {
     simpleCard,
   },
-    data() {
-  return {
-    version: deps["@rei/cdr-card"],
+  data() {
+    return {
+      version: deps["@rei/cdr-card"],
     };
   },
 };

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Selects</h2>
+    <h2>Selects version: {{ version }}</h2>
 
     <cdr-select
       label="Disabled select"
@@ -93,7 +93,8 @@
 </template>
 
 <script>
-import { CdrSelect } from '~/cedar';
+import { CdrSelect } from '@rei/cdr-select';
+const deps = require('~/package').dependencies;
 
 export default {
   name: 'Selects',
@@ -107,6 +108,7 @@ export default {
       multiple: ['1', '2'],
       multiple2: [],
       multiple2Data: ['a', 'b', 'c', 'd'],
+      version: deps["@rei/cdr-select"],
     };
   },
 };

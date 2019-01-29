@@ -1,24 +1,53 @@
 <template>
   <div>
-    <h2>Text Inputs</h2>
+    <h2>Text Inputs version: {{ version }}</h2>
 
     <cdr-input
-      v-model="debounce"
-      label="Validation with debounce"
-      id="testing"
-      placeholder="Enter hi"
-      feedback
-      name="yoyo"
-      :rules="[validateFn]"
-      debounce
-      data-backstop="text-input"
+      label="Max length is 5 characters"
+      maxlength="5"
+    />
+    <!-- empty thing -->
+    <!-- <p>Completely empty input</p> -->
+    <!-- <cdr-input /> -->
+
+  <!--   <cdr-input
+      placeholder="no label used"
+    /> -->
+
+    <cdr-input 
+      hide-label 
+      label="Now go away or I will taunt you a second time."
+    />
+
+    <cdr-input
+      placeholder="a shorter box"
+      style="width: 300px"
+      label="Now go away or I will taunt you a second time."
+    />
+
+    <cdr-input
+      placeholder="high contrast version"
+      style="background-color: #292929"
+      label="Now go"
+
+    />
+
+    <cdr-input
+      placeholder="high contrast with short length"
+      style="background-color: #292929; width: 300px"
+      label="Now go away or I will taunt you a second time."
+    />
+
+    <cdr-input
+      v-model="nothing"
+      placeholder="high contrast with short length"
+      style="shortText"
+      label="Now go away or I will taunt you a second time."
     />
 
     <cdr-input
       v-model="requiredValidated"
       label="Required"
-      feedback
-      :rules="[validateFn]"
       required
     />
 
@@ -44,9 +73,7 @@
       v-model="pattern"
       label="Pattern validation"
       required
-      pattern="[a-zA-Z0-9\-\s'/@#+&%]+"
-      pattern-error="Only letters, numbers, spaces, dashes,
-      apostrophes, /, @, #, +, &amp; or % are allowed."
+     
     />
 
     <cdr-input
@@ -57,86 +84,62 @@
     />
 
     <cdr-input
-      v-model="valid"
-      label="Success"
-      feedback
-      :rules="[validateFn]"
-      immediate-validate
-    />
-
-    <cdr-input
-      v-model="warning"
-      label="Warning"
-      feedback
-      :rules="[validateFn]"
-      immediate-validate
-    />
-
-    <cdr-input
-      v-model="error"
-      label="Error"
-      feedback
-      :rules="[validateFn]"
-      immediate-validate
-    />
-
-    <cdr-input
       v-model="multi"
       label="Multiline"
-      multi-line
-      rows="5"
-      data-backstop="form-textarea"
-    />
-
-    <cdr-input
-      v-model="valid"
-      label="Multiline Success"
-      feedback
-      :rules="[validateFn]"
-      multi-line
-      rows="5"
-      immediate-validate
-    />
-
-    <cdr-input
-      v-model="warning"
-      label="Multiline Warning"
-      feedback
-      :rules="[validateFn]"
-      multi-line
-      rows="5"
-      immediate-validate
-    />
-
-    <cdr-input
-      v-model="error"
-      label="Multiline Error"
-      feedback
-      :rules="[validateFn]"
-      multi-line
-      rows="5"
-      immediate-validate
+      :rows="5"
     />
 
     <cdr-input
       v-model="multi2"
       label="Multiline 10 rows"
-      multi-line
-      rows="10"
+      :rows="10"
+    />
+
+     <cdr-input
+      class="demo-input"
+      v-model="requiredWithIcons"
+      id="required-with-icon"
+      placeholder="Required with Icon"
+      label="#5 Input Label"
+      required
+      type="email">
+      <template slot="info">
+        <a href="/inputs">
+          Info Link/Icon
+        </a>
+      </template>
+      <template slot="pre-icon">
+        <icon-twitter inherit-color />
+      </template>
+      <template slot="post-icon">
+        <icon-check-lg inherit-color=true />
+      </template>
+      <template slot="helper-text">
+        This is helper text.
+      </template>
+    </cdr-input>
+    <cdr-input
+      class="demo-input"
+      v-model="multiRowModel"
+      :rows="10"
+      placeholder="#6 Multi Line Input/TextArea"
+      label="#6 Multi Line Input/TextArea"
     />
   </div>
 </template>
 
 <script>
-import { CdrInput } from '~/cedar';
+import { CdrInput } from '@rei/cdr-input';
+import { IconTwitter, IconCheckLg } from '@rei/cdr-icon';
+const deps = require('~/package').dependencies;
 
 export default {
   name: 'Forms',
-  components: { CdrInput },
+  components: { CdrInput, IconTwitter, IconCheckLg },
   data() {
     return {
-      debounce: '',
       requiredValidated: '',
+      requiredWithIcons: '',
       required: '',
       nothing: '',
       pattern: '',
@@ -146,25 +149,16 @@ export default {
       error: 1,
       multi: '',
       multi2: '',
+      multiRowModel: '',
+      version: deps["@rei/cdr-input"],
     };
-  },
-  methods: {
-    validateFn(inputText) {
-      const obj = {};
-      if (inputText === 'hi') {
-        obj.state = 'valid';
-      } else if (inputText === '') {
-        obj.state = 'warn';
-        obj.message = 'Warning Message';
-      } else if (!isNaN(inputText) && inputText !== '') { //eslint-disable-line
-        obj.state = 'error';
-        obj.message = 'Error: needs to be letters';
-      } else {
-        obj.state = 'error';
-        obj.message = 'Error Message';
-      }
-      return obj;
-    },
   },
 };
 </script>
+
+<style>
+.shortText {
+  background-color: #292929; 
+  width: 300px;
+}
+</style>

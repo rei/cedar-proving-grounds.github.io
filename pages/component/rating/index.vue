@@ -1,35 +1,39 @@
 <template>
   <div>
-    <h2>Ratings</h2>
+    <h2>Ratings version: {{ version }}</h2>
 
     <!-- Large Size -->
     <cdr-rating
       rating="0"
       count="0"
-      modifier="large"
+      size="large"
     />
     <cdr-rating
       rating="3"
       count="100"
-      modifier="large"
+      size="large"
       compact
     />
+    <br />
+    <h2>Linked review</h2>
     <cdr-rating
       rating="3.66"
       count="1000"
       href="https://www.rei.com"
-      modifier="large"
+      size="large"
     />
     <div>
       <cdr-rating
         rating="3.66"
         count="1000"
         href="https://www.rei.com"
-        modifier="large"
+        size="large"
         compact
       />
     </div>
 
+    <br />
+    <h2>default sized tests</h2>
     <!-- Default Size -->
     <cdr-rating
       rating="1.2"
@@ -50,29 +54,35 @@
     <cdr-rating
       rating="2"
       count="9"
-      modifier="small"
+      size="small"
     />
     <cdr-rating
       rating="3.444412321"
       count="615"
-      modifier="small"
+      size="small"
       compact
     />
     <cdr-rating
       rating="3"
       count="100"
       href="https://www.rei.com"
-      modifier="small"
+      size="small"
     />
   </div>
 </template>
 
 <script>
-import { CdrRating } from '~/cedar';
+import { CdrRating } from '@rei/cdr-rating';
+const deps = require('~/package').dependencies;
 
 export default {
   name: 'Rating',
   components: { CdrRating },
+  data() {
+  return {
+    version: deps["@rei/cdr-rating"],
+    };
+  },
 };
 </script>
 

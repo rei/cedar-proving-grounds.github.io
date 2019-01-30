@@ -31,12 +31,7 @@
 
               <th>{{ record.rowheader }}</th>
                 <td>
-                    <cdr-checkbox
-                        :custom-value="testVal"
-                        v-model="exGroup"
-                    >
-                    CheckBox
-                </cdr-checkbox>
+                    <cdr-checkbox>CheckBox</cdr-checkbox>
                 </td>
               <td
                 v-for="(colData, key, index) in record"

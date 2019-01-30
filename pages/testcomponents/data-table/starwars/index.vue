@@ -51,10 +51,7 @@
 
 <script>
 import { CdrDataTable } from '@rei/cdr-data-table'
-let axios;
-if (process.browser) {
-  axios = require('axios');
-}
+const axios = require('axios');
 
 var _ = require('underscore');
 const deps = require('~/package').dependencies;
@@ -72,10 +69,10 @@ export default {
   },
   computed: {
     getColHeaders() {
-        return this.hasData ? _.allKeys(this.characters[0]) : [{}]
+        return this.hasData ? _.allKeys(this.characters[0]) : [];
     },
     getRowHeaders() {
-      return this.hasData ? this.characters.map(char=>char.name) : [{}];
+      return this.hasData ? this.characters.map(char=>char.name) : [];
     }
   },
 

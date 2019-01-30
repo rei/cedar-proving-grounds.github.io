@@ -44,7 +44,7 @@
         :row-headers="false"
         :row-data="tableData.rowData"
         :key-order="['xs', 's', 'm', 'l', 'xl', 'xxl', 'xxxl']"
-        id="auto-table-no-col-no-row-headersx"
+        id="auto-table-no-col-no-row-headersy"
       />
     </div>
   </div>

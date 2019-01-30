@@ -4,7 +4,7 @@
           :col-headers="true"
           :row-headers="true"
           caption="Slots can use components"
-          id="manual-3-col"
+          id="manual-3-col-slot"
         >
           <template slot="thead">
             <tr>

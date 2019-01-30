@@ -1,12 +1,13 @@
 <template>
-    <div>
-        <h2>Star Wars API using DataTables version {{ version }}</h2>
+  <div>
+    <h2>Star Wars API using DataTables version: {{version}}</h2>
+
 
     <cdr-data-table
       :col-headers="true"
       :row-headers="true"
       caption="Table with data fed from REST API using slots"
-      id="manual-3-col"
+      id="slots-example"
     >
       <template slot="thead">
         <tr>
@@ -15,22 +16,20 @@
             scope="col"
           />
           <th
-            v-for="(header, index) in swData.results"
-            :key="index"
-          >
-            {{ header }}
+            v-for="columnName in getColHeaders">
+              {{columnName}}
           </th>
+          
         </tr>
       </template>
       <template slot="tbody">
         <tr
-          v-for="(record, index) in data.message.results"
+          v-for="(record, index) in characters"
           :key="'tr_' + index"
         >
-          <th>{{ record }}</th>
+          <th>{{ record.name }}</th>
           <td
             v-for="(colData, key, index) in record"
-            v-if="key !== 'rowheader'"
             :key="index"
           >
             {{ colData }}
@@ -38,30 +37,54 @@
         </tr>
       </template>
     </cdr-data-table>
-    </div>
+
+    <cdr-data-table
+      :col-headers="getColHeaders"
+      :row-headers="getRowHeaders"
+      :row-data="characters"
+      :key-order="getColHeaders"
+      caption="REST data fed using cdr api only"
+      id="cdr-data-table-api"
+    />
+  </div>
 </template>
 
 <script>
-import {CdrDataTable} from '@rei/cdr-data-table';
+import { CdrDataTable } from '@rei/cdr-data-table'
+let axios;
+if (process.browser) {
+  axios = require('axios');
+}
 
+var _ = require('underscore');
 const deps = require('~/package').dependencies;
+
 
 export default {
   name: 'swapi',
+  components: { CdrDataTable },
   data() {
-  return {
-    version: deps["@rei/cdr-data-table"],
+    return {
+      version: deps["@rei/cdr-data-table"],
+      characters: [{}],
+      hasData: false,
     };
   },
-  async asyncData({ app }) {
-    const {
-      data: { 
-        message: swData 
-      } 
-    } = await app.$axios.get('https://swapi.co/api/people')
-    return { swData }
+  computed: {
+    getColHeaders() {
+        return this.hasData ? _.allKeys(this.characters[0]) : [{}]
+    },
+    getRowHeaders() {
+      return this.hasData ? this.characters.map(char=>char.name) : [{}];
+    }
   },
-};
+
+  mounted() {
+    axios.get('https://swapi.co/api/people')
+         .then(res => (this.characters = res.data.results))
+         .then(this.hasData = true);
+  },
+}
 </script>
 
 <style>
@@ -72,5 +95,4 @@ export default {
 .table-examples-wrapper > div {
   margin-bottom: 40px;
 }
-
 </style>

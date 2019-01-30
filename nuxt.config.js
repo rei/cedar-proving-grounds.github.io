@@ -78,7 +78,7 @@ module.exports = {
     ['/api/dog', { target: 'https://dog.ceo/', pathRewrite: { '^/api/dog': '/api/breeds/image/random' } }]
   ],
   axios: {
-    proxy: true
+    // proxy: true
   },
   // buildDir: "docs",
   /*

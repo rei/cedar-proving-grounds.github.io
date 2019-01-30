@@ -24,7 +24,7 @@
     "@rei/cdr-card": "^0.2.0",
     "@rei/cdr-checkbox": "^1.0.0",
     "@rei/cdr-cta": "1.0.4-alpha.1",
-    "@rei/cdr-data-table": "1.1.0-alpha.3",
+    "@rei/cdr-data-table": "1.1.0-alpha.4",
     "@rei/cdr-grid": "1.0.0",
     "@rei/cdr-icon": "2.0.0-alpha.0",
     "@rei/cdr-img": "^1.0.1",
@@ -41,6 +41,7 @@
     "@rei/cdr-tabs": "1.0.0-alpha.64",
     "@rei/cdr-text": "1.0.2-alpha.0",
     "nuxt": "^1.0.0",
+    "underscore": "^1.9.1",
     "vue-js-toggle-button": "^1.3.0",
     "vuex": "^3.0.1"
   },

@@ -3,9 +3,12 @@
     <h2>Images {{ version }}</h2>
     
       <h3>Images from Rest service</h3>
-      <cdr-img
-        :src=dogData
-        />
+      <img
+        :src="imageFromApi" 
+        v-if="hasData"
+        height=100px
+        width=100px
+      >
       <h3>Aspect Ratios (with landscape images)</h3>
       <ratios/>
       <cropping/>
@@ -45,6 +48,7 @@ import ratios from '~/components/img/Ratios';
 import cropping from '~/components/img/Cropping';
 import mods from '~/components/img/Mods';
 const deps = require('~/package').dependencies;
+const testJpg = require('~/static/constants.json').testJpg;
 
 export default {
   name: 'Images',
@@ -54,20 +58,26 @@ export default {
     cropping,
     mods,
   },
-  
-  async asyncData({ app }) {
-    const {
-      data: { 
-      message: dogData 
-      } 
-    } = await app.$axios.get('https://dog.ceo/api/breeds/image/random')
-    return { dogData }
-  },
-
   data() {
   return {
-    version: deps["@rei/cdr-img"],
+      version: deps["@rei/cdr-img"],
+      testImage: null,
+      hasData: false,
     };
+  },
+  computed: {
+    imageFromApi () {
+      return this.testImage; 
+    } 
+  },
+  mounted() {
+    fetch(testJpg)
+      .then(response => response.url)
+      .then((imgUrl) => {
+        this.testImage = imgUrl;
+        this.hasData = true;
+      })
+    .catch(err => console.log(err)); /* eslint-disable-line */
   },
 };
 </script>

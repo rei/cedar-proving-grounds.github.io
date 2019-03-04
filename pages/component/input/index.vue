@@ -112,7 +112,8 @@
         <icon-twitter inherit-color />
       </template>
       <template slot="post-icon">
-        <icon-check-lg inherit-color=true />
+        <icon-check-lg 
+        :inherit-color=true />
       </template>
       <template slot="helper-text">
         This is helper text.

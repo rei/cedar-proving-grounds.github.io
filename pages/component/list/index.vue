@@ -18,7 +18,7 @@ import { CdrText } from '@rei/cdr-text';
 import unorderedList from '~/components/list/Unordered';
 import orderedList from '~/components/list/Ordered';
 import bareList from '~/components/list/Bare';
-
+const deps = require('~/package').dependencies;
 
 export default {
   name: 'Lists',
@@ -28,5 +28,10 @@ export default {
     bareList,
     CdrText,
   },
+  data() {
+    return {
+      version: deps["@rei/cdr-input"],
+    };
+  }
 };
 </script>

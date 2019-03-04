@@ -29,7 +29,7 @@
     "@rei/cdr-icon": "2.0.0-alpha.0",
     "@rei/cdr-img": "^1.0.1",
     "@rei/cdr-input": "1.0.0-alpha.5",
-    "@rei/cdr-link": "^1.0.3-alpha.0",
+    "@rei/cdr-link": "^1.1.0-alpha.0",
     "@rei/cdr-list": "^1.0.1",
     "@rei/cdr-media-object": "0.1.4-alpha.0",
     "@rei/cdr-pagination": "0.1.2-alpha.6",

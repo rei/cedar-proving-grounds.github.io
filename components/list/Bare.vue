@@ -70,7 +70,8 @@
 </template>
 
 <script>
-import { CdrText, CdrList } from '@rei/cdr-list';
+import { CdrText} from '@rei/cdr-text';
+import { CdrList } from '@rei/cdr-list';
 
 export default {
   name: 'BareList',

@@ -22,11 +22,6 @@
 
     <h3>Links, with icon</h3>
     <div class="anchor-example">
-      <!-- Already on page from icons -->
-      <!-- Uncomment if moving to separate page -->
-      <!-- <cdr-icon-sprite/> -->
-
-
       <cdr-link>
         <cdr-icon
           use="#mail"
@@ -79,7 +74,10 @@
     <h3>Link using a &lt;button&gt; element</h3>
     <div class="anchor-example">
       <cdr-link
-        tag="button">I'm a button!</cdr-link>
+        tag="button"
+        :on-click="logme('hello you')"
+        >I'm a button doing a button thing!</cdr-link>
+        
     </div>
   </div>
 </template>
@@ -100,6 +98,11 @@ export default {
     version: deps["@rei/cdr-link"],
     };
   },
+  methods: {
+    logme: function(value) {
+      console.log(value);
+    }
+  }
 };
 </script>
 

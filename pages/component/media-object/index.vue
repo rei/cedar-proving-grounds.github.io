@@ -27,7 +27,6 @@ import mediaOverlay from '~/components/media-object/mediaOverlay';
 import mediaShapeAlign from '~/components/media-object/mediaShapeAlign';
 const deps = require('~/package').dependencies;
 
-
 export default {
   name: 'MediaObject',
   components: {

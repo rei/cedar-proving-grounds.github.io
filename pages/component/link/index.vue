@@ -1,5 +1,4 @@
 <template>
-  <!-- eslint-disable max-len -->
   <div>
     <h2>Links version: {{ version }}</h2>
 

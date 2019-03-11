@@ -93,8 +93,8 @@ export default {
     ...Icons
   },
   data() {
-    return {
-      version: deps["@rei/cdr-link"],
+  return {
+    version: deps["@rei/cdr-link"],
     };
   },
   methods: {

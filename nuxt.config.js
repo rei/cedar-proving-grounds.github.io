@@ -60,7 +60,6 @@ module.exports = {
     '@rei/cdr-tabs/dist/cdr-tabs.css',
     '@rei/cdr-data-table/dist/cdr-data-table.css',
     '@rei/cdr-pagination/dist/cdr-pagination.css',
-    '@rei/cdr-popover/dist/cdr-popover.css',
   ],
 
   /*

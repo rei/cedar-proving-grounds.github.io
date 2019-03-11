@@ -74,7 +74,7 @@
     <div class="anchor-example">
       <cdr-link
         tag="button"
-        :on-click="logme('hello you')"
+        @click.prevent="logme('hello you')"
         >I'm a button doing a button thing!</cdr-link>
         
     </div>
@@ -93,8 +93,8 @@ export default {
     ...Icons
   },
   data() {
-  return {
-    version: deps["@rei/cdr-link"],
+    return {
+      version: deps["@rei/cdr-link"],
     };
   },
   methods: {

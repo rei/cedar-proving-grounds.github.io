@@ -15,7 +15,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.3.2",
     "@nuxtjs/proxy": "^1.1.2",
-    "@rei/cdr-accordion": "1.0.3",
+    "@rei/cdr-accordion": "1.0.4",
     "@rei/cdr-activity-card": "0.1.4",
     "@rei/cdr-assets": "1.0.0-alpha.0",
     "@rei/cdr-breadcrumb": "1.0.1-alpha.0",
@@ -26,7 +26,7 @@
     "@rei/cdr-cta": "1.0.4-alpha.1",
     "@rei/cdr-data-table": "1.1.0-alpha.4",
     "@rei/cdr-grid": "1.0.0",
-    "@rei/cdr-icon": "2.0.0-alpha.0",
+    "@rei/cdr-icon": "2.0.1",
     "@rei/cdr-img": "^1.0.1",
     "@rei/cdr-input": "1.0.0-alpha.5",
     "@rei/cdr-link": "1.1.0-alpha.2",

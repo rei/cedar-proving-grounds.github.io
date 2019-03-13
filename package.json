@@ -33,6 +33,7 @@
     "@rei/cdr-list": "^1.0.1",
     "@rei/cdr-media-object": "0.1.4",
     "@rei/cdr-pagination": "0.1.2-alpha.6",
+    "@rei/cdr-popover": "0.1.0-alpha.1",
     "@rei/cdr-quote": "^1.0.0",
     "@rei/cdr-radio": "1.0.0",
     "@rei/cdr-rating": "^1.0.0",

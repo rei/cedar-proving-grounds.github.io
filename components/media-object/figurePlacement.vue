@@ -5,7 +5,7 @@
     align="stretch"
   >
     <cdr-col span="6">
-      <cdr-media-object img-src="http://placehold.it/350x150">
+      <cdr-media-object img-src="https://placehold.it/350x150">
         <cdr-text
           tag="h2"
           modifier="heading-medium">
@@ -20,7 +20,7 @@
     </cdr-col>
     <cdr-col span="6">
       <cdr-media-object
-        img-src="http://placehold.it/350x150"
+        img-src="https://placehold.it/350x150"
         modifier="right">
         <cdr-text
           tag="h2"
@@ -36,7 +36,7 @@
     </cdr-col>
     <cdr-col span="6">
       <cdr-media-object
-        img-src="http://placehold.it/350x150"
+        img-src="https://placehold.it/350x150"
         modifier="top">
         <cdr-text
           tag="h2"
@@ -52,7 +52,7 @@
     </cdr-col>
     <cdr-col span="6">
       <cdr-media-object
-        img-src="http://placehold.it/350x150"
+        img-src="https://placehold.it/350x150"
         modifier="bottom">
         <cdr-text
           tag="h2"

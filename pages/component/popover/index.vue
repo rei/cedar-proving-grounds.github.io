@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div style="padding:20px; position:relative;">
+    <div style="padding:20px; position:relative; height:400">
       <h2>Popover: {{ version }} </h2>
       <cdr-button
         mykey="myvalue"

@@ -10,7 +10,7 @@
       <cdr-popover
         toggle-button-selector="[mykey='myvalue']"
       >
-        <h4>Welcome to my amazing popover</h4>
+        <h4>Welcome to my non-centered popover</h4>
         <p>Thanks for stopping by.</p>
       </cdr-popover>
   
@@ -20,11 +20,12 @@
             Popover in a 500px div
           </cdr-button>
           <cdr-popover toggle-button-selector="[derp='popover-toggle-button']">
-            <h4>Welcome to my amazing popover</h4>
+            <h4>Welcome to my centered popover</h4>
             <p>Thanks for stopping by. blah.</p>
           </cdr-popover>
         </div>
     </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>bottom footer
   </div>
 </template>
 

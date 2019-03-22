@@ -131,7 +131,8 @@ export default {
   },
   methods: {
     log() {
-      console.warn('clicked!'); // eslint-disable-line
+      alert('clicked!'); 
+      // console.warn('clicked!'); // eslint-disable-line
     },
   },
 };

@@ -5,6 +5,7 @@
       v-for="(section, index) in data"
       :key="index">
       <h2>{{ section.title }}</h2>
+      <h3>logs to console</h3>
       <cdr-button
         v-for="(button, index) in section.buttons"
         :key="index"

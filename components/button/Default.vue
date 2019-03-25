@@ -5,7 +5,7 @@
       v-for="(section, index) in data"
       :key="index">
       <h2>{{ section.title }}</h2>
-      <h3>logs to console</h3>
+      <h3>runs javascript- click count: {{ counter }}</h3>
       <cdr-button
         v-for="(button, index) in section.buttons"
         :key="index"
@@ -13,7 +13,7 @@
         :full-width="button.fullWidth"
         :type="button.type"
         :disabled="button.disabled"
-        :on-click="log"
+        :on-click="update"
       >{{ button.label }}</cdr-button>
     </div>
     <div class="button-example">
@@ -50,12 +50,12 @@
 <script>
 import { CdrButton } from '@rei/cdr-button';
 
-
 export default {
   name: 'Default',
   components: { CdrButton },
   data: function data() {
     return {
+      counter: 0,
       data: [
         {
           title: 'Default sizes',
@@ -130,9 +130,8 @@ export default {
     };
   },
   methods: {
-    log() {
-      alert('clicked!'); 
-      // console.warn('clicked!'); // eslint-disable-line
+    update() {
+      this.counter++;
     },
   },
 };

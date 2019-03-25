@@ -25,7 +25,7 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: 'docs/trees-left.svg' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto+Condensed:400|Roboto:400' }
-    ]
+    ],
   },
 
   /*
@@ -39,7 +39,9 @@ module.exports = {
   css: [
     '@rei/cdr-assets/dist/cdr-core.css',
     '@rei/cdr-assets/dist/cdr-fonts.css',
-    '@rei/cdr-accordion/dist/cdr-accordion.css',
+    '@rei/cdr-icon/dist/cdr-icon.css',
+    '@rei/cdr-grid/dist/cdr-grid.css',
+    '@rei/cdr-button/dist/cdr-button.css',
   ],
 
   /*
@@ -63,16 +65,16 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    vendor: ['babel-polyfill', "eventsource-polyfill"],
     babel: {
       presets: [
-        ["env", {
-          // "modules": false,
-          "targets": {
-            "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
-          }
-        }],
-        "stage-2"
-      ],
+      ["env", {
+      "modules": false,
+      "targets": {
+        "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
+      }
+    }],
+    "stage-2"],
       plugins: ["transform-vue-jsx", "transform-runtime"]
     },
     /*

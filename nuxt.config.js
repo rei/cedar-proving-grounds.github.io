@@ -40,27 +40,6 @@ module.exports = {
     '@rei/cdr-assets/dist/cdr-core.css',
     '@rei/cdr-assets/dist/cdr-fonts.css',
     '@rei/cdr-accordion/dist/cdr-accordion.css',
-    '@rei/cdr-breadcrumb/dist/cdr-breadcrumb.css',
-    '@rei/cdr-button/dist/cdr-button.css',
-    '@rei/cdr-caption/dist/cdr-caption.css',
-    '@rei/cdr-card/dist/cdr-card.css',
-    '@rei/cdr-checkbox/dist/cdr-checkbox.css',
-    '@rei/cdr-cta/dist/cdr-cta.css',
-    '@rei/cdr-grid/dist/cdr-grid.css',
-    '@rei/cdr-icon/dist/cdr-icon.css',
-    '@rei/cdr-img/dist/cdr-img.css',
-    '@rei/cdr-input/dist/cdr-input.css',
-    '@rei/cdr-link/dist/cdr-link.css',
-    '@rei/cdr-list/dist/cdr-list.css',
-    '@rei/cdr-media-object/dist/cdr-media-object.css',
-    '@rei/cdr-quote/dist/cdr-quote.css',
-    '@rei/cdr-radio/dist/cdr-radio.css',
-    '@rei/cdr-rating/dist/cdr-rating.css',
-    '@rei/cdr-select/dist/cdr-select.css',
-    '@rei/cdr-tabs/dist/cdr-tabs.css',
-    '@rei/cdr-data-table/dist/cdr-data-table.css',
-    '@rei/cdr-pagination/dist/cdr-pagination.css',
-    '@rei/cdr-popover/dist/cdr-popover.css',
   ],
 
   /*
@@ -72,11 +51,9 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/axios',
-    '@nuxtjs/proxy'
+  
   ],
   proxy: [
-    ['/api/dog', { target: 'https://dog.ceo/', pathRewrite: { '^/api/dog': '/api/breeds/image/random' } }]
   ],
   axios: {
     // proxy: true

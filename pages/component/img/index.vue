@@ -47,6 +47,7 @@ import { CdrImg } from '@rei/cdr-img';
 import ratios from '~/components/img/Ratios';
 import cropping from '~/components/img/Cropping';
 import mods from '~/components/img/Mods';
+import "isomorphic-fetch";
 const deps = require('~/package').dependencies;
 const testJpg = require('~/static/constants.json').testJpg;
 

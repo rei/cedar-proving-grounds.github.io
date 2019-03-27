@@ -12,7 +12,7 @@ import { CdrCard } from '@rei/cdr-card';
 
 export default {
   name: 'SimpleCard',
-  components: CdrCard,
+  components: { CdrCard },
 };
 </script>
 

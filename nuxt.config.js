@@ -39,9 +39,24 @@ module.exports = {
   css: [
     '@rei/cdr-assets/dist/cdr-core.css',
     '@rei/cdr-assets/dist/cdr-fonts.css',
-    '@rei/cdr-icon/dist/cdr-icon.css',
-    '@rei/cdr-grid/dist/cdr-grid.css',
+    '@rei/cdr-breadcrumb/dist/cdr-breadcrumb.css',
     '@rei/cdr-button/dist/cdr-button.css',
+    '@rei/cdr-card/dist/cdr-card.css',
+    '@rei/cdr-checkbox/dist/cdr-checkbox.css',
+    '@rei/cdr-cta/dist/cdr-cta.css',
+    '@rei/cdr-data-table/dist/cdr-data-table.css',
+    '@rei/cdr-grid/dist/cdr-grid.css',
+    '@rei/cdr-icon/dist/cdr-icon.css',
+    '@rei/cdr-img/dist/cdr-img.css',
+    '@rei/cdr-input/dist/cdr-input.css',
+    '@rei/cdr-link/dist/cdr-link.css',
+    '@rei/cdr-list/dist/cdr-list.css',
+    '@rei/cdr-pagination/dist/cdr-pagination.css',
+    '@rei/cdr-radio/dist/cdr-radio.css',
+    '@rei/cdr-select/dist/cdr-select.css',
+    '@rei/cdr-quote/dist/cdr-quote.css',
+    '@rei/cdr-rating/dist/cdr-rating.css',
+    '@rei/cdr-tabs/dist/cdr-tabs.css',
   ],
 
   /*
@@ -53,7 +68,7 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-  
+    '@nuxtjs/axios'
   ],
   proxy: [
   ],
@@ -65,7 +80,12 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    vendor: ['babel-polyfill', "eventsource-polyfill"],
+    vendor: [
+    'babel-polyfill', 
+    "eventsource-polyfill", 
+    "es6-promise", 
+    "isomorphic-fetch"
+    ],
     babel: {
       presets: [
       ["env", {

@@ -7,7 +7,7 @@
             <div class="image-row">
                 <cdr-img
                     :src="image"
-                    :ratio="auto"
+                    :ratio='auto'
                 />
             </div>
           </cdr-col>
@@ -43,7 +43,7 @@ export default {
     props: {
         _id: {
             type: String,
-            required: true
+            required: false
         },
         /* Path to image */
         image: String,
@@ -60,6 +60,11 @@ export default {
         age: {
             type: String,
             required: true
+        }
+    },
+    computed: {
+        getImage() {
+            return props.image;
         }
     }
 }

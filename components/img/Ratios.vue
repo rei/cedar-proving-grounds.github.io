@@ -101,6 +101,17 @@
         />
       </div>
     </cdr-col>
+    <cdr-col>
+      <div>
+        <p>auto</p>
+        <cdr-img
+          class="cdr-img-test"
+          :ratio='auto'
+          alt="ratio auto"
+          src="http://placehold.it/300x100"
+        />
+      </div>
+    </cdr-col>
   </cdr-row>
 </template>
 

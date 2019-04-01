@@ -26,7 +26,7 @@
     "@rei/cdr-data-table": "1.1.2-alpha.0",
     "@rei/cdr-grid": "1.0.4-alpha.0",
     "@rei/cdr-icon": "2.0.2-alpha.0",
-    "@rei/cdr-img": "1.0.3-alpha.0",
+    "@rei/cdr-img": "1.0.0",
     "@rei/cdr-input": "1.0.2-alpha.0",
     "@rei/cdr-link": "1.0.5-alpha.2",
     "@rei/cdr-list": "1.0.3-alpha.0",

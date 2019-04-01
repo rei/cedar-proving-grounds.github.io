@@ -18,7 +18,7 @@
     "@rei/cdr-accordion": "1.0.5-alpha.0",
     "@rei/cdr-activity-card": "0.1.5-alpha.0",
     "@rei/cdr-breadcrumb": "1.0.3-alpha.0",
-    "@rei/cdr-button": "2.0.2-alpha.1",
+    "@rei/cdr-button": "2.0.2",
     "@rei/cdr-caption": "1.0.2-alpha.0",
     "@rei/cdr-card": "0.2.4-alpha.0",
     "@rei/cdr-checkbox": "1.0.3-alpha.0",

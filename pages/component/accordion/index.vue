@@ -21,13 +21,6 @@
           nec, eleifend vulputate mi. Praesent vestibulum accumsan erat id dapibus.
           Suspendisse ut laoreet nunc, et tempor eros. Etiam vel commodo velit. Proin
           egestas fringilla elit et lacinia. Praesent et vehicula massa. Fusce ac purus neque.
-            <img
-              :src="imageFromApi" 
-              v-if="hasData"
-              height=100px
-              width=100px
-              >
-            </img>
         </cdr-accordion-item>
         <cdr-accordion-item
           id="default-long-label"
@@ -84,8 +77,8 @@ export default {
   data() {
     return {
       version: deps["@rei/cdr-accordion"],
-      testImage: null,
-      hasData: false,
+      testImage: require('~/static/constants.json').testJpg,
+      hasData: true,
     };
   },
   computed: {

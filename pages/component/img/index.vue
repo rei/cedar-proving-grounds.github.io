@@ -48,6 +48,7 @@ import ratios from '~/components/img/Ratios';
 import cropping from '~/components/img/Cropping';
 import mods from '~/components/img/Mods';
 import "isomorphic-fetch";
+import "es6-promise";
 const deps = require('~/package').dependencies;
 const testJpg = require('~/static/constants.json').testJpg;
 

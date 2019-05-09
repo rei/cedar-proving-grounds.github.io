@@ -85,13 +85,14 @@ module.exports = {
     extend(config) {
       let cjs = 'cjs';
       // let esm = 'esm';
-
-      if (renderMode == 'universal') {
+      console.log('>>>>>>>>>>>>> ' + renderMode);
+      console.log('>>>>>>>>>>>>> ' + (renderMode.valueOf() === 'universal'));
+      if (renderMode.valueOf() === 'universal') {
         cjs = 'cjs.ssr';
         // esm = 'esm.ssr';
       }
       
-      config.resolve.alias['rei-cedar$'] = `@rei/cedar/dist/cedar.${cjs}.js`
+      config.resolve.alias['rei-cedar$'] = '@rei/cedar/dist/cedar.' + cjs + '.js'
     }
   },
   generate: {

@@ -50,7 +50,7 @@
 </template>
 
 <script>
-import { CdrDataTable } from '@rei/cedar'
+import { CdrDataTable } from 'rei-cedar'
 const axios = require('axios');
 
 var _ = require('underscore');

@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import { CdrCard } from '@rei/cdr-card';
+import { CdrCard } from 'rei-cedar';
 
 
 export default {

@@ -48,7 +48,7 @@
 </template>
 
 <script>
-import { CdrText } from '@rei/cedar';
+import { CdrText } from 'rei-cedar';
 
 export default {
   name: 'headings',

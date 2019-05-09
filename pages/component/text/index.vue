@@ -13,7 +13,7 @@
 <script>
 import headings from '~/components/text/Headings';
 import paragraphs from '~/components/text/Paragraphs';
-import { CdrText } from '@rei/cedar';
+import { CdrText } from 'rei-cedar';
 const deps = require('~/package').dependencies;
 
 export default {

@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import { CdrButton } from '@rei/cedar';
+import { CdrButton } from 'rei-cedar';
 
 export default {
   name: 'Secondary',

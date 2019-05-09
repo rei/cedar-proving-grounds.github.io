@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import { CdrCaption } from '@rei/cedar';
+import { CdrCaption } from 'rei-cedar';
 const deps = require('~/package').dependencies;
 
 export default {

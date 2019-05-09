@@ -78,7 +78,7 @@
 </template>
 
 <script>
-import { CdrText, CdrList } from '@rei/cedar';
+import { CdrText, CdrList } from 'rei-cedar';
 
 export default {
   name: 'UnorderedList',

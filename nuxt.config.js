@@ -90,8 +90,10 @@ module.exports = {
         cjs = 'cjs.ssr';
         // esm = 'esm.ssr';
       }
-      
-      config.resolve.alias['rei-cedar$'] = `@rei/cedar/dist/cedar.${cjs}.js`
+
+      config.resolve.alias = Object.assign({}, config.resolve.alias, {
+        'rei-cedar$': `@rei/cedar/dist/cedar.${cjs}.js`,
+      });
     }
   },
   generate: {

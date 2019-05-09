@@ -63,7 +63,7 @@
 </template>
 
 <script>
-import { CdrAccordion, CdrAccordionItem } from '@rei/cedar';
+import { CdrAccordion, CdrAccordionItem } from 'rei-cedar';
 import "isomorphic-fetch";
 import "es6-promise";
 

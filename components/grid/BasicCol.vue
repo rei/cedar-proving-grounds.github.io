@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import { CdrRow, CdrCol } from '@rei/cedar';
+import { CdrRow, CdrCol } from 'rei-cedar';
 
 export default {
   name: 'BasicRowExample',

@@ -69,7 +69,7 @@
 </template>
 
 <script>
-import { CdrText, CdrQuote } from '@rei/cedar';
+import { CdrText, CdrQuote } from 'rei-cedar';
 
 export default {
   name: 'PullquoteDemo',

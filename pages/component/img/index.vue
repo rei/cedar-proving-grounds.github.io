@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import { CdrImg } from '@rei/cedar';
+import { CdrImg } from 'rei-cedar';
 import ratios from '~/components/img/Ratios';
 import cropping from '~/components/img/Cropping';
 import mods from '~/components/img/Mods';

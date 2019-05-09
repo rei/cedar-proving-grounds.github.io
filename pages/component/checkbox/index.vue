@@ -127,7 +127,7 @@
 </template>
 
 <script>
-import { CdrCheckbox } from '@rei/cedar';
+import { CdrCheckbox } from 'rei-cedar';
 const deps = require('~/package').dependencies;
 
 export default {

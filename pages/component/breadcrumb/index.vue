@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import { CdrBreadcrumb } from '@rei/cedar'
+import { CdrBreadcrumb } from 'rei-cedar'
 
 const deps = require('~/package').dependencies;
 

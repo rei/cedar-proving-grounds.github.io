@@ -295,7 +295,7 @@
 </template>
 
 <script>
-import { CdrTabs, CdrTabPanel, CdrImg } from '@rei/cedar';
+import { CdrTabs, CdrTabPanel, CdrImg } from 'rei-cedar';
 const deps = require('~/package').dependencies;
 
 export default {

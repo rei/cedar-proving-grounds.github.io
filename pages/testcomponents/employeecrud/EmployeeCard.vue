@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import { CdrCard, CdrImg, CdrCol, CdrRow } from '@rei/cedar'
+import { CdrCard, CdrImg, CdrCol, CdrRow } from 'rei-cedar'
 
 export default {
     name: 'EmployeeCard',

@@ -17,7 +17,7 @@
 
 <script>
 import _ from 'lodash';
-import * as components from '@rei/cedar';
+import * as components from 'rei-cedar';
 const deps = require('~/package').dependencies;
 
 export default {

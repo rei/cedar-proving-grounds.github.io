@@ -63,7 +63,7 @@
 </template>
 
 <script>
-import { CdrAccordion, CdrAccordionItem } from '@rei/cdr-accordion';
+import { CdrAccordion, CdrAccordionItem } from '@rei/cedar';
 import "isomorphic-fetch";
 import "es6-promise";
 
@@ -76,7 +76,7 @@ export default {
 
   data() {
     return {
-      version: deps["@rei/cdr-accordion"],
+      version: deps["@rei/cedar"],
       testImage: require('~/static/constants.json').testJpg,
       hasData: true,
     };

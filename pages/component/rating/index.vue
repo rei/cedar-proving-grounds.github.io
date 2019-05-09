@@ -72,7 +72,7 @@
 </template>
 
 <script>
-import { CdrRating } from '@rei/cdr-rating';
+import { CdrRating } from '@rei/cedar';
 const deps = require('~/package').dependencies;
 
 export default {

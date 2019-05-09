@@ -82,7 +82,7 @@
 </template>
 
 <script>
-import { CdrLink } from '@rei/cdr-link';
+import { CdrLink } from '@rei/cedar';
 import * as Icons from '@rei/cdr-icon';
 const deps = require('~/package').dependencies;
 

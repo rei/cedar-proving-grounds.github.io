@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import {CdrTabs, CdrTabPanel} from '@rei/cdr-tabs'
+import {CdrTabs, CdrTabPanel} from '@rei/cedar'
 import EmployeeCard from './EmployeeCard'
 import axios from 'axios';
 

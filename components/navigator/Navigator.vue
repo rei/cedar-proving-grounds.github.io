@@ -17,6 +17,7 @@
 
 <script>
 import _ from 'lodash';
+import * as components from '@rei/cedar';
 const deps = require('~/package').dependencies;
 
 export default {
@@ -28,17 +29,20 @@ export default {
   },
   computed: {
     routes() {
-      const ignorePackages = ['@rei/cdr-assets']
-      const reiDeps = _.pickBy(this.deps, (v, k) => {
-        return (_.startsWith(k, '@rei') && ignorePackages.indexOf(k) === -1);
+      const depArr = _.keys(components);
+      var routeArr = depArr.map((dep) => {
+        let rep = dep.replace('Cdr', '')
+                       .replace('TabPanel', 'tab')
+                       .replace('DataTable', 'data-table')
+                       .toLowerCase();
+          return rep;
       });
-      const depArr = _.keys(reiDeps);
-      const routeArr = depArr.map((dep) => {
-        const rep = dep.replace('@rei/cdr-', '');
-        return rep;
-      });
-      return routeArr;
-    },
+
+      return routeArr.filter(function(e) { return e != 'col'})
+                     .filter(function(e) { return e != 'row'})
+                     .filter(function(e) { return e != 'accordionitem'})
+                     .filter(function(e) { return e != 'tabs'});
+    }
   }
 };
 

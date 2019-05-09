@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import { CdrRow, CdrCol } from '@rei/cdr-grid';
+import { CdrRow, CdrCol } from '@rei/cedar';
 
 export default {
   name: 'BasicRowExample',

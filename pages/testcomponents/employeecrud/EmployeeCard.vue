@@ -26,11 +26,7 @@
 </template>
 
 <script>
-import { CdrCard } from '@rei/cdr-card'
-import { CdrImg } from '@rei/cdr-img'
-import { CdrCol, CdrRow } from '@rei/cdr-grid'
-
-import "@rei/cdr-grid/dist/cdr-grid.css";
+import { CdrCard, CdrImg, CdrCol, CdrRow } from '@rei/cedar'
 
 export default {
     name: 'EmployeeCard',

@@ -70,9 +70,7 @@
 </template>
 
 <script>
-import { CdrMediaObject } from '@rei/cdr-media-object';
-import { CdrCol, CdrRow } from '@rei/cdr-grid';
-import { CdrText } from '@rei/cdr-text';
+import { CdrMediaObject, CdrCol, CdrRow, CdrText } from '@rei/cedar';
 
 export default {
   name: 'FigurePlacement',

@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import { CdrCaption } from '@rei/cdr-caption';
+import { CdrCaption } from '@rei/cedar';
 const deps = require('~/package').dependencies;
 
 export default {
@@ -42,7 +42,7 @@ export default {
   },
   data() {
   return {
-    version: deps["@rei/cdr-caption"],
+    version: deps["@rei/cedar"],
     };
   },
 };

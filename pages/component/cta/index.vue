@@ -63,7 +63,7 @@
 </template>
 
 <script> 
-import { CdrCta } from '@rei/cdr-cta';
+import { CdrCta } from '@rei/cedar';
 const deps = require('~/package').dependencies;
 
 export default {

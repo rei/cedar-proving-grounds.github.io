@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import { CdrButton } from '@rei/cdr-button';
+import { CdrButton } from '@rei/cedar';
 
 export default {
   name: 'Group',

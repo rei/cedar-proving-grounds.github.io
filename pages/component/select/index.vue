@@ -93,7 +93,7 @@
 </template>
 
 <script>
-import { CdrSelect } from '@rei/cdr-select';
+import { CdrSelect } from '@rei/cedar';
 const deps = require('~/package').dependencies;
 
 export default {

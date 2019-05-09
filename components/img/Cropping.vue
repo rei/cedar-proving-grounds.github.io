@@ -204,8 +204,7 @@
 
 <script>
 import testImage from '~/static/test-image.jpeg';
-import { CdrImg } from '@rei/cdr-img';
-import { CdrCol, CdrRow } from '@rei/cdr-grid';
+import { CdrImg, CdrCol, CdrRow } from 'rei-cedar';
 
 export default {
   name: 'Cropping',

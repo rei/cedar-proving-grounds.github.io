@@ -37,31 +37,8 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    '@rei/cdr-assets/dist/cdr-core.css',
-    '@rei/cdr-assets/dist/cdr-fonts.css',
-    '@rei/cdr-accordion/dist/cdr-accordion.css',
-    '@rei/cdr-activity-card/dist/cdr-activity-card.css',
-    '@rei/cdr-breadcrumb/dist/cdr-breadcrumb.css',
-    '@rei/cdr-button/dist/cdr-button.css',
-    '@rei/cdr-caption/dist/cdr-caption.css',
-    '@rei/cdr-card/dist/cdr-card.css',
-    '@rei/cdr-checkbox/dist/cdr-checkbox.css',
-    '@rei/cdr-cta/dist/cdr-cta.css',
-    '@rei/cdr-data-table/dist/cdr-data-table.css',
-    '@rei/cdr-grid/dist/cdr-grid.css',
-    '@rei/cdr-icon/dist/cdr-icon.css',
-    '@rei/cdr-img/dist/cdr-img.css',
-    '@rei/cdr-input/dist/cdr-input.css',
-    '@rei/cdr-link/dist/cdr-link.css',
-    '@rei/cdr-list/dist/cdr-list.css',
-    '@rei/cdr-media-object/dist/cdr-media-object.css',
-    '@rei/cdr-pagination/dist/cdr-pagination.css',
-    '@rei/cdr-radio/dist/cdr-radio.css',
-    '@rei/cdr-search/dist/cdr-search.css',
-    '@rei/cdr-select/dist/cdr-select.css',
-    '@rei/cdr-quote/dist/cdr-quote.css',
-    '@rei/cdr-rating/dist/cdr-rating.css',
-    '@rei/cdr-tabs/dist/cdr-tabs.css',
+    '@rei/cedar/dist/cedar.css',
+    '@rei/cedar/dist/cdr-fonts.css',
   ],
 
   /*
@@ -105,7 +82,16 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    extend(config, ctx) {
+    extend(config) {
+      let cjs = 'cjs';
+      // let esm = 'esm';
+
+      if (renderMode == 'universal') {
+        cjs = 'cjs.ssr';
+        // esm = 'esm.ssr';
+      }
+      
+      config.resolve.alias['rei-cedar$'] = `@rei/cedar/dist/cedar.${cjs}.js`
     }
   },
   generate: {

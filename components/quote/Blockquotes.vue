@@ -52,8 +52,7 @@
 </template>
 
 <script>
-import { CdrText} from '@rei/cdr-text';
-import { CdrQuote } from '@rei/cdr-quote';
+import { CdrText, CdrQuote } from '@rei/cedar';
 
 export default {
   name: 'BlockquoteDemo',

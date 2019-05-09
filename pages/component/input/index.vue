@@ -130,7 +130,7 @@
 </template>
 
 <script>
-import { CdrInput } from '@rei/cdr-input';
+import { CdrInput } from '@rei/cedar';
 import { IconTwitter, IconCheckLg } from '@rei/cdr-icon';
 const deps = require('~/package').dependencies;
 

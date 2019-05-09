@@ -88,7 +88,7 @@
 </template>
 
 <script>
-import { CdrCol, CdrRow } from '@rei/cdr-grid';
+import { CdrCol, CdrRow } from '@rei/cedar';
 import * as Icons from '@rei/cdr-icon';
 const deps = require('~/package').dependencies;
 

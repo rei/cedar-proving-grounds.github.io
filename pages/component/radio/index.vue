@@ -124,7 +124,7 @@
 </template>
 
 <script>
-import { CdrRadio } from '@rei/cdr-radio';
+import { CdrRadio } from '@rei/cedar';
 const deps = require('~/package').dependencies;
 
 export default {

@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import { CdrText } from '@rei/cedar';
+import { CdrText } from 'rei-cedar';
 import unorderedList from '~/components/list/Unordered';
 import orderedList from '~/components/list/Ordered';
 import bareList from '~/components/list/Bare';

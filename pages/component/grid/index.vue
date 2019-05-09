@@ -1799,7 +1799,7 @@
 </template>
 
 <script>
-import { CdrRow, CdrCol } from '@rei/cedar';
+import { CdrRow, CdrCol } from 'rei-cedar';
 import complex from '~/components/grid/Complex';
 const deps = require('~/package').dependencies;
 

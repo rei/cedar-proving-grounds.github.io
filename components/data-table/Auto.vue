@@ -51,7 +51,7 @@
 </template>
 
 <script>
-import { CdrDataTable } from '@rei/cedar/dist/cedar.cjs.ssr.js';
+import { CdrDataTable } from 'rei-cedar';
 import tableData from './data'
 
 export default {

@@ -48,7 +48,7 @@
 </template>
 
 <script>
-import {CdrDataTable, CdrCheckbox } from '@rei/cedar/dist/cedar.cjs.ssr.js';
+import {CdrDataTable, CdrCheckbox } from 'rei-cedar';
 
 import tableData from './data'
 

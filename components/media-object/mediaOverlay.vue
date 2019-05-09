@@ -61,7 +61,7 @@
 </template>
 
 <script>
-import { CdrMediaObject, CdrCol, CdrRow, CdrText } from '@rei/cedar';
+import { CdrMediaObject, CdrCol, CdrRow, CdrText } from 'rei-cedar';
 
 export default {
   name: 'MediaOverlay',

@@ -88,7 +88,7 @@
 </template>
 
 <script>
-import { CdrPagination, CdrRow, CdrCol } from '@rei/cedar';
+import { CdrPagination, CdrRow, CdrCol } from 'rei-cedar';
 const deps = require('~/package').dependencies;
 
 

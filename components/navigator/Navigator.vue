@@ -31,18 +31,19 @@ export default {
   computed: {
     routes() {
       const depArr = _.keys(components);
+
       var routeArr = depArr.map((dep) => {
         let rep = dep.replace('Cdr', '')
-                       .replace('TabPanel', 'tab')
-                       .replace('DataTable', 'data-table')
-                       .toLowerCase();
+                     .replace('TabPanel', 'tab')
+                     .replace('DataTable', 'data-table')
+                     .replace('Row', 'grid')
+                     .toLowerCase();
           return rep;
       });
 
-      return routeArr.filter(function(e) { return e != 'col'})
-                     .filter(function(e) { return e != 'row'})
-                     .filter(function(e) { return e != 'accordionitem'})
-                     .filter(function(e) { return e != 'tabs'});
+      return routeArr.filter(e => e !== 'col')
+                     .filter(e => e !== 'accordionitem')
+                     .filter(e => e !== 'tabs');
     }
   }
 };

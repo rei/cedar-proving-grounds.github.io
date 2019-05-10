@@ -66,11 +66,11 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend(config) {
+    extend(config, ctx) {
       let cjs = 'cjs';
       // let esm = 'esm';
 
-      if (renderMode === 'universal') {
+      if (renderMode === 'universal' && ctx.isServer) {
         cjs = 'cjs.ssr';
         // esm = 'esm.ssr';
       }

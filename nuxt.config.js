@@ -1,5 +1,7 @@
 const pkg = require('./package')
 
+// const routerBase = '';
+// const renderMode = 'universal';
 const routerBase = process.env.NODE_ENV === 'production' ? '/rei-cedar-proving-grounds/' : '';
 const renderMode = process.env.NODE_ENV === 'production' ? 'universal' : 'spa';
 
@@ -68,7 +70,7 @@ export default {
       let cjs = 'cjs';
       // let esm = 'esm';
 
-      if (renderMode.valueOf() === 'universal') {
+      if (renderMode === 'universal') {
         cjs = 'cjs.ssr';
         // esm = 'esm.ssr';
       }

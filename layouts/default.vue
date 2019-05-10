@@ -6,18 +6,24 @@
     <!-- add navigation pane to every page -->
     <navigator />
     <section>
-      <input 
-        type="radio" 
-        aria-label="light background"
-        v-model="bgc.backgroundColor"
-        :value='light'>light ({{light}})
-      />
-      <input
-        type="radio"
-        aria-label="light background"
-        v-model="bgc.backgroundColor"
-        :value='dark'>dark ({{dark}})
-      />
+      <label>
+        <input
+          type="radio" 
+          aria-label="light background"
+          v-model="bgc.backgroundColor"
+          :value='light'
+        />
+        light ({{light}})
+      </label>
+      <label>
+        <input
+          type="radio"
+          aria-label="dark background"
+          v-model="bgc.backgroundColor"
+          :value='dark'
+        />
+        dark ({{dark}})
+      </label>
     </section>
     <br />
     <br />

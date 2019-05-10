@@ -1,10 +1,9 @@
-const path = require('path');
 const pkg = require('./package')
 
 const routerBase = process.env.NODE_ENV === 'production' ? '/rei-cedar-proving-grounds/' : '';
 const renderMode = process.env.NODE_ENV === 'production' ? 'universal' : 'spa';
 
-module.exports = {
+export default {
   /*
    ** Toggle for client side vs. server side rendering.
    */
@@ -62,23 +61,6 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    vendor: [
-    'babel-polyfill', 
-    "eventsource-polyfill", 
-    "es6-promise", 
-    "isomorphic-fetch"
-    ],
-    babel: {
-      presets: [
-      ["env", {
-      "modules": false,
-      "targets": {
-        "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
-      }
-    }],
-    "stage-2"],
-      plugins: ["transform-vue-jsx", "transform-runtime"]
-    },
     /*
     ** You can extend webpack config here
     */

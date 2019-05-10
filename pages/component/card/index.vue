@@ -1,6 +1,5 @@
 <template>
   <div>
-    <p>Card version: {{ version }}</p>
     <div>
     <simple-card/>
   </div>

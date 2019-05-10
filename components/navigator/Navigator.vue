@@ -3,6 +3,7 @@
     <nuxt-link to="/#/">home * </nuxt-link>
 
      <nuxt-link
+        no-prefetch
         v-for="route in routes"
         :key="route"
         :to="`/component/${route}/`">{{ route }}  *

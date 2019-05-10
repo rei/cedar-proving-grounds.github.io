@@ -37,8 +37,8 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    'rei-cedar/dist/cedar.css',
-    'rei-cedar/dist/cdr-fonts.css',
+    '@rei/cedar/dist/cedar.css',
+    '@rei/cedar/dist/cdr-fonts.css',
   ],
 
   /*
@@ -92,7 +92,7 @@ module.exports = {
       }
       
       config.resolve.alias = Object.assign({}, config.resolve.alias, {
-        'rei-cedar$': `rei-cedar/dist/cedar.${cjs}.js`,
+        'rei-cedar$': `@rei/cedar/dist/cedar.${cjs}.js`,
       });
     }
   },

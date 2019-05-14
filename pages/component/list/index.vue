@@ -1,10 +1,8 @@
 <template>
   <div>
-
     <cdr-text
       tag="h2"
       modifier="heading-large">
-      List version: {{ version }}
     </cdr-text>
 
     <unordered-list class="cdr-stack--xl"/>
@@ -18,7 +16,6 @@ import { CdrText } from 'rei-cedar';
 import unorderedList from '~/components/list/Unordered';
 import orderedList from '~/components/list/Ordered';
 import bareList from '~/components/list/Bare';
-const deps = require('~/package').dependencies;
 
 export default {
   name: 'Lists',
@@ -30,7 +27,6 @@ export default {
   },
   data() {
     return {
-      version: deps["@rei/cdr-input"],
     };
   }
 };

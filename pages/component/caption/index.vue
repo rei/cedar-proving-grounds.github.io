@@ -1,8 +1,6 @@
 <template>
   <!-- eslint-disable max-len -->
   <div>
-    <h2>Caption version: {{ version }}</h2>
-
     <h3>Default</h3>
     <cdr-caption
       summary="Lorem ipsum dolor sit amet consectetur adipisicing elit. At perferendis reiciendis sapiente delectus commodi eaque sunt aperiam ex aliquam. Temporibus, veritatis laudantium molestiae accusamus asperiores odio fuga reiciendis blanditiis magni?"
@@ -33,7 +31,6 @@
 
 <script>
 import { CdrCaption } from 'rei-cedar';
-const deps = require('~/package').dependencies;
 
 export default {
   name: 'CaptionExample',
@@ -42,7 +39,6 @@ export default {
   },
   data() {
   return {
-    version: deps["rei-cedar"],
     };
   },
 };

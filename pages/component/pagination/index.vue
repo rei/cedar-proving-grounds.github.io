@@ -1,7 +1,5 @@
 <template>
   <div>
-    <h1>Pagination version: {{ version }}</h1>
-
       <div class="pagination-demo">
         <h2>Example with fetched data</h2>
         <cdr-row>
@@ -89,8 +87,6 @@
 
 <script>
 import { CdrPagination, CdrRow, CdrCol } from 'rei-cedar';
-const deps = require('~/package').dependencies;
-
 
 export default {
   name: 'pagination-example',
@@ -113,7 +109,6 @@ export default {
       fakedPage3: 1,
       fakedPage4: 2,
       fakedPage5: 1,
-      version: deps["@rei/cdr-pagination"],
     };
   },
   computed: {

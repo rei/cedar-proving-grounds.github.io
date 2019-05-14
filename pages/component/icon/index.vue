@@ -1,6 +1,5 @@
 <template>
   <div class="icon-examples">
-    <h2>Icons version: {{ version }}</h2>
     <cdr-icon-sprite/>
     <icon-account-profile />
 
@@ -90,7 +89,6 @@
 <script>
 import { CdrCol, CdrRow } from 'rei-cedar';
 import * as Icons from '@rei/cdr-icon';
-const deps = require('~/package').dependencies;
 
 export default {
   name: 'Icons',
@@ -102,7 +100,6 @@ export default {
   data() {
     return {
       Icons,
-      version: deps["@rei/cdr-icon"],
     };
   },
   methods: {

@@ -1,7 +1,5 @@
 <template>
   <div>
-    <h2>Ratings version: {{ version }}</h2>
-
     <!-- Large Size -->
     <cdr-rating
       rating="0"
@@ -73,14 +71,12 @@
 
 <script>
 import { CdrRating } from 'rei-cedar';
-const deps = require('~/package').dependencies;
 
 export default {
   name: 'Rating',
   components: { CdrRating },
   data() {
   return {
-    version: deps["@rei/cdr-rating"],
     };
   },
 };

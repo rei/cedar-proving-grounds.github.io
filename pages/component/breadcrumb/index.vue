@@ -1,6 +1,6 @@
 <template>
   <div class="breadcrumb-demo-container">
-    <h2>Breadcrumb version: {{ version }}</h2>
+    <h2>Breadcrumb version</h2>
     <h6>Basic Breadcrumb</h6>
     <cdr-breadcrumb
       :items="averageBreadcrumbItems"
@@ -23,14 +23,11 @@
 <script>
 import { CdrBreadcrumb } from 'rei-cedar'
 
-const deps = require('~/package').dependencies;
-
 export default {
   name: 'Breadcrumb',
   components: { CdrBreadcrumb },
   data() {
     return {
-      version: deps["@rei/cdr-breadcrumb"],
       averageBreadcrumbItems: [
         {
           item: {

@@ -1,6 +1,6 @@
 <template>
   <div class="accordion-container">
-    <h2>Accordion version: {{ version }}</h2>
+    <h2>Accordion</h2>
     <div class="accordion-group">
       <h3>Default</h3>
       <cdr-accordion
@@ -68,7 +68,6 @@ import "isomorphic-fetch";
 import "es6-promise";
 
 const testJpg = require('~/static/constants.json').testJpg;
-const deps = require('~/package.json').dependencies;
 
 export default {
   name: 'Accordion',
@@ -76,7 +75,6 @@ export default {
 
   data() {
     return {
-      version: deps["rei-cedar"],
       testImage: require('~/static/constants.json').testJpg,
       hasData: true,
     };

@@ -1,7 +1,5 @@
 <template>
   <div>
-    <h2>Links version: {{ version }}</h2>
-
     <h3>Default Link, No props</h3>
     <div class="anchor-example">
       <cdr-link class="regression-link"/>
@@ -84,7 +82,6 @@
 <script>
 import { CdrLink } from 'rei-cedar';
 import * as Icons from '@rei/cdr-icon';
-const deps = require('~/package').dependencies;
 
 export default {
   name: 'Links',
@@ -95,7 +92,6 @@ export default {
   data() {
   return {
     counter: 0,
-    version: deps["@rei/cdr-link"],
     };
   },
   methods: {

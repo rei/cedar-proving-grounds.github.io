@@ -1,7 +1,5 @@
 <template>
   <div>
-    <h2>Text Inputs version: {{ version }}</h2>
-
     <cdr-input
       label="Max length is 5 characters"
       maxlength="5"
@@ -132,7 +130,6 @@
 <script>
 import { CdrInput } from 'rei-cedar';
 import { IconTwitter, IconCheckLg } from '@rei/cdr-icon';
-const deps = require('~/package').dependencies;
 
 export default {
   name: 'Forms',
@@ -151,7 +148,6 @@ export default {
       multi: '',
       multi2: '',
       multiRowModel: '',
-      version: deps["@rei/cdr-input"],
     };
   },
 };

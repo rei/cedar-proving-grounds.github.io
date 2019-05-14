@@ -3,7 +3,6 @@
   <div id="tabcontainer" style="padding:50px">
   <div class="basic-tab-examples">
     <div class="tab-demo-section">
-      <h2>Tabs version: {{ version }}</h2>
       <cdr-tabs height="100px">
         <cdr-tab-panel name="Tab1">
           <h1>          This is some text. It's not in a <strong>paragraph</strong> element because
@@ -296,7 +295,6 @@
 
 <script>
 import { CdrTabs, CdrTabPanel, CdrImg } from 'rei-cedar';
-const deps = require('~/package').dependencies;
 
 export default {
   name: 'Tabs',
@@ -307,7 +305,6 @@ export default {
   },
   data() {
   return {
-    version: deps["@rei/cdr-tabs"],
     };
   },
 };

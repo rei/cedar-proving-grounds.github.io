@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h2>Radios version: {{ version }}</h2>
     <cdr-radio
       id="test1"
       name="example"
@@ -125,7 +124,6 @@
 
 <script>
 import { CdrRadio } from 'rei-cedar';
-const deps = require('~/package').dependencies;
 
 export default {
   name: 'Radios',
@@ -139,7 +137,6 @@ export default {
       ex3: 'c1',
       ex3compact: 'c1',
       custom: 'customB',
-      version: deps["@rei/cdr-radio"],
     };
   },
 };

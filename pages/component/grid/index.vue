@@ -2,7 +2,6 @@
   <!-- eslint-disable max-len -->
   <div>
     <div class="row-demo-wrapper">
-      <h2>The Grid version: {{ version }}</h2>
 
       <div data-backstop="row-basic">
         <h3>cdr-row usage</h3>
@@ -1801,14 +1800,12 @@
 <script>
 import { CdrRow, CdrCol } from 'rei-cedar';
 import complex from '~/components/grid/Complex';
-const deps = require('~/package').dependencies;
 
 export default {
   name: 'Grid',
   components: { CdrRow, CdrCol, complex },
   data() {
   return {
-    version: deps["@rei/cdr-grid"],
     };
   },
 };

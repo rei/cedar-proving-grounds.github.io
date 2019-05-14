@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h2>CTA version: {{ version }}</h2>
     <div class="button-example">
       <cdr-cta>
         Dark
@@ -64,7 +63,6 @@
 
 <script> 
 import { CdrCta } from 'rei-cedar';
-const deps = require('~/package').dependencies;
 
 export default {
   name: 'Cta',
@@ -73,7 +71,6 @@ export default {
   },
   data() {
     return {
-      version: deps["@rei/cdr-cta"],
     };
   },
 };

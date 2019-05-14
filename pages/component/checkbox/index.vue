@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h2>Checkboxes version: {{ version }} </h2>
     <cdr-checkbox
       v-model="ex1"
       @change="logChange"
@@ -128,7 +127,6 @@
 
 <script>
 import { CdrCheckbox } from 'rei-cedar';
-const deps = require('~/package').dependencies;
 
 export default {
   name: 'Checkboxes',
@@ -149,7 +147,6 @@ export default {
       testVal2: [9, 8],
       complex1: false,
       complex2: true,
-      version: deps["@rei/cdr-checkbox"],
     };
   },
   methods: {

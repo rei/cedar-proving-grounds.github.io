@@ -1,6 +1,5 @@
 <template>
   <div class="accordion-container">
-    <h2>Accordion</h2>
     <div class="accordion-group">
       <h3>Default</h3>
       <cdr-accordion

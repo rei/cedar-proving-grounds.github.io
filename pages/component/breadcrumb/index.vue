@@ -1,6 +1,5 @@
 <template>
   <div class="breadcrumb-demo-container">
-    <h2>Breadcrumb version</h2>
     <h6>Basic Breadcrumb</h6>
     <cdr-breadcrumb
       :items="averageBreadcrumbItems"

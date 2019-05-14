@@ -48,7 +48,7 @@ export default {
                 backgroundColor: ''
             },
             light:'#FFFFFF',
-            dark:'#292929'
+            dark:'#292929',
         }
     },
 };

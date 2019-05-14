@@ -67,16 +67,16 @@ export default {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-      let cjs = 'cjs';
-      // let esm = 'esm';
+      //let cjs = 'cjs';
+      let esm = 'esm';
 
       if (renderMode === 'universal' && ctx.isServer) {
-        cjs = 'cjs.ssr';
-        // esm = 'esm.ssr';
+        //cjs = 'cjs.ssr';
+        esm = 'esm.ssr';
       }
 
       config.resolve.alias = Object.assign({}, config.resolve.alias, {
-        'rei-cedar$': `@rei/cedar/dist/cedar.${cjs}.js`,
+        'rei-cedar$': `@rei/cedar/dist/cedar.${esm}.js`,
       });
     }
   },

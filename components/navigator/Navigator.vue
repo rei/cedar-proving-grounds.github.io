@@ -30,20 +30,28 @@ export default {
   },
   computed: {
     routes() {
-      const depArr = _.keys(components);
-
+      const depArr = _.keys(components)
+     
       var routeArr = depArr.map((dep) => {
         let rep = dep.replace('Cdr', '')
                      .replace('TabPanel', 'tab')
                      .replace('DataTable', 'data-table')
                      .replace('Row', 'grid')
                      .toLowerCase();
-          return rep;
+
+        return rep;
       });
 
-      return routeArr.filter(e => e !== 'col')
-                     .filter(e => e !== 'accordionitem')
-                     .filter(e => e !== 'tabs');
+      // remove icons and replace with 'icon'
+      // Object.keys(routeArr)
+      //       .filter(key => routeArr[key].match(/^icon/))
+      //       .reduce((o,k) => (routeArr[k] = 'icon'))
+
+      // let withoutIcons = [... new Set(routeArr)];
+
+      return  routeArr.filter(e => e !== 'col')
+                          .filter(e => e !== 'accordionitem')
+                          .filter(e => e !== 'tabs')
     }
   }
 };

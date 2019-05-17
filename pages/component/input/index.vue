@@ -128,8 +128,7 @@
 </template>
 
 <script>
-import { CdrInput } from 'rei-cedar';
-import { IconTwitter, IconCheckLg } from '@rei/cdr-icon';
+import { CdrInput, IconTwitter, IconCheckLg } from 'rei-cedar';
 
 export default {
   name: 'Forms',

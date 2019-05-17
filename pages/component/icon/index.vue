@@ -12,7 +12,7 @@
 
     <cdr-row  cols="3 6@md 10@lg">
       <cdr-col
-        v-for="(val, key) in Icons"
+        v-for="(val, key) in CdrIcon"
         :key="key"
         v-if="key !== 'CdrIcon' && key !== 'CdrIconSprite'"
       >
@@ -87,19 +87,19 @@
 </template>
 
 <script>
-import { CdrCol, CdrRow } from 'rei-cedar';
-import * as Icons from 'rei-cedar';
+import { CdrCol, CdrRow, CdrIcon } from 'rei-cedar';
+
 
 export default {
   name: 'Icons',
   components: {
-    ...Icons,
+    CdrIcon,
     CdrCol,
     CdrRow
   },
   data() {
     return {
-      Icons,
+      CdrIcon,
     };
   },
   methods: {

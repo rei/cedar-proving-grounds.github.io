@@ -43,15 +43,15 @@ export default {
       });
 
       // remove icons and replace with 'icon'
-      // Object.keys(routeArr)
-      //       .filter(key => routeArr[key].match(/^icon/))
-      //       .reduce((o,k) => (routeArr[k] = 'icon'))
+      Object.keys(routeArr)
+            .filter(key => routeArr[key].match(/^icon/))
+            .reduce((o,k) => (routeArr[k] = 'icon'))
 
-      // let withoutIcons = [... new Set(routeArr)];
+      let withoutIcons = [... new Set(routeArr)];
 
-      return  routeArr.filter(e => e !== 'col')
+      return  withoutIcons.filter(e => e !== 'col')
                           .filter(e => e !== 'accordionitem')
-                          .filter(e => e !== 'tabs')
+                          .filter(e => e !== 'tabs');
     }
   }
 };

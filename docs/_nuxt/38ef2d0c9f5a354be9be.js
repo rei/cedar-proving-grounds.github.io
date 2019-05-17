@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[28],{279:function(e,t,n){"use strict";n.r(t);var l=n(9),component=Object(l.a)({},function(){var e=this.$createElement,t=this._self._c||e;return t("div",[t("nuxt-link",{attrs:{to:"/testcomponents/employeecrud"}},[this._v("employeeCRUD with vue *")])],1)},[],!1,null,null,null);t.default=component.exports}}]);

@@ -82,8 +82,7 @@
 </template>
 
 <script>
-import { CdrButton } from 'rei-cedar';
-import { CdrIcon, IconCheckLg, IconCheckSm, IconClock } from '@rei/cdr-icon';
+import { CdrButton, CdrIcon, IconCheckLg, IconCheckSm, IconClock } from 'rei-cedar';
 
 export default {
   name: 'ButtonIconComps',

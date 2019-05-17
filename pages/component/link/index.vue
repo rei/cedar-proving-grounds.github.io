@@ -81,7 +81,7 @@
 
 <script>
 import { CdrLink } from 'rei-cedar';
-import * as Icons from '@rei/cdr-icon';
+import * as Icons from 'rei-cedar';
 
 export default {
   name: 'Links',

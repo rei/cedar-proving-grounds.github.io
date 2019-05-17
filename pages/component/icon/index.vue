@@ -87,15 +87,22 @@
 </template>
 
 <script>
-import { CdrCol, CdrRow } from 'rei-cedar';
-import * as Icons from '@rei/cdr-icon';
+import { CdrCol, CdrRow, CdrIcon, CdrIconSprite } from 'rei-cedar';
+import * as Components from 'rei-cedar';
+
+const Icons =  Object.keys(Components)
+    .filter(key => key.match(/^Icon/))
+    .reduce((obj, key) => (obj[key] = Components[key], obj), {});
 
 export default {
   name: 'Icons',
   components: {
-    ...Icons,
+    CdrIcon,
+    CdrIconSprite,
     CdrCol,
-    CdrRow
+    CdrRow,
+    ...Icons
+
   },
   data() {
     return {

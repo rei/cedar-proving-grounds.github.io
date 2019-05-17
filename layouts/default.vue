@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import { CdrIconSprite } from '@rei/cdr-icon';
+import { CdrIconSprite } from 'rei-cedar';
 import Navigator from '~/components/navigator/Navigator';
 
 export default {
@@ -55,7 +55,6 @@ export default {
 </script>
 
 <style lang="scss">
-  @import "@rei/cdr-icon/dist/cdr-icon.css";
 .page {
     background-color: #FFFFFF;
 }

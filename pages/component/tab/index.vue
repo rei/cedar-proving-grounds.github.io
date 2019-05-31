@@ -288,6 +288,18 @@
           <h1>auuuuuuuugh.</h1>
         </cdr-tab-panel>
       </cdr-tabs>
+      <h2>Tab with duplicate names</h2>
+      <cdr-tabs>
+        <cdr-tab-panel name="Super Tab">
+          <h1>tab one content</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="Mediocre Tab">
+          <h1>tab two content</h1>
+        </cdr-tab-panel>
+        <cdr-tab-panel name="Super Tab">
+          <h1>tab three content</h1>
+        </cdr-tab-panel>
+      </cdr-tabs>
     </div>
   </div>
 </div >
